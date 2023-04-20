@@ -37,7 +37,7 @@
 			
 <section class="contact" style="margin-top: 1%; width: 50%; margin-left: 25% ; background: white;">
 
-<a href="all_books.jsp">
+<a href="/Ebook/all_books">
 <i class="fas fa-caret-square-left" style="font-size: 347%; background: #f7f7f7; color: green;"></i>
 </a>
   

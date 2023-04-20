@@ -27,7 +27,7 @@
 
 <div class="heading" style="margin-top: 3%">
     <h1>our blogs</h1>
-    <p> <a href="index.jsp">home >></a> blogs </p>
+    <p> <a href="Ebook">home >></a> blogs </p>
 </div>
 
 <section class="blogs" style="margin-top: -3%">

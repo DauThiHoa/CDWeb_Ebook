@@ -62,7 +62,7 @@ a:hover {
 
 
 	<c:if test="${empty userobj }">
-		<c:redirect url="login.jsp" />
+		<c:redirect url="/Ebook/login" />
 	</c:if>
 
   
@@ -148,7 +148,7 @@ a:hover {
              
 								<a href="setting.jsp" class="btn btn-warning" style="background: orange;">Setting Now</a>
 								
-								<a href="index.jsp" class="btn btn-success"> Continue Shopping</a>
+								<a href="Ebook" class="btn btn-success"> Continue Shopping</a>
 			</div>
 	
 	

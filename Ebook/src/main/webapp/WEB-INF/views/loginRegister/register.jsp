@@ -63,7 +63,7 @@
 						<a href="" class="btn btn-social btn-twitter"><i class="fa fa-twitter"></i></a>
 					</div>
 					<div class="text-center mb-5" style="color: #777;">Already have an account? 
-						<a class="login-link" href="login.jsp">Login here</a>
+						<a class="login-link" href="/Ebook/login">Login here</a>
 			       	</div>
 				</form>
 			</div>

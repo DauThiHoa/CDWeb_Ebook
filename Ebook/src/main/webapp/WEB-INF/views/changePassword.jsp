@@ -175,7 +175,7 @@ function check() {
 					</div>
 
 					<div class="text-center mb-5">
-						Already have password <a class="login-link" href="login.jsp">Login
+						Already have password <a class="login-link" href="/Ebook/login">Login
 							here</a>
 					</div>
 

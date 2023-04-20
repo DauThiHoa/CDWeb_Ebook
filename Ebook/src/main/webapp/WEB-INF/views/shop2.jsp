@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>shop</title>
-<link rel="icon" href="../img/icon2.png" type="image/png" class="icon">
+<link rel="icon" href="img/icon2.png" type="image/png" class="icon">
 <!-- font awesome cdn link  -->
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -21,12 +21,12 @@
 
 	<header class="header">
 
-		<a href="index.jsp" class="logo"> <i class="fas fa-shopping-basket"></i>
+		<a href="Ebook" class="logo"> <i class="fas fa-shopping-basket"></i>
 			groco
 		</a>
 
 		<nav class="navbar">
-			<a href="index.jsp">home</a> <a href="shop.jsp">shop</a> <a
+			<a href="Ebook">home</a> <a href="shop.jsp">shop</a> <a
 				href="about.jsp">about</a> <a href="review.jsp">review</a> <a
 				href="blog.jsp">blog</a> <a href="contact.jsp">contact</a>
 		</nav>
@@ -98,7 +98,7 @@
 	<div class="heading">
 		<h1>our shop</h1>
 		<p>
-			<a href="index.jsp">home >></a> shop
+			<a href="Ebook">home >></a> shop
 		</p>
 	</div>
 
@@ -552,7 +552,7 @@
 
 			<div class="box">
 				<h3>quick links</h3>
-				<a href="index.jsp"> <i class="fas fa-arrow-right"></i> home
+				<a href="Ebook"> <i class="fas fa-arrow-right"></i> home
 				</a> <a href="shop.jsp"> <i class="fas fa-arrow-right"></i> shop
 				</a> <a href="about.jsp"> <i class="fas fa-arrow-right"></i> about
 				</a> <a href="review.jsp"> <i class="fas fa-arrow-right"></i> review

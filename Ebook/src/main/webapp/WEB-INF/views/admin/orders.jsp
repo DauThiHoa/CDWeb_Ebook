@@ -8,9 +8,11 @@
 <%@page import="com.example.ebook.dao.BookDAOImpl"%>
 <%@page import="com.example.ebook.connect.DBConnect"%>
 <%@page import="java.sql.Connection"%>
+
 <!-- 
 	Trong bai co nhung => Chay bi loi
 	 -->
+	 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page isELIgnored="false"%>
 
@@ -48,7 +50,7 @@
 
 
 	<c:if test="${empty userobj }">
-		<c:redirect url="login.jsp" />
+		<c:redirect url="/Ebook/login" />
 	</c:if>
 	
 	<!-- <h3 class="text-center p-3">Hello Admin</h3> -->

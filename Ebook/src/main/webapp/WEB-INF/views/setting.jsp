@@ -56,7 +56,7 @@ a:hover {
 	%>
 	
 	<c:if test="${empty userobj }">
-		<c:redirect url="login.jsp" />
+		<c:redirect url="/Ebook/login" />
 	</c:if>
 
 	<%@include file="all_component/navbar.jsp"%>

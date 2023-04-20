@@ -31,7 +31,7 @@
 	
 	<!--  PHUONG THUC BAT BUOC PHAI DANG NHAP ADMIN MOI VAO DC-->
 	<c:if test="${empty userobj }">
-		<c:redirect url="../login.jsp" />
+		<c:redirect url="/Ebook/login" />
 	</c:if>
 	
 	
@@ -45,7 +45,7 @@
   
     <div class="row"> 
 			
-        <form action="../add_books" method="post" enctype="multipart/form-data">
+        <form action="/Ebook/add_books" method="post" enctype="multipart/form-data">
         
             <h3  class="text-center text-success" style="font-weight: bold;">ADD BOOKS</h3>
             

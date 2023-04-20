@@ -61,7 +61,7 @@
 						
 						
 				<!-- Form -->
-				<form action="login" method="post"  class="px-3">
+				<form action="/Ebook/login" method="post"  class="px-3">
 					<!-- Input Box -->
 					<div class="form-input">
 						<span><i class="fa fa-envelope"></i></span> <input type="email"

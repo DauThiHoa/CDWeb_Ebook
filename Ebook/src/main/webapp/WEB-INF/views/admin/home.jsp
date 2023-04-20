@@ -33,7 +33,7 @@
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 <!-- custom css file link  --> 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="cssAdmin/style.css">
  
  <%@include file="allCss.jsp"%>  
 <style type="text/css">
@@ -48,7 +48,7 @@ a:hover {
 }
  .bold {
     font-weight: bold;
-  }
+  } 
 </style>
 </head>
 <body style="background-color: #f0f1f2">
@@ -57,7 +57,7 @@ a:hover {
 
 <!--  PHUONG THUC BAT BUOC PHAI DANG NHAP ADMIN MOI VAO DC-->
 	<c:if test="${empty userobj }">
-		<c:redirect url="../login.jsp" />
+		<c:redirect url="/Ebook/login" />
 	</c:if>
 
 <!-- #e1ffd3 -->
@@ -71,7 +71,7 @@ a:hover {
 		 
 
 			<div class="col-md-3">
-				<a href="add_books.jsp">
+				<a href="/Ebook/add_books">
 					<div class="card">
 						<div class="card-body text-center">
 							<i class="fas fa-plus-square fa-5x"  style="color: green;"></i><br>
@@ -84,7 +84,7 @@ a:hover {
 
 
 			<div class="col-md-3">
-				<a href="all_books.jsp">
+				<a href="/Ebook/all_books">
 					<div class="card">
 						<div class="card-body text-center">
 							<i class="fas fa-book-open fa-5x text-danger"></i><br>
@@ -97,7 +97,7 @@ a:hover {
  
 
 			<div class="col-md-3">
-				<a href="orders.jsp">
+				<a href="/Ebook/orders">
 					<div class="card">
 						<div class="card-body text-center">
 							<i class="fas fa-box-open fa-5x text-warning"></i><br>
@@ -147,7 +147,7 @@ a:hover {
 						<h4>Do You Want Logout</h4>
 						<button type="button" class="btn btn-secondary"
 							data-dismiss="modal">Close</button>
-						<a href="../logout" type="button"
+						<a href="/Ebook/logout" type="button"
 							class="btn btn-primary text-white">Logout</a>
 
 					</div>

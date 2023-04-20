@@ -35,7 +35,7 @@
 
 <div class="heading" style="margin-top: 2%">
     <h1>Contact us</h1>
-    <p> <a href="index.jsp">home >></a> contact </p>
+    <p> <a href="Ebook">home >></a> contact </p>
 </div>
  
 				    <c:if test="${not empty failedMsg }"> 

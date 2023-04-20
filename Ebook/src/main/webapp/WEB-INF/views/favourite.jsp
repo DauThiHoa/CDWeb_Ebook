@@ -63,7 +63,7 @@
 
 
 	<c:if test="${empty userobj }">
-		<c:redirect url="login.jsp" />
+		<c:redirect url="/Ebook/login" />
 	</c:if>
 	 
   
@@ -161,7 +161,7 @@
              
 								<!-- <a href="order.jsp" class="btn btn-warning" style="background: orange;">Order Now</a> -->
 								
-								<a href="index.jsp" class="btn btn-success p-2"> Continue Shopping</a>
+								<a href="Ebook" class="btn btn-success p-2"> Continue Shopping</a>
 			</div>
 
 <%@include file="all_component/footer.jsp"%>

@@ -65,13 +65,13 @@ a:hover {
 				<h1 style="font-weight: bold;">24*7 Service</h1>
 				<h2>Help Line Number</h2>
 				<h3>+0671 869899023</h3>
-				<!-- <a href="index.jsp" class="btn btn-primary" style="font-weight: bold;">Home</a> -->
+				<!-- <a href="Ebook" class="btn btn-primary" style="font-weight: bold;">Home</a> -->
 				
 				<div class="text-center text-white">
              
 								<a href="setting.jsp" class="btn btn-warning" style="background: orange;">Setting Now</a>
 								
-								<a href="index.jsp" class="btn btn-success p-2"> Continue Shopping</a>
+								<a href="Ebook" class="btn btn-success p-2"> Continue Shopping</a>
 			    </div>
 			
 			</div>

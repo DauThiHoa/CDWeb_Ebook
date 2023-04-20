@@ -7,7 +7,7 @@
 
         <div class="box">
             <h3>quick links</h3>
-            <a href="index.jsp"> <i class="fas fa-arrow-right"></i> home</a>
+            <a href="/Ebook/"> <i class="fas fa-arrow-right"></i> home</a>
             <a href="shop.jsp"> <i class="fas fa-arrow-right"></i> shop</a>
             <a href="about.jsp"> <i class="fas fa-arrow-right"></i> about</a>
             <a href="review.jsp"> <i class="fas fa-arrow-right"></i> review</a>

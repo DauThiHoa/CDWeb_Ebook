@@ -57,7 +57,7 @@
 
 
 	<c:if test="${empty userobj }">
-		<c:redirect url="login.jsp" />
+		<c:redirect url="/Ebook/login" />
 	</c:if>
 
 	<!--  HIEN THI THONG BAO XOA SAN PHAM TRONG GIO HANG HAY CHUA-->
@@ -260,7 +260,7 @@
             					<input type="hidden" class="box" value="<%=totalPrice%>" name="total" required>
 								<button type="submit" class="btn btn-warning" style="background: orange;">Order Now</button>
 								
-								<a href="index.jsp" class="btn btn-success"> Continue
+								<a href="Ebook" class="btn btn-success"> Continue
 									Shopping</a>
 			</div>
 							

@@ -40,7 +40,7 @@
 		<h1>Thank You</h1>
 		<h2>Your Order Successfully</h2>
 		<h5>With in 7 Days Your Product will be Delivered In Your Address</h5>
-		<a href="index.jsp" class="btn btn-primary mt-3">Home</a> <a
+		<a href="Ebook" class="btn btn-primary mt-3">Home</a> <a
 			href="order.jsp" style="background: orange;" class="btn btn-danger mt-3">View Order</a>
 	</div>
 

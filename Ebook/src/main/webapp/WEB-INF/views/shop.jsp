@@ -144,7 +144,7 @@ function checkAscPrice() {
 		
 		<h1>our shop</h1>
 		<p>
-			<a href="index.jsp">home >></a> shop
+			<a href="Ebook">home >></a> shop
 		</p>
 		
 		<c:if test="${not empty addCart }">
@@ -376,7 +376,7 @@ function showToast(content) {
 							<%
 							if (u == null) {
 							%>
-							     <a href="login.jsp" class="btn btn-danger btn-sm"><i class="fas fa-cart-plus"></i></a>
+							     <a href="/Ebook/login" class="btn btn-danger btn-sm"><i class="fas fa-cart-plus"></i></a>
 							<%
 							} else {
 							%>
@@ -588,7 +588,7 @@ function showToast(content) {
 							<%
 							if (u == null) {
 							%>
-							     <a href="login.jsp" class="btn btn-danger btn-sm"><i class="fas fa-cart-plus"></i></a>
+							     <a href="/Ebook/login" class="btn btn-danger btn-sm"><i class="fas fa-cart-plus"></i></a>
 							<%
 							} else {
 							%>
@@ -801,7 +801,7 @@ function showToast(content) {
 							<%
 							if (u == null) {
 							%>
-							     <a href="login.jsp" class="btn btn-danger btn-sm"><i class="fas fa-cart-plus"></i></a>
+							     <a href="/Ebook/login" class="btn btn-danger btn-sm"><i class="fas fa-cart-plus"></i></a>
 							<%
 							} else {
 							%>
@@ -1019,7 +1019,7 @@ function showToast(content) {
 							<%
 							if (u == null) {
 							%>
-							     <a href="login.jsp" class="btn btn-danger btn-sm"><i class="fas fa-cart-plus"></i></a>
+							     <a href="/Ebook/login" class="btn btn-danger btn-sm"><i class="fas fa-cart-plus"></i></a>
 							<%
 							} else {
 							%>
@@ -1243,7 +1243,7 @@ function showToast(content) {
 							<%
 							if (u == null) {
 							%>
-							     <a href="login.jsp" class="btn btn-danger btn-sm"><i class="fas fa-cart-plus"></i></a>
+							     <a href="/Ebook/login" class="btn btn-danger btn-sm"><i class="fas fa-cart-plus"></i></a>
 							<%
 							} else {
 							%>
@@ -1456,7 +1456,7 @@ function showToast(content) {
 							<%
 							if (u == null) {
 							%>
-							     <a href="login.jsp" class="btn btn-danger btn-sm"><i class="fas fa-cart-plus"></i></a>
+							     <a href="/Ebook/login" class="btn btn-danger btn-sm"><i class="fas fa-cart-plus"></i></a>
 							<%
 							} else {
 							%>
@@ -1668,7 +1668,7 @@ function showToast(content) {
 							<%
 							if (u == null) {
 							%>
-							     <a href="login.jsp" class="btn btn-danger btn-sm"><i class="fas fa-cart-plus"></i></a>
+							     <a href="/Ebook/login" class="btn btn-danger btn-sm"><i class="fas fa-cart-plus"></i></a>
 							<%
 							} else {
 							%>
@@ -1882,7 +1882,7 @@ function showToast(content) {
 							<%
 							if (u == null) {
 							%>
-							     <a href="login.jsp" class="btn btn-danger btn-sm"><i class="fas fa-cart-plus"></i></a>
+							     <a href="/Ebook/login" class="btn btn-danger btn-sm"><i class="fas fa-cart-plus"></i></a>
 							<%
 							} else {
 							%>
@@ -2093,7 +2093,7 @@ function showToast(content) {
 							<%
 							if (u == null) {
 							%>
-							     <a href="login.jsp" class="btn btn-danger btn-sm"><i class="fas fa-cart-plus"></i></a>
+							     <a href="/Ebook/login" class="btn btn-danger btn-sm"><i class="fas fa-cart-plus"></i></a>
 							<%
 							} else {
 							%>

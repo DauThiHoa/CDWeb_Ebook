@@ -37,7 +37,7 @@
 
 
 						<div class="text-center mb-5">
-							Already have password <a class="login-link" href="login.jsp">Login
+							Already have password <a class="login-link" href="/Ebook/login">Login
 								here</a>
 						</div>
 
@@ -50,12 +50,12 @@
 							password reset link.</h6>
 					</div>
 					<div class="mb-3">
-						<a href="login.jsp">
+						<a href="/Ebook/login">
 							<button type="submit" class="btn">Login Now</button>
 						</a>
 
 						<div class="text-center mb-5">
-							Already have password <a class="login-link" href="login.jsp">Login
+							Already have password <a class="login-link" href="/Ebook/login">Login
 								here</a>
 						</div>
 

@@ -199,7 +199,7 @@
 							<%
 							if (u == null) {
 							%>
-							     <a href="login.jsp" class="btn btn-danger btn-sm"><i class="fas fa-cart-plus"></i>Add Cart</a>
+							     <a href="/Ebook/login" class="btn btn-danger btn-sm"><i class="fas fa-cart-plus"></i>Add Cart</a>
 							<%
 							} else {
 							%>
@@ -332,7 +332,7 @@
 							<%
 							if (u == null) {
 							%>
-							<a href="login.jsp" class="btn btn-danger btn-sm"><i class="fas fa-cart-plus"></i>Add Cart</a>
+							<a href="/Ebook/login" class="btn btn-danger btn-sm"><i class="fas fa-cart-plus"></i>Add Cart</a>
 							<%
 							} else {
 							%>

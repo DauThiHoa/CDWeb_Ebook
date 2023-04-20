@@ -20,7 +20,7 @@
 <meta charset="UTF-8">
 <title>FOOD WEBSITE</title>
 <!-- BIEU TUONG TRANG WEB -->
-<link rel="icon" href="../img/icon2.png" type="image/png" class="icon"> 
+<link rel="icon" href="img/icon2.png" type="image/png" class="icon"> 
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 
@@ -46,7 +46,7 @@
 
 
 	<%-- <c:if test="${empty userobj }">
-		<c:redirect url="login.jsp" />
+		<c:redirect url="/Ebook/login" />
 	</c:if> --%>
 
 
@@ -55,7 +55,7 @@
 	<header class="header">
 
 		<!--  logo -->
-		<a href="index.jsp" class="logo"> <span><img alt=""
+		<a href="/Ebook/" class="logo"> <span><img alt=""
 				style="width: 15%; height: 15%" src="img/icon1.png"></span>
 			 
 				 <span><img alt="" style="width: 22%; height: 22%" src="img/ebook1.png"></span>
@@ -63,7 +63,7 @@
 
 		<!--  THANH menu  -->
 		<nav style="margin-left: -31%" class="navbar">
-			<a href="index.jsp">home</a> 
+			<a href="/Ebook/">home</a> 
 			<a href="shop.jsp">shop</a> 
  
 
@@ -89,7 +89,7 @@
 					<div id="login-btn" class="fas fa-heart"></div> 
 				</a>
 				
-				</a> <a href="login.jsp">
+				</a> <a href="/Ebook/login">
 					<div id="login-btn" class="fas fa-user"></div>
  
 
@@ -114,7 +114,7 @@
 				<div id="menu-btn" class="fas fa-bars"></div>
 				<div id="search-btn" class="fas fa-search"></div>
 
-				</a> <a href="login.jsp">
+				</a> <a href="/Ebook/login">
 					<div id="login-btn" class="fas fa-user"></div>
 				</a> <a href="register.jsp">
 					<div id="login-btn" class="fas fa-user-plus"></div>
@@ -223,7 +223,7 @@
 						<h4>Do You Want Logout</h4>
 						<button type="button" class="btn btn-secondary"
 							data-dismiss="modal">Close</button>
-						<a href="logout" type="button"
+						<a href="/Ebook/logout" type="button"
 							class="btn btn-primary text-white">Logout</a>
 
 					</div>

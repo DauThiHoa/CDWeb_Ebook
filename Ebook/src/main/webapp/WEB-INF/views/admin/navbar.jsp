@@ -18,7 +18,7 @@
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 <!-- custom css file link  --> 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="cssAdmin/style.css">
  
  
  
@@ -37,20 +37,20 @@
 
 		<!--  logo -->
 		<div class="logo"> 
-		<a href="../index.jsp"  > <span><img alt=""
-				style="width: 10%; height: 10%" src="../img/icon1.png"></span> 
+		<a href="/Ebook/"  > <span><img alt=""
+				style="width: 10%; height: 10%" src="img/icon1.png"></span> 
 				</a>
 				<a  href="home.jsp">
-				 	<span><img alt="" style="width: 20%; height: 20%" src="../img/ebook2.png"></span> 
+				 	<span><img alt="" style="width: 20%; height: 20%" src="img/ebook2.png"></span> 
 				</a>
 				 
 		</div>
       
 		<!--  THANH menu  -->
 		<nav style="margin-left: -40%" class="navbar">
-			<a href="add_books.jsp"  >Add books</a> 
-			<a href="all_books.jsp"  >All books</a>  
-			<a href="orders.jsp"   >Orders</a>  
+			<a href="/Ebook/add_books"  >Add books</a> 
+			<a href="/Ebook/all_books"  >All books</a>  
+			<a href="/Ebook/orders"   >Orders</a>  
 		</nav>
 
 
@@ -60,7 +60,7 @@
 			<!-- CAC ICON SEARCH - LOGIN  -->
 			<div class="icons" >  
 				
-				</a> <a href="../login.jsp">
+				</a> <a href="/Ebook/login">
 					<div id="login-btn" class="fas fa-user"  >
 					 
 					</div> 
@@ -88,7 +88,7 @@
 				<div id="menu-btn" class="fas fa-bars"></div>
 				<div id="search-btn" class="fas fa-search"></div>
 
-				</a> <a href="../login.jsp">
+				</a> <a href="/Ebook/login">
 					<div id="login-btn" class="fas fa-user"></div>
 					
 				</a> <a href="../register.jsp">
@@ -127,7 +127,7 @@
 					<h4>Do You Want Logout</h4>
 					<button type="button" class="btn btn-secondary"
 						data-dismiss="modal" style="font-weight: bold;background: green; " >Close</button>
-					<a href="../logout" type="button"
+					<a href="/Ebook/logout" type="button"
 						class="btn btn-primary text-white" style="font-weight: bold;background: green;">Logout</a>
 
 				</div>

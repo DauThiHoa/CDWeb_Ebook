@@ -108,7 +108,7 @@ function showToast(content) {
 
                         <div class="product__main-info col-lg-8 col-md-8 col-sm-12">
                             <div class="product__main-info-breadcrumb text-success">
-                               <a class="product__main-info-breadcrumb text-success" style="font-weight: bold;" href="index.jsp">Home</a> /<a style="font-weight: bold;" class="product__main-info-breadcrumb text-success" href="#">Products</a>  
+                               <a class="product__main-info-breadcrumb text-success" style="font-weight: bold;" href="Ebook">Home</a> /<a style="font-weight: bold;" class="product__main-info-breadcrumb text-success" href="#">Products</a>  
                             </div>
                             
                             <a href="#" class="product__main-info-title">
@@ -193,7 +193,7 @@ function showToast(content) {
 						   <%
 							if (u == null) {
 							%>
-							     <a href="login.jsp" class="btn btn-danger btn-sm">
+							     <a href="/Ebook/login" class="btn btn-danger btn-sm">
 							     <i style="font-size: 100%; margin-right: 5%"  class="fas fa-cart-plus"></i>
 							     Add To Cart</a>
 							<%
@@ -455,7 +455,7 @@ function showToast(content) {
                      		<%
 							if (u == null) {
 							%> 
-							        <a href="login.jsp"  type="submit" name="sbm" id= "submitcomment" class="btn btn-primary" style="width: 10%;font-weight: bold;">Send</a>
+							        <a href="/Ebook/login"  type="submit" name="sbm" id= "submitcomment" class="btn btn-primary" style="width: 10%;font-weight: bold;">Send</a>
 							<%
 							} else {
 							%>  
@@ -625,7 +625,7 @@ function showToast(content) {
 							<%
 							if (u == null) {
 							%>
-							     <a href="login.jsp" class="btn btn-danger btn-sm"><i style="font-size: 100%;"  class="fas fa-cart-plus"></i></a>
+							     <a href="/Ebook/login" class="btn btn-danger btn-sm"><i style="font-size: 100%;"  class="fas fa-cart-plus"></i></a>
 							<%
 							} else {
 							%>

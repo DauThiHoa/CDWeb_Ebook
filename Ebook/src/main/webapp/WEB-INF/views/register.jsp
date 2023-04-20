@@ -185,7 +185,7 @@
 
 					</div>
 					<div class="text-center mb-5" style="color: #777;">
-						Already have an account? <a class="login-link" href="login.jsp">Login
+						Already have an account? <a class="login-link" href="/Ebook/login">Login
 							here</a>
 					</div>
 				</form>
