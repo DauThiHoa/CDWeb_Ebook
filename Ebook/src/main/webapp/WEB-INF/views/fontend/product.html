@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Product</title>
+     
+     <script src="js/jquery-3.3.1.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0.500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/product.css">
+     
+</head>
+<body>
+     <!-- header -->
+     <header id="header">
+         <!-- header top -->
+         <div class="header__top">
+             <div class="container">
+                 <section class="row flex">
+                     <div class="col-lg-5 col-md-0 col-sm-0 header__top-left">
+                         <span>EduBook - The source of knowledge</span>
+                     </div>
+
+                     <nav class="col-lg-7 col-md-0 col-sm-0 header__top-right">
+                         <ul class="header__top-list">
+                             <li class="header__top-item">
+                                 <a href="#" class="header__top-link">
+
+                                 FAQ</a>
+                             </li>
+                             <li class="header__top-item">
+                                 <a href="#" class="header__top-link">Tutorial</a>
+                             </li>
+                             <li class="header__top-item">
+                                 <a href="#" class="header__top-link">Register</a>
+                             </li>
+                             <li class="header__top-item">
+                                 <a href="#" class="header__top-link">Login</a>
+                             </li>
+                         </ul>
+                     </nav>
+                 </section>
+             </div>
+         </div>
+         <!--end header top -->
+
+     <!-- header bottom -->
+         <div class="header__bottom">
+             <div class="container">
+                 <section class="row">
+                 
+                     <div class="col-lg-3 col-md-4 col-sm-12 header__logo">
+                         <h1 class="header__heading">
+                             <a href="#" class="header__logo-link">
+                                 <img src="images1/logo1.png" alt="Logo" class="header__logo-img">
+                             </a>
+                         </h1>
+                     </div>
+
+                     <div class="col-lg-6 col-md-7 col-sm-0 header__search">
+                         <select name="" id="" class="header__search-select">
+                             <option value="0">All</option>
+                             <option value="1">Vietnamese book</option>
+                             <option value="2">Foreign books</option>
+                             <option value="3">Manga-Comic</option>
+                            
+                         </select>
+                         <input type="text" class="header__search-input" placeholder="Search here...">
+                         <button class="header__search-btn">
+                             <div class="header__search-icon-wrap">
+                                 <i class="fas fa-search header__search-icon"></i>
+                             </div>
+                         </button>
+                     </div>
+
+                     <div class="col-lg-2 col-md-0 col-sm-0 header__call">
+                         <div class="header__call-icon-wrap">
+                             <i class="fas fa-phone-alt header__call-icon"></i>
+                         </div>
+                         <div class="header__call-info">
+                             <div class="header__call-text">
+                                 Call for advice
+                             </div>
+                             <div class="header__call-number">
+                                 039.882.3232
+                             </div>
+                         </div>
+                     </div>
+
+                     <a href="cart.html" class="col-lg-1 col-md-1 col-sm-0 header__cart">
+                         <div class="header__cart-icon-wrap">
+                             <span class="header__notice">4</span>
+                             <i class="fas fa-shopping-cart header__nav-cart-icon"></i>
+                         </div>
+                     </a>
+                     
+                 </section>
+             </div>
+         </div>
+        <!--end header bottom -->
+<!-- header nav -->
+         <div class="header__nav">
+             <div class="container">
+                 <section class="row">
+                     <div class="header__nav-menu-wrap col-lg-3 col-md-0 col-sm-0">
+                         <i class="fas fa-bars header__nav-menu-icon"></i>
+                         <div class="header__nav-menu-title">Product Category</div>
+                     </div>
+
+                     <div class="header__nav col-lg-9 col-md-0 col-sm-0">
+                         <ul class="header__nav-list">
+                             <li class="header__nav-item">
+                                 <a href="index.html" class="header__nav-link">Homepage</a>
+                             </li>
+                             <li class="header__nav-item">
+                                 <a href="category.html" class="header__nav-link">Product Category</a>
+                             </li>
+                             <li class="header__nav-item">
+                                 <a href="product.html" class="header__nav-link">Product</a>
+                             </li>
+                             <li class="header__nav-item">
+                                 <a href="post.html" class="header__nav-link">Posts</a>
+                             </li>
+                             <li class="header__nav-item">
+                                 <a href="#" class="header__nav-link">Recruiting collaborators</a>
+                             </li>
+                             <li class="header__nav-item">
+                                 <a href="contact.html" class="header__nav-link">Contact</a>
+                             </li>
+                         </ul>
+                     </div>
+                 </section>
+             </div>
+         </div>
+     </header>
+     <!--end header nav -->
+     <!-- score-top-->
+
+<button onclick="topFunction()" id="myBtn-scroll" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+     <!-- product -->
+     <section class="product">
+         <div class="container">
+             <div class="row bg-white pt-4 pb-4 border-bt pc">
+                 <nav class="menu__nav col-lg-3 col-md-12 col-sm-0">
+                     <ul class="menu__list">
+                         <li class="menu__item menu__item--active">
+                             <a href="#" class="menu__link">
+                             <img src="images1/item/baby-boy.png" alt="" class="menu__item-icon" id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox=" 0 0 512 512" width="512">
+                             Vietnamese Book</a>
+                         </li>
+                         <li class="menu__item">
+                             <a href="#" class="menu__link">
+                             <img src="images1/item/translation.png" alt="" class="menu__item-icon" id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512">
+                             Foreign books</a>
+                         </li>
+                      
+                         <li class="menu__item">
+                             <a href="#" class="menu__link">
+                                 <img src="images1/item/1380754_batman_comic_hero_superhero_icon.png" alt="" class="menu__item-icon" viewBox="0 0 512 512" width="1012" height="512">
+
+                             Manga - Comic</a>
+                         </li>
+                      
+                     </ul>
+                 </nav>
+
+                <article class="product__main col-lg-9 col-md-12 col-sm-12">
+                    <div class="row">
+                        <div class="product__main-img col-lg-4 col-md-4 col-sm-12">
+                         
+                            <div class="product__main-img-primary">
+                                <img src="images1/product/hoc-tap-qua-du-an-2-01-1.jpg">
+                            </div>
+
+                            <div class="product__main-img-list">
+                                <img src="images1/product/hoc-tap-qua-du-an-2-01-1.jpg">
+                                <img src="images1/product/hoc-tap-qua-du-an-2-01-1 1.jpg">
+                                <img src="images1/product/hoc-tap-qua-du-an-2-01-1 2.jpg">
+                                <img src="images1/product/23f849a0617301e63159067164aecfd2.png">
+                            </div>
+                        </div>
+
+                        <div class="product__main-info col-lg-8 col-md-8 col-sm-12">
+                            <div class="product__main-info-breadcrumb">
+                               Home / Products
+                            </div>
+                            
+                            <a href="#" class="product__main-info-title">
+                                <h2 class="product__main-info-heading">
+                                    Learning through projects
+                                </h2>
+                            </a>
+
+                            <div class="product__main-info-rate-wrap">
+                                <i class="fas fa-star product__main-info-rate"></i>
+                                <i class="fas fa-star product__main-info-rate"></i>
+                                <i class="fas fa-star product__main-info-rate"></i>
+                                <i class="fas fa-star product__main-info-rate"></i>
+                                <i class="fas fa-star product__main-info-rate"></i>
+                            </div>
+
+                            <div class="product__main-info-price">
+                                <span class="product__main-info-price-current">
+                                   140.000$
+                                </span>
+                            </div>
+
+                            <div class="product__main-info-description">
+                                For nearly a century, many educators have researched and documented the benefits of experiential, hands-on, and learner-centered learning. The scientist Albert Einstein...
+                            </div> 
+
+                            <div class="product__main-info-cart">
+                                <!--<div class="product__main-info-cart-quantity">
+                                    <input type="button" value="-"  class="product__main-info-cart-quantity-minus">
+                                    <input type="number" step="1" min="1" max="999" value="1" class="product__main-info-cart-quantity-total">
+                                    <input type="button" value="+" class="product__main-info-cart-quantity-plus">
+                                </div>-->
+                                
+                                <div class="product__main-info-cart-btn-wrap">
+                                    <button class="product__main-info-cart-btn">
+                                       Add to cart
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="product__main-info-contact">
+                                <a href="#" class="product__main-info-contact-fb">
+                                    <i class="fab fa-facebook-f"></i>
+                                    Chat Facebook
+                                </a>
+                                <div class="product__main-info-contact-phone-wrap">
+                                    <div class="product__main-info-contact-phone-icon">
+                                        <i class="fas fa-phone-alt "></i>
+                                    </div>
+                                    
+                                    <div class="product__main-info-contact-phone">
+                                        <div class="product__main-info-contact-phone-title">
+                                            Call for advice
+                                        </div>
+                                        <div class="product__main-info-contact-phone-number">
+                                            ( 0352.860.701)
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row bg-white">
+                        <div class="col-12 product__main-tab">
+                            <a href="#" class="product__main-tab-link product__main-tab-link--active">
+                              Describe
+                            </a>
+                            <a href="#" class="product__main-tab-link">
+                               Evaluate
+                            </a>
+                        </div>
+
+                        <div class="col-12 product__main-content-wrap">
+                            <h2 class="product__main-content-heading">
+                                Learning through projects
+                            </h2>
+
+                            <p>
+                                <span>For nearly a century,</span> Many educators have conducted research and documented the benefits of experiential, hands-on, and learner-centered learning. Albert Einstein once said: “Example is not another way to teach; example is the only way to teach.” Almost every teacher understands the appeal of real-world learning compared to a purely theoretical classroom.
+                            </p>
+
+                            <p>
+                                <span> Authors Hoang Anh Duc and To Thuy Diem Quyen </span> wants to offer a light and intuitive approach for both teachers and students to Project Learning; using projects to make the most diverse, multi-dimensional and real-life examples, thereby helping readers build their own treasures of knowledge and skills.
+                            </p>
+
+                            <p>
+                                <span>Project-Based Learning (PBL)</span> is a model of classroom organization to energize the traditional classroom, which is lesson-centered and teacher-centered. Project-based learning is long-term, learner-centered, inter-content, and integrates real-world problems. By taking a step back, taking on leadership roles and empowering students to take control of the learning process, students form a sense of responsibility for learning, thereby creating a more proactive learning environment.
+                            </p>
+                            <p> <span>The book consists of four main parts:</span></p>
+                            <p>
+                                <span>Part I: Introduction to project-based learning</span> <br>
+                                This section consists of 3 chapters, giving an overview of project-based learning, 6 learning characteristics of learning projects, and 8 steps of implementing project-based learning in high schools.
+                            </p>
+                            <p>
+                                <span>Part II: Project implementation </span> <br>
+                               This section consists of 8 chapters to help teachers and students know how to put projects in a suitable space, know how to implement projects from an existing space.
+                            </p>
+                            <p>
+                                <span>Part III: Introduction to project-based learning</span> <br>
+                               This section provides a background on the different measures for assessing the Learning Project, as well as the different levels for assessing learning activities.
+                            </p>
+                            <p>
+                                <span>Part IV: Appendix </span> <br>
+                                This section expands on some issues such as: STEM thinking in project-based learning, common problems and suggestions for handling….
+
+                                The book integrates with QR codes so that teachers and students can see illustrations of projects that have been implemented and won prizes in Creative Teacher competitions.
+                                </p> 
+                            
+                            <h2 class="thongtin">    <span>Details</span> 
+                             </h2>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered">
+                                        <tbody>
+                                            <tr>
+                                                <th>Issuing company</th>
+                                                <td>Vietnam Education Publishing House</td>
+                                            </tr>
+                                            <tr><th>Publication date</th><td>2019-03-15 11:47:36</td></tr>
+                                            <tr><th>Size</th><td>19 x 27 cm</td></tr>
+                                            <tr><th>Cover Type</th><td>Folding cover</td></tr>
+                                            <tr><th>Number of pages</th><td>168</td></tr>
+                                            <tr><th>SKU</th><td>4119626029817</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                              
+                        
+                        </div>
+                        
+                    </div>
+                </article>
+
+                <aside class="product__aside col-lg-3 col-md-0 col-sm-0">
+                    <div class="product__aside-top">
+                        <div class="product__aside-top-item">
+                            <img src="images/shipper.png">
+                            <div class="product__aside-top-item-text">
+                                <p>
+                                    Fast shipping
+                                </p>
+                                <span>
+                                   In just 24 hours
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product__aside-top-item">
+                            <img src="images/brand.png">
+                            <div class="product__aside-top-item-text">
+                                <p>
+                                    Genuine product
+                                </p>
+                                <span>
+                                   100% imported products
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product__aside-top-item">
+                            <img src="images/less.png">
+                            <div class="product__aside-top-item-text">
+                                <p>
+                                    Buy savings
+                                </p>
+                                <span>
+                                    10% to 30% cheaper
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product__aside-bottom">
+                        <h3 class="product__aside-heading">
+                            Maybe you like
+                        </h3>
+
+                        <div class="product__aside-list">
+                            <div class="product__aside-item product__aside-item--border">
+                                <div class="product__aside-img-wrap">
+                                    <img src="images1/product/image_227958.jpg" class="product__aside-img">
+                                </div>
+                                <div class="product__aside-title">
+                                    <a href="#" class="product__aside-link">
+                                        <h4 class="product__aside-link-heading"> Stem/Steam Education : From Practical Experience to Thinking</h4>
+                                    </a>
+
+                                    <div class="product__aside-rate-wrap">
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                    </div>
+
+                                    <div class="product__aside-price">
+                                        <span class="product__aside-price-current">
+                                            72.250
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product__aside-item">
+                                <div class="product__aside-img-wrap">
+                                    <img src="images1/product/untitled-1_9_25_1.jpg" class="product__aside-img">
+                                </div>
+                                <div class="product__aside-title">
+                                    <a href="#" class="product__aside-link">
+                                        <h4 class="product__aside-link-heading">I Like Effortless Myself (Revised 2019)</h4>
+                                    </a>
+
+                                    <div class="product__aside-rate-wrap">
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                    </div>
+
+                                    <div class="product__aside-price">
+                                        <span class="product__aside-price-current">
+                                            76.800$
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product__aside-item">
+                                <div class="product__aside-img-wrap">
+                                    <img src="images1/product/image_187163.jpg" class="product__aside-img">
+                                </div>
+                                <div class="product__aside-title">
+                                    <a href="#" class="product__aside-link">
+                                        <h4 class="product__aside-link-heading">Intense Childhood - Episode 2 (2019 Reissue)</h4>
+                                    </a>
+
+                                    <div class="product__aside-rate-wrap">
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                    </div>
+
+                                    <div class="product__aside-price">
+                                        <span class="product__aside-price-current">
+                                          69.000$
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product__aside-item">
+                                <div class="product__aside-img-wrap">
+                                    <img src="images1/product/image_188285.jpg" class="product__aside-img">
+                                </div>
+                                <div class="product__aside-title">
+                                    <a href="#" class="product__aside-link">
+                                        <h4 class="product__aside-link-heading">The Story of the Cat that Teaches Seagulls to Fly</h4>
+                                    </a>
+
+                                    <div class="product__aside-rate-wrap">
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                    </div>
+
+                                    <div class="product__aside-price">
+                                        <span class="product__aside-price-current">
+                                         34.300$
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product__aside-item">
+                                <div class="product__aside-img-wrap">
+                                    <img src="images1/product/8936186542176.jpg" class="product__aside-img">
+                                </div>
+                                <div class="product__aside-title">
+                                    <a href="#" class="product__aside-link">
+                                        <h4 class="product__aside-link-heading">I Like A Girl But Don't Dare To Say It</h4>
+                                    </a>
+
+                                    <div class="product__aside-rate-wrap">
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                    </div>
+
+                                    <div class="product__aside-price">
+                                        <span class="product__aside-price-current">
+                                            70.000$
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product__aside-item">
+                                <div class="product__aside-img-wrap">
+                                    <img src="images1/product/biamem.jpg" class="product__aside-img">
+                                </div>
+                                <div class="product__aside-title">
+                                    <a href="#" class="product__aside-link">
+                                        <h4 class="product__aside-link-heading">Blue Bird Returns - Comes with 6</h4>
+                                    </a>
+
+                                    <div class="product__aside-rate-wrap">
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                    </div>
+
+                                    <div class="product__aside-price">
+                                        <span class="product__aside-price-current">
+                                           112.500$
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product__aside-item">
+                                <div class="product__aside-img-wrap">
+                                    <img src="images1/product/8936049524905.jpg" class="product__aside-img">
+                                </div>
+                                <div class="product__aside-title">
+                                    <a href="#" class="product__aside-link">
+                                        <h4 class="product__aside-link-heading">5 Centimeters Per Second</h4>
+                                    </a>
+
+                                    <div class="product__aside-rate-wrap">
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                    </div>
+
+                                    <div class="product__aside-price">
+                                        <span class="product__aside-price-current">
+                                            39.500$
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product__aside-item">
+                                <div class="product__aside-img-wrap">
+                                    <img src="images1/product/bia1_tobinhyen_2_1_1.jpg" class="product__aside-img">
+                                </div>
+                                <div class="product__aside-title">
+                                    <a href="#" class="product__aside-link">
+                                        <h4 class="product__aside-link-heading">To Binh Yen Draw Happiness</h4>
+                                    </a>
+
+                                    <div class="product__aside-rate-wrap">
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                    </div>
+
+                                    <div class="product__aside-price">
+                                        <span class="product__aside-price-current">
+                                           63.960$
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+            </div>
+            
+           <div class="customer-reviews row pb-4 pb-4  py-4 pb-4 py-4 py-4">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <h3 >Product Comments</h3>
+                <form id ="formgroupcomment" method="post">
+                    <div class="form-group">
+                        <label>Name:</label>
+                        <input name="comm_name" required="" type="text" id ='form-name' class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Email:</label>
+                        <input name="comm_mail" required="" type="email"  class="form-control" id="pwd">
+                    </div>
+                    <div class="form-group">
+                        <label>Content:</label>
+                        <textarea name="comm_details" required="" rows="8" id ='formcontent' class="form-control"></textarea>     
+                    </div>
+                    <button type="submit" name="sbm" id= "submitcomment" class="btn btn-primary">Send</button>
+                </form> 
+            </div>
+           </div>
+            
+           <div class="product-comment row pb-4 pb-4  py-4 pb-4 py-4 py-4">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="comment-item">
+                    <ul class = item-reviewer>
+                        <div class="comment-item-user">
+                            <img src="images/img/1.png" alt="" class="comment-item-user-img">
+                            
+                            <li><b>Nguyen Nhung</b></li> 
+                         </div>
+                      
+                       <br>
+                        <li>2021-08-17 20:40:10</li>
+                        <li>
+                           <h4>The book is carefully wrapped in plastic, clean and new. Fast delivery. The content has not been read but at first glance looks interesting and a lot of useful knowledge. I'm abroad and ask the buyer to send it over, so the seller's packaging is very important, helping the book to be shipped far away without damage. Will continue to support. Love book shop .From Hust with Love</h4>
+                        </li>
+                    </ul>
+                </div>
+                <div class="comment-item">
+                    <ul class = item-reviewer> 
+                    <div class="comment-item-user">
+                        <img src="images/img/2.png" alt="" class="comment-item-user-img">
+                        <li><b>Tung Luong</b></li> 
+                     </div>
+                   
+                       <br>
+                        <li>2021-02-17 12:20:10</li>
+                        <li>
+                           <h4>The book is closed very carefully, the box is not dented at all .... , delivery is late for a week, It is clear on the app that the goods have arrived in the warehouse and have not been found for a whole week. The shipper is very funny and friendly. Other than that, the book is very nice. The paper is bright and fragrant. From the cover to the color in the book. Seeing that everyone said it was very good, I bought it to try, but I have not read it so I can't review the content.</h4>
+                         </li>
+                    </ul>
+                </div>
+                <div class="comment-item">
+                    <ul class = item-reviewer>
+                    <div class="comment-item-user">
+                        <img src="images/img/5.png" alt="" class="comment-item-user-img">
+                        <li><b>Trung Tran</b></li> 
+                     </div>
+                    
+                        <br>
+                       
+                        <li>2020-12-27 10:48:20</li>
+                        <li>
+                           <h4>Love it! - Hardcover book, color printing, thick paper. - Delivery on time, careful packaging. -I have attended a class but I'm not very familiar with it, so I bought it and read it again. Now I understand. The price is a bit expensive but appropriate, hope to have a better price in the next edition! - Good content, elaborate, many terms but easy to understand and useful; maybe the translation is good too! Curious, I bought an English ebook to read more and improve my vocabulary. If you read the original (English) first, it would be difficult to read this book. Anyone who works as a purchasing manager is also helpful! Worth the money!</h4>
+                         </li>
+                    </ul>
+                </div>
+                <div class="comment-item">
+                    <ul class = item-reviewer> 
+                    <div class="comment-item-user">
+                        <img src="images/img/6.png" alt="" class="comment-item-user-img">
+                        <li><b>Son Hoang</b></li> 
+                     </div>
+                        <br>
+                    
+                        <li>2020-08-17 20:40:18</li>
+                        <li>
+                          <h4>The book is packed in a box and has a protective nylon film. The spine of the book is not dented, 
+                          the quality of the paper, the color is great. Extremely useful content, very easy to understand for pure 
+                          psychological theory books. The content of the book is new and strange. The book uses a lot of scientific
+                           terms, so it requires a certain amount of patience and understanding from the reader. Extremely satisfied
+                            and will continue to support</h4>
+                         </li>
+                    </ul>
+                </div>
+                
+                
+            </div>
+           </div>
+             
+            
+
+    
+                               
+                             
+
+            <section class="product__love col-12 mt-4">
+                <div class="row bg-white">
+                <div class="col-lg-12 col-md-12 col-sm-12 product__love-title">
+                    <h2 class="product__love-heading">
+                       Similar product
+                    </h2>
+                </div>
+            </div>
+            <div class="row bg-white">
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <img src="images1/product/image_189077.jpg" alt="" class="product__panel-img">
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="#" class="product__panel-link">Psychology - An Overview of Big Thoughts</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old product__panel-price-old-hide">
+                         300.000$
+                        </span>
+                        <span class="product__panel-price-current">
+                            273.000$
+                        </span>
+                    </div>  
+                </div>
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <img src="images1/product/camnangppsupham.u84.d20161125.t123417.884704.jpg" alt="" class="product__panel-img">
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="#" class="product__panel-link">Pedagogical Method Manual (2020 Edition)</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old product__panel-price-old-hide">
+                           150.000$
+                        </span>
+                        <span class="product__panel-price-current">
+                            120.000$
+                        </span>
+                    </div> 
+                </div>
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <img src="images1/product/image_197655.jpg" alt="" class="product__panel-img">
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="#" class="product__panel-link">STEM- Super Simple Engineering</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old product__panel-price-old-hide 
+                        ">
+                           50.000$
+                        </span>
+                        <span class="product__panel-price-current">
+                            47.200$
+                        </span>
+                    </div>
+                </div>
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <img src="images1/product/9786045890332.jpg" alt="" class="product__panel-img">
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="#" class="product__panel-link">A Guide to Learning and Research Thinking..</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old product__panel-price-old-hide">
+                           30.000$
+                        </span>
+                        <span class="product__panel-price-current">
+                           24.000$
+                        </span>
+                    </div> 
+                </div>
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <img src="images1/product/image_195509_1_21191.jpg" alt="" class="product__panel-img" width="110">
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="#" class="product__panel-link">The Jewish Doctrine <br>
+                            
+                        </a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old product__panel-price-old-hide">
+                           62.000$
+                        </span>
+                        <span class="product__panel-price-current">
+                            37.200$
+                        </span>
+                    </div> 
+                </div>
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <img src="images1/product/image_227958.jpg" alt="" class="product__panel-img" >
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="#" class="product__panel-link">Stem/Steam Education: From Hands-on Experience..
+                        </a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old product__panel-price-old-hide">
+                            85.000$
+                        </span>
+                        <span class="product__panel-price-current">
+                            72.250$
+                        </span>
+                    </div> 
+                </div>
+            </div>
+            </section>
+        </div>
+    </section>
+    <!--product -->
+
+    <!-- footer -->
+    <footer>
+        <section class="footer__top">
+            <div class="container">
+                <div class="row">
+                    <article class="footer__top-intro col-lg-5 col-md-4 col-sm-6">
+                        <h4 class="footer__top-intro-heading">
+                            About us
+                        </h4>
+                        <div class="footer__top-intro-content">
+                           Edubook is a store that always provides you with knowledge and passion
+                             Read books all over the country. We will constantly update
+                             Update the best, newest, best quality books
+                             help readers have the best books to read! <br> <br>
+                             Phone: 0352 860 701 <br>
+                             Email: teamed2@gmail.com <br>
+                             Zalo: 039,882.3232 <br>
+                        </div>
+                    </article>
+
+                    <article class="footer__top-policy col-lg-3 col-md-4 col-sm-6">
+                        <h4 class="footer__top-policy-heading">
+                           Purchase Policy
+                        </h4>
+
+                      <ul class="footer__top-policy-list">
+                             <li class="footer__top-policy-item">
+                                 <a href="#" class="footer__top-policy-link">Order form</a>
+                             </li>
+                             <li class="footer__top-policy-item">
+                                 <a href="#" class="footer__top-policy-link">Form of payment</a>
+                             </li>
+                             <li class="footer__top-policy-item">
+                                 <a href="#" class="footer__top-policy-link">Shipping method</a>
+                             </li>
+                             <li class="footer__top-policy-item">
+                                 <a href="#" class="footer__top-policy-link">Return Policy</a>
+                             </li>
+                             <li class="footer__top-policy-item">
+                                 <a href="#" class="footer__top-policy-link">User Manual</a>
+                             </li>
+                         </ul>
+                    </article>
+
+                  <article class="footer__top-contact-wrap col-lg-4 col-md-4 col-sm-6">
+                         <h4 class="footer__top-contact-heading">
+                             Hotline contact
+                         </h4>
+
+                         <div class="footer__top-contact">
+                             <div class="footer__top-contact-icon">
+                                 <img src="images/phone_top.png" class="footer__top-contact-img">
+                             </div>
+
+                             <div class="footer__top-contact-phone-wrap">
+                                 <div class="footer__top-contact-phone">
+                                     039.882.3232
+                                 </div>
+                                 <div class="footer__top-contact-des">
+                                     (Answer questions 24/7)
+                                 </div>
+                             </div>
+                         </div>
+                    
+                         <h4 class="footer__top-contact-heading">
+                             Connect with us
+                         </h4>
+
+                        <div class="footer__top-contact-social">
+                            <a href="#" class="footer__top-contact-social-link">
+                                <img src="images/facebook.png">
+                            </a>
+                            <a href="#" class="footer__top-contact-social-link">
+                                <img src="images/youtube.png">
+                            </a>
+                            <a href="#" class="footer__top-contact-social-link">
+                                <img src="images/tiktok.png">
+                            </a>
+                            <a href="#" class="footer__top-contact-social-link">
+                                <img src="images/zalo.png">
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="footer__bottom">
+            <div class="container">
+                <div class="row">
+                     <span class="footer__bottom-content">@Copyright belongs to edubook | Designed by ED2 team </span>
+                 </div>
+            </div>
+        </section>
+    </footer>
+    <!-- end footer -->
+
+    <script src="js/jq.js"></script>
+    <script src="js/product.js"></script>
+        
+</body>
+</html>
