@@ -149,7 +149,7 @@ for (BookDtls b : list) {%>
 							} else {
 							%>
 							<!--  NGUOC LAI NEU DA DANG NHAP VAO TAI KHOAN => DI CHUYEN DEN TRANG CARTSERVLET ( XU LY SU KIEN THEM SAN PHAM VAO GIO HANG )-->
-							<a href="cart?bid=<%=b.getBookId() %>&&uid=<%=u.getId()%>" class="btn btn-danger btn-sm"><i
+							<a href="/Ebook/cart?bid=<%=b.getBookId() %>&&uid=<%=u.getId()%>" class="btn btn-danger btn-sm"><i
 								class="fas fa-cart-plus"></i>Add Cart</a>
 
 							<%

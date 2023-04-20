@@ -52,7 +52,7 @@ function check() {
 			confirmPassword : confirmPassword,
 			
 		},
-		url : 'changePassword',
+		url : '/Ebook/changePassword',
 		success : function(result) {
 			$('#result').html(result)
 		}
@@ -100,7 +100,7 @@ function check() {
 
 
 				<!-- Form -->
-				<form action="changePassword" method="POST"  class="px-3">
+				<form action="/Ebook/changePassword" method="POST"  class="px-3">
 				
 				<br> <span class="text-center text-danger" id="result"></span>
 				

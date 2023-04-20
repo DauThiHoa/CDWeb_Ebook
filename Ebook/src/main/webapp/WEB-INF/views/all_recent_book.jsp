@@ -91,7 +91,7 @@
 							} else {
 							%>
 							<!--  NGUOC LAI NEU DA DANG NHAP VAO TAI KHOAN => DI CHUYEN DEN TRANG CARTSERVLET ( XU LY SU KIEN THEM SAN PHAM VAO GIO HANG )-->
-							<a href="cart?bid=<%=b2.getBookId()%>&&uid=<%=u.getId()%>"
+							<a href="/Ebook/cart?bid=<%=b2.getBookId()%>&&uid=<%=u.getId()%>"
 								class="btn btn-danger btn-sm"><i class="fas fa-cart-plus"></i>Add
 								Cart</a>
 

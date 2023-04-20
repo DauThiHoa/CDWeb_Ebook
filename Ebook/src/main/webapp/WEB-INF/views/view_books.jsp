@@ -156,9 +156,9 @@ function showToast(content) {
                             <%-- <div class="product__main-info-cart"> 
                                 
                                 <div class="product__main-info-cart-btn-wrap">
-                                <a href="cart?bid=<%=b.getBookId()%>&&uid=<%=u.getId()%>">
+                                <a href="/Ebook/cart?bid=<%=b.getBookId()%>&&uid=<%=u.getId()%>">
                                     <button class="product__main-info-cart-btn" style="background: green;">
-                                    <a href="cart?bid=<%=b.getBookId()%>&&uid=<%=u.getId()%>">
+                                    <a href="/Ebook/cart?bid=<%=b.getBookId()%>&&uid=<%=u.getId()%>">
                                        <i style="font-size: 100%; margin-right: 5%" class="fas fa-cart-plus"></i>
                                        Add to cart
                                     <!--  </a> -->
@@ -167,7 +167,7 @@ function showToast(content) {
                                 </div>
                             </div>  --%>
 
-                        <form action="addProductDetails" method="post" class="product__main-info-cart">
+                        <form action="/Ebook/addProductDetails" method="post" class="product__main-info-cart">
 							<!-- <article class="row cart__body">  -->
   
 							<!-- </article>  -->
@@ -406,7 +406,7 @@ function showToast(content) {
             <div class="col-lg-12 col-md-12 col-sm-12">
                 <h3 class="text-success" style="font-weight: bold;" >Product Comments</h3>
                 
-                <form id ="formgroupcomment" action="commentProduct" method="post">
+                <form id ="formgroupcomment" action="/Ebook/commentProduct" method="post">
                     <div class="form-group">
                         <label>Name:</label>
                         	 <%
@@ -631,7 +631,7 @@ function showToast(content) {
 							%>
 							
 					<!--  NGUOC LAI NEU DA DANG NHAP VAO TAI KHOAN => DI CHUYEN DEN TRANG CARTSERVLET ( XU LY SU KIEN THEM SAN PHAM VAO GIO HANG )-->
-							<a href="cart?bid=<%=b2.getBookId()%>&&uid=<%=u.getId()%>" class="btn btn-danger btn-sm"><i style="font-size: 100%;"  class="fas fa-cart-plus"></i></a>
+							<a href="/Ebook/cart?bid=<%=b2.getBookId()%>&&uid=<%=u.getId()%>" class="btn btn-danger btn-sm"><i style="font-size: 100%;"  class="fas fa-cart-plus"></i></a>
 
 							<%
 							}

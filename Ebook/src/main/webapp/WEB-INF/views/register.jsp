@@ -61,7 +61,7 @@
 				confirmPassword : confirmPassword,
 
 			},
-			url : 'changePassword',
+			url : '/Ebook/changePassword',
 			success : function(result) {
 				$('#result').html(result)
 			}

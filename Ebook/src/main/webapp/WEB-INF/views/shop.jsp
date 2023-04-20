@@ -90,7 +90,7 @@
 			ascName : ascName,
 			
 		},
-		url : 'arrangeServlet',
+		url : '/Ebook/arrangeServlet',
 		success : function(result) {
 			$('#result').html(result)
 		}
@@ -114,7 +114,7 @@ function checkAscPrice() {
 			ascPrice : ascPrice , 
 			
 		},
-		url : 'arrangeServlet',
+		url : '/Ebook/arrangeServlet',
 		success : function(result) {
 			/* $('#result').style.display = 'none'
 		    $('#result').css('display'​​​​​​​​​​​​​​​​​​​​​​​​​​​,'none'); */​​​​​​
@@ -189,7 +189,7 @@ function showToast(content) {
 	<section class="category" style="margin-top: -5%">
 
 
-		<form action="arrangeServlet"  method="post" class="category">
+		<form action="/Ebook/arrangeServlet"  method="post" class="category">
  
 			<button type="submit" id="categoryLanguage" class="box"> 
 				<img src="image/cat-1.png" alt="">
@@ -199,7 +199,7 @@ function showToast(content) {
 			
 		</form>
 		
-		<form action="arrangeServlet"  method="post" class="category">
+		<form action="/Ebook/arrangeServlet"  method="post" class="category">
 			<button type="submit" id="categoryLiterature" class="box"> 
 				<img src="image/cat-2.png" alt="">
 				<input  style="display: none" value="categoryLiterature" name="categoryLiterature"> 
@@ -207,7 +207,7 @@ function showToast(content) {
 			</button> 
 		</form>
 		
-		<form action="arrangeServlet"  method="post" class="category">	
+		<form action="/Ebook/arrangeServlet"  method="post" class="category">	
 			<button type="submit" id="categorySkills" class="box"> 
 				<img src="image/cat-3.png" alt="">
 				<input  style="display: none" value="categorySkills" name="categorySkills"> 
@@ -215,7 +215,7 @@ function showToast(content) {
 			</button> 
 		</form>
 		
-		<form action="arrangeServlet"  method="post" class="category">	
+		<form action="/Ebook/arrangeServlet"  method="post" class="category">	
 			<button type="submit" id="categoryArt" class="box"> 
 				<img src="image/cat-4.png" alt="">
 				<input  style="display: none" value="categoryArt" name="categoryArt"> 
@@ -223,7 +223,7 @@ function showToast(content) {
 			</button> 
 		</form>
 		
-		<form action="arrangeServlet"  method="post" class="category">		
+		<form action="/Ebook/arrangeServlet"  method="post" class="category">		
 			<button type="submit" id="categorySport" class="box"> 
 				<img src="image/cat-5.png" alt="">
 				<input  style="display: none" value="categorySport" name="categorySport"> 
@@ -249,13 +249,13 @@ function showToast(content) {
 
 		<section class="category">
 
-			<form action="arrangeServlet"  method="post"><input  style="display: none" value="ascName" name="ascName"> <button type="submit" onclick="" id="ascName" class="btn btn-outline-primary" style="font-weight: bold;">Ascending by name</button>
+			<form action="/Ebook/arrangeServlet"  method="post"><input  style="display: none" value="ascName" name="ascName"> <button type="submit" onclick="" id="ascName" class="btn btn-outline-primary" style="font-weight: bold;">Ascending by name</button>
 			</form> 
-			<form action="arrangeServlet"  method="post"><input  style="display: none" value="descName" name="descName">  <button type="submit" value="descName" onclick="" id="descName" class="btn btn-outline-warning" style="font-weight: bold;">Descending by name</button>
+			<form action="/Ebook/arrangeServlet"  method="post"><input  style="display: none" value="descName" name="descName">  <button type="submit" value="descName" onclick="" id="descName" class="btn btn-outline-warning" style="font-weight: bold;">Descending by name</button>
 			</form> 
-			<form action="arrangeServlet"  method="post"><input  style="display: none" value="ascPrice" name="ascPrice">  <button type="submit" value="ascPrice" onclick="" id="ascPrice" class="btn btn-outline-success" style="font-weight: bold;">Ascending by price</button>
+			<form action="/Ebook/arrangeServlet"  method="post"><input  style="display: none" value="ascPrice" name="ascPrice">  <button type="submit" value="ascPrice" onclick="" id="ascPrice" class="btn btn-outline-success" style="font-weight: bold;">Ascending by price</button>
 			</form> 
-			<form action="arrangeServlet"  method="post"><input  style="display: none" value="descPrice" name="descPrice">  <button type="submit" value="descPrice" onclick="" id="descPrice" class="btn btn-outline-info" style="font-weight: bold;">Descending by price</button>
+			<form action="/Ebook/arrangeServlet"  method="post"><input  style="display: none" value="descPrice" name="descPrice">  <button type="submit" value="descPrice" onclick="" id="descPrice" class="btn btn-outline-info" style="font-weight: bold;">Descending by price</button>
 			</form>
 
 			<!-- <a href="#" class="box">
@@ -382,7 +382,7 @@ function showToast(content) {
 							%>
 							
 					<!--  NGUOC LAI NEU DA DANG NHAP VAO TAI KHOAN => DI CHUYEN DEN TRANG CARTSERVLET ( XU LY SU KIEN THEM SAN PHAM VAO GIO HANG )-->
-							<a href="cart?bid=<%=b2.getBookId()%>&&uid=<%=u.getId()%>" class="btn btn-danger btn-sm"><i class="fas fa-cart-plus"></i></a>
+							<a href="/Ebook/cart?bid=<%=b2.getBookId()%>&&uid=<%=u.getId()%>" class="btn btn-danger btn-sm"><i class="fas fa-cart-plus"></i></a>
 
 							<%
 							}
@@ -594,7 +594,7 @@ function showToast(content) {
 							%>
 							
 					<!--  NGUOC LAI NEU DA DANG NHAP VAO TAI KHOAN => DI CHUYEN DEN TRANG CARTSERVLET ( XU LY SU KIEN THEM SAN PHAM VAO GIO HANG )-->
-							<a href="cart?bid=<%=b2.getBookId()%>&&uid=<%=u.getId()%>" class="btn btn-danger btn-sm"><i class="fas fa-cart-plus"></i></a>
+							<a href="/Ebook/cart?bid=<%=b2.getBookId()%>&&uid=<%=u.getId()%>" class="btn btn-danger btn-sm"><i class="fas fa-cart-plus"></i></a>
 
 							<%
 							}
@@ -807,7 +807,7 @@ function showToast(content) {
 							%>
 							
 					<!--  NGUOC LAI NEU DA DANG NHAP VAO TAI KHOAN => DI CHUYEN DEN TRANG CARTSERVLET ( XU LY SU KIEN THEM SAN PHAM VAO GIO HANG )-->
-							<a href="cart?bid=<%=b2.getBookId()%>&&uid=<%=u.getId()%>" class="btn btn-danger btn-sm"><i class="fas fa-cart-plus"></i></a>
+							<a href="/Ebook/cart?bid=<%=b2.getBookId()%>&&uid=<%=u.getId()%>" class="btn btn-danger btn-sm"><i class="fas fa-cart-plus"></i></a>
 
 							<%
 							}
@@ -1025,7 +1025,7 @@ function showToast(content) {
 							%>
 							
 					<!--  NGUOC LAI NEU DA DANG NHAP VAO TAI KHOAN => DI CHUYEN DEN TRANG CARTSERVLET ( XU LY SU KIEN THEM SAN PHAM VAO GIO HANG )-->
-							<a href="cart?bid=<%=b2.getBookId()%>&&uid=<%=u.getId()%>" class="btn btn-danger btn-sm"><i class="fas fa-cart-plus"></i></a>
+							<a href="/Ebook/cart?bid=<%=b2.getBookId()%>&&uid=<%=u.getId()%>" class="btn btn-danger btn-sm"><i class="fas fa-cart-plus"></i></a>
 
 							<%
 							}
@@ -1249,7 +1249,7 @@ function showToast(content) {
 							%>
 							
 					<!--  NGUOC LAI NEU DA DANG NHAP VAO TAI KHOAN => DI CHUYEN DEN TRANG CARTSERVLET ( XU LY SU KIEN THEM SAN PHAM VAO GIO HANG )-->
-							<a href="cart?bid=<%=b2.getBookId()%>&&uid=<%=u.getId()%>" class="btn btn-danger btn-sm"><i class="fas fa-cart-plus"></i></a>
+							<a href="/Ebook/cart?bid=<%=b2.getBookId()%>&&uid=<%=u.getId()%>" class="btn btn-danger btn-sm"><i class="fas fa-cart-plus"></i></a>
 
 							<%
 							}
@@ -1462,7 +1462,7 @@ function showToast(content) {
 							%>
 							
 					<!--  NGUOC LAI NEU DA DANG NHAP VAO TAI KHOAN => DI CHUYEN DEN TRANG CARTSERVLET ( XU LY SU KIEN THEM SAN PHAM VAO GIO HANG )-->
-							<a href="cart?bid=<%=b2.getBookId()%>&&uid=<%=u.getId()%>" class="btn btn-danger btn-sm"><i class="fas fa-cart-plus"></i></a>
+							<a href="/Ebook/cart?bid=<%=b2.getBookId()%>&&uid=<%=u.getId()%>" class="btn btn-danger btn-sm"><i class="fas fa-cart-plus"></i></a>
 
 							<%
 							}
@@ -1674,7 +1674,7 @@ function showToast(content) {
 							%>
 							
 					<!--  NGUOC LAI NEU DA DANG NHAP VAO TAI KHOAN => DI CHUYEN DEN TRANG CARTSERVLET ( XU LY SU KIEN THEM SAN PHAM VAO GIO HANG )-->
-							<a href="cart?bid=<%=b2.getBookId()%>&&uid=<%=u.getId()%>" class="btn btn-danger btn-sm"><i class="fas fa-cart-plus"></i></a>
+							<a href="/Ebook/cart?bid=<%=b2.getBookId()%>&&uid=<%=u.getId()%>" class="btn btn-danger btn-sm"><i class="fas fa-cart-plus"></i></a>
 
 							<%
 							}
@@ -1888,7 +1888,7 @@ function showToast(content) {
 							%>
 							
 					<!--  NGUOC LAI NEU DA DANG NHAP VAO TAI KHOAN => DI CHUYEN DEN TRANG CARTSERVLET ( XU LY SU KIEN THEM SAN PHAM VAO GIO HANG )-->
-							<a href="cart?bid=<%=b2.getBookId()%>&&uid=<%=u.getId()%>" class="btn btn-danger btn-sm"><i class="fas fa-cart-plus"></i></a>
+							<a href="/Ebook/cart?bid=<%=b2.getBookId()%>&&uid=<%=u.getId()%>" class="btn btn-danger btn-sm"><i class="fas fa-cart-plus"></i></a>
 
 							<%
 							}
@@ -2099,7 +2099,7 @@ function showToast(content) {
 							%>
 							
 					<!--  NGUOC LAI NEU DA DANG NHAP VAO TAI KHOAN => DI CHUYEN DEN TRANG CARTSERVLET ( XU LY SU KIEN THEM SAN PHAM VAO GIO HANG )-->
-							<a href="cart?bid=<%=b2.getBookId()%>&&uid=<%=u.getId()%>" class="btn btn-danger btn-sm"><i class="fas fa-cart-plus"></i></a>
+							<a href="/Ebook/cart?bid=<%=b2.getBookId()%>&&uid=<%=u.getId()%>" class="btn btn-danger btn-sm"><i class="fas fa-cart-plus"></i></a>
 
 							<%
 							}

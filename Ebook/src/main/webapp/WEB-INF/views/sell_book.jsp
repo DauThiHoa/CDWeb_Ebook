@@ -73,7 +73,7 @@ a:hover {
   
     <div class="row"> 
 			
-        <form action="add_old_book" method="post" enctype="multipart/form-data">
+        <form action="/Ebook/add_old_book" method="post" enctype="multipart/form-data">
         
             <h3  class="text-center text-success" style="font-weight: bold;">Sell Old Book</h3>
             
