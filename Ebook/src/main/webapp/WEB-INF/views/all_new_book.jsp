@@ -158,7 +158,7 @@ for (BookDtls b : list) {%>
 							
 							
 							  <a
-								href="view_books.jsp?id=<%=b.getBookId()%>"
+								href="/Ebook/view_books?id=<%=b.getBookId()%>"
 								class="btn btn-success btn-sm ml-0">View Details</a> <a href=""
 								class="btn btn-danger btn-sm"><%=b.getPrice()%><i
 								class="fas fa-rupee-sign"></i></a>

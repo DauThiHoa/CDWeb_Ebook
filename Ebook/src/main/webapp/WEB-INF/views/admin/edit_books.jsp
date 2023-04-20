@@ -43,7 +43,7 @@
   
     <div class="row"> 
 			
-        <form action="../editbooks" method="post" enctype="multipart/form-data">
+        <form action="/Ebook/editbooks" method="post" enctype="multipart/form-data">
         
             <h3  class="text-center text-success" style="font-weight: bold;">EDIT BOOKS</h3>
             

@@ -364,12 +364,12 @@ function showToast(content) {
  
 							<div class="product__aside-item product__aside-item--border">
                                 <div class="product__aside-img-wrap">
-                               		 <a href="view_books.jsp?id=<%=b1.getBookId()%>"> 
+                               		 <a href="/Ebook/view_books?id=<%=b1.getBookId()%>"> 
                                     <img src="book/<%=b1.getPhotoName()%>" class="product__aside-img">
                                     </a>
                                 </div>
                                 <div class="product__aside-title">
-                                    <a href="view_books.jsp?id=<%=b1.getBookId()%>"  class="product__aside-link">
+                                    <a href="/Ebook/view_books?id=<%=b1.getBookId()%>"  class="product__aside-link">
                                         <h4 class="product__aside-link-heading"><%=b1.getBookName()%></h4>
                                     </a>
  
@@ -610,7 +610,7 @@ function showToast(content) {
 
 							Categories: <%=b2.getBookCategory()%></h5>
 						<div class="row" style="margin-left: 25%">
-							<a href="view_books.jsp?id=<%=b2.getBookId()%>" class="btn btn-success btn-sm ml-5"><i style="font-size: 100%;"  class="fas fa-eye"></i></a>  
+							<a href="/Ebook/view_books?id=<%=b2.getBookId()%>" class="btn btn-success btn-sm ml-5"><i style="font-size: 100%;"  class="fas fa-eye"></i></a>  
 						</div>
 						
 						<%
@@ -637,7 +637,7 @@ function showToast(content) {
 							}
 							%>
 
-							<a style="margin-left: 5%" href="view_books.jsp?id=<%=b2.getBookId()%>" class="btn btn-success btn-sm"><i style="font-size: 100%;"  class="fas fa-eye"></i></a> 
+							<a style="margin-left: 5%" href="/Ebook/view_books?id=<%=b2.getBookId()%>" class="btn btn-success btn-sm"><i style="font-size: 100%;"  class="fas fa-eye"></i></a> 
 						</div>
 						
 						<%
@@ -659,7 +659,7 @@ function showToast(content) {
             back4 = pages4 - 1;//Neu pages4 tu 2 tro len thi back4 tru 1
         }
     %>
-    <a href="shop.jsp?pages=<%=back4%>">&laquo;</a>
+    <a href="/Ebook/shop?pages=<%=back4%>">&laquo;</a>
                 <%
                     //Button num4ber pages4
                     int loop4 = 0, num4 = 0;
@@ -685,9 +685,9 @@ function showToast(content) {
                     for (int i = 1; i <= loop4; i++) {%>
                 <% if (pages4 == i) {%> 
 
-    <span><a class="active" href="shop.jsp?pages=<%=i%>"><%=i%></a></span>
+    <span><a class="active" href="/Ebook/shop?pages=<%=i%>"><%=i%></a></span>
                 <%} else {%>
-   <a href="shop.jsp?pages=<%=i%>"><%=i%></a> 
+   <a href="/Ebook/shop?pages=<%=i%>"><%=i%></a> 
 
         <%}
              }%>
@@ -721,7 +721,7 @@ function showToast(content) {
                 }
             }
         %>
-    <a href="shop.jsp?pages=<%=next4%>">&raquo;</a>
+    <a href="/Ebook/shop?pages=<%=next4%>">&raquo;</a>
 </div>
  
   

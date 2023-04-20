@@ -115,7 +115,7 @@
 
 
 								<tr style="" >
-								<a href="view_books.jsp?id=<%=f.getBid()%>"> 
+								<a href="/Ebook/view_books?id=<%=f.getBid()%>"> 
 									<th style="margin: auto;" scope="row"><img alt="" src="book/<%=f.getPhotoName()%>"
 										style="width: 100px; height: 120px"></th>
 								</a>
@@ -126,7 +126,7 @@
 									
 									<td><br> <br><br>
 									
-										<a style="margin-left: 5%" href="view_books.jsp?id=<%=f.getBid()%>"
+										<a style="margin-left: 5%" href="/Ebook/view_books?id=<%=f.getBid()%>"
 									 class="btn btn-success btn-sm"><i class="fas fa-eye"></i></a>
 									</td> 
 									
@@ -161,7 +161,7 @@
              
 								<!-- <a href="order.jsp" class="btn btn-warning" style="background: orange;">Order Now</a> -->
 								
-								<a href="Ebook" class="btn btn-success p-2"> Continue Shopping</a>
+								<a href="/Ebook/" class="btn btn-success p-2"> Continue Shopping</a>
 			</div>
 
 <%@include file="all_component/footer.jsp"%>

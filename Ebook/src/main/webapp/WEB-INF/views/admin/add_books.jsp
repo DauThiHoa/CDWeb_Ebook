@@ -39,7 +39,7 @@
 			
 <section class="contact" style="margin-top: 1%; width: 50%; margin-left: 25% ; background: white;">
 
-<a href="home.jsp">
+<a href="/Ebook/home">
 <i class="fas fa-caret-square-left" style="font-size: 347%; background: #f7f7f7; color: green;"></i>
 </a>
   
@@ -97,7 +97,7 @@
              <div class="inputBox" >    
 									
 									<input  style="width: 100%" placeholder="" class="box" 
-									aria-describedby="emailHelp" required type="number"
+									aria-describedby="emailHelp" required type="double"
 									name="price" class="form-control"
 									id="exampleInputPassword1">
 							 

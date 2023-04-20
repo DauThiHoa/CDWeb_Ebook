@@ -9,7 +9,7 @@
 
 <!DOCTYPE html>
 <html>
-<head>
+<head> 
 <!-- BIEU TUONG TRANG WEB -->
 <link rel="icon" href="img/icon1.png" type="image/png" class="icon">
 

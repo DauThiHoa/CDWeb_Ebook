@@ -8,11 +8,11 @@
         <div class="box">
             <h3>quick links</h3>
             <a href="/Ebook/"> <i class="fas fa-arrow-right"></i> home</a>
-            <a href="shop.jsp"> <i class="fas fa-arrow-right"></i> shop</a>
-            <a href="about.jsp"> <i class="fas fa-arrow-right"></i> about</a>
-            <a href="review.jsp"> <i class="fas fa-arrow-right"></i> review</a>
-            <a href="blog.jsp"> <i class="fas fa-arrow-right"></i> blog</a>
-            <a href="contact.jsp"> <i class="fas fa-arrow-right"></i> contact</a>
+            <a href="/Ebook/shop"> <i class="fas fa-arrow-right"></i> shop</a>
+            <a href="/Ebook/about"> <i class="fas fa-arrow-right"></i> about</a>
+            <a href="/Ebook/review"> <i class="fas fa-arrow-right"></i> review</a>
+            <a href="/Ebook/blog"> <i class="fas fa-arrow-right"></i> blog</a>
+            <a href="/Ebook/contact"> <i class="fas fa-arrow-right"></i> contact</a>
         </div>
 
         <div class="box">

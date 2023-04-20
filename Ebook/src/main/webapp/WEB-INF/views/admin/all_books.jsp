@@ -106,8 +106,8 @@
 						 				href="orderDetails.jsp?order_id=<%=b.getOrderId()%>"
 										class="btn btn-sm btn-danger"><i class="fas fa-search"></i></a> --%>
 										
-										<a href="edit_books.jsp?id=<%=b.getBookId()%>"
-					class="btn btn-sm btn-primary"><i style="padding: 5%;" class="fas fa-edit"></i>Edit</a> <a href="../delete?id=<%=b.getBookId()%>"
+										<a href="/Ebook/editbooks?id=<%=b.getBookId()%>"
+					class="btn btn-sm btn-primary"><i style="padding: 5%;" class="fas fa-edit"></i>Edit</a> <a href="/Ebook/delete?id=<%=b.getBookId()%>"
 					class="btn btn-sm btn-danger"><i  style="padding: 5%;" class="fas fa-trash-alt"></i>Delete</a>
 										</td>
 								</tr>

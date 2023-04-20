@@ -64,13 +64,13 @@
 		<!--  THANH menu  -->
 		<nav style="margin-left: -31%" class="navbar">
 			<a href="/Ebook/">home</a> 
-			<a href="shop.jsp">shop</a> 
+			<a href="/Ebook/shop">shop</a> 
  
 
-			<a href="about.jsp">about</a> 
+			<a href="/Ebook/about">about</a> 
 		
-			<a href="blog.jsp">blog</a> 
-			<a href="contact.jsp">contact</a> 
+			<a href="/Ebook/blog">blog</a> 
+			<a href="/Ebook/contact">contact</a> 
 		</nav>
 
 
@@ -82,10 +82,10 @@
 				<div id="menu-btn" class="fas fa-bars"></div>
 				<div id="search-btn" class="fas fa-search"></div>
 
-				<a href="checkout.jsp">
+				<a href="/Ebook/checkout">
 					<div id="cart-btn" class="fas fa-shopping-cart"></div>
 					
-				<a href="favourite.jsp">
+				<a href="/Ebook/favourite">
 					<div id="login-btn" class="fas fa-heart"></div> 
 				</a>
 				
@@ -96,7 +96,7 @@
 				</a> <a href="" data-toggle="modal" data-target="#exampleModalCenter">
 					<div id="login-btn" class="fas fa-sign-in-alt"></div>
 					
-				</a> <a href="setting.jsp">
+				</a> <a href="/Ebook/setting">
 					<div id="login-btn" class="fas fa-cog"></div>
 				</a>
 			</div>
@@ -116,9 +116,9 @@
 
 				</a> <a href="/Ebook/login">
 					<div id="login-btn" class="fas fa-user"></div>
-				</a> <a href="register.jsp">
+				</a> <a href="/Ebook/register">
 					<div id="login-btn" class="fas fa-user-plus"></div>
-				</a> <a href="setting.jsp">
+				</a> <a href="/Ebook/setting">
 					<div id="login-btn" class="fas fa-cog"></div>
 				</a>
 			</div>

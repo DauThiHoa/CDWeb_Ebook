@@ -260,7 +260,7 @@
             					<input type="hidden" class="box" value="<%=totalPrice%>" name="total" required>
 								<button type="submit" class="btn btn-warning" style="background: orange;">Order Now</button>
 								
-								<a href="Ebook" class="btn btn-success"> Continue
+								<a href="/Ebook/" class="btn btn-success"> Continue
 									Shopping</a>
 			</div>
 							

@@ -69,7 +69,7 @@ a:hover {
  
  	<div class="container " style="margin-top: 8%">
  	
- 	<!-- <a href="setting.jsp">
+ 	<!-- <a href="/Ebook/setting">
 		<i class="fas fa-caret-square-left" style="font-size: 347%; background: #f7f7f7; color: green;"></i>
 	</a> -->
 
@@ -146,9 +146,9 @@ a:hover {
  
  			<div class="text-center text-white">
              
-								<a href="setting.jsp" class="btn btn-warning" style="background: orange;">Setting Now</a>
+								<a href="/Ebook/setting" class="btn btn-warning" style="background: orange;">Setting Now</a>
 								
-								<a href="Ebook" class="btn btn-success"> Continue Shopping</a>
+								<a href="/Ebook/" class="btn btn-success"> Continue Shopping</a>
 			</div>
 	
 	

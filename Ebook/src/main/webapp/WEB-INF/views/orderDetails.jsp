@@ -170,9 +170,9 @@
 									
 			<div class="text-center text-white">
              
-								<a href="order.jsp" class="btn btn-warning" style="background: orange;">Order Now</a>
+								<a href="/Ebook/order" class="btn btn-warning" style="background: orange;">Order Now</a>
 								
-								<a href="Ebook" class="btn btn-success"> Continue Shopping</a>
+								<a href="/Ebook/" class="btn btn-success"> Continue Shopping</a>
 			</div>
 
 <%@include file="all_component/footer.jsp"%>

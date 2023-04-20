@@ -183,7 +183,7 @@
 
 							Categories: <%=b2.getBookCategory()%></p>
 						<div class="row">
-							<a href="view_books.jsp?id=<%=b2.getBookId()%>" class="btn btn-success btn-sm ml-5">View Details</a> 
+							<a href="/Ebook/view_books?id=<%=b2.getBookId()%>" class="btn btn-success btn-sm ml-5">View Details</a> 
 							<a href="" class="btn btn-danger btn-sm ml-1"><%=b2.getPrice()%> <i class="fas fa-rupee-sign"></i></a>
 						</div>
 
@@ -211,7 +211,7 @@
 							}
 							%>
 
-							<a href="view_books.jsp?id=<%=b2.getBookId()%>" class="btn btn-success btn-sm">View Details</a>
+							<a href="/Ebook/view_books?id=<%=b2.getBookId()%>" class="btn btn-success btn-sm">View Details</a>
 							<a href="" class="btn btn-danger btn-sm"><%=b2.getPrice()%><i class="fas fa-rupee-sign"></i></a>
 						</div>
 						
@@ -230,7 +230,7 @@
 		</div>
 
 		<div class="text-center mt-3">
-			<a href="all_recent_book.jsp"
+			<a href="/Ebook/all_recent_book"
 				class="btn btn-danger btn-sm text-while">View All</a>
 		</div>
 	</div>
@@ -273,7 +273,7 @@
         </div>
 
    <div class="text-center mt-3">
-			<a href="all_recent_book.jsp"
+			<a href="/Ebook/all_recent_book"
 				class="btn btn-danger btn-sm text-while">View All</a>
 		</div>
 	</div>
@@ -344,7 +344,7 @@
 							<%
 							}
 							%>
-							<a href="view_books.jsp?id=<%=b.getBookId()%>"
+							<a href="/Ebook/view_books?id=<%=b.getBookId()%>"
 								class="btn btn-success btn-sm ml-0">View Details</a> <a href=""
 								class="btn btn-danger btn-sm"><%=b.getPrice()%><i
 								class="fas fa-rupee-sign"></i></a>
@@ -363,7 +363,7 @@
 	</div>
 
 	<div class="text-center mt-3">
-		<a href="all_new_book.jsp" class="btn btn-danger btn-sm text-while">View
+		<a href="/Ebook/all_new_book" class="btn btn-danger btn-sm text-while">View
 			All</a>
 	</div>
 	</div>
@@ -395,7 +395,7 @@
 							Categories:
 							<%=b2.getBookCategory()%></p>
 						<div class="row">
-							<a href="view_books.jsp?id=<%=b2.getBookId()%>"
+							<a href="/Ebook/view_books?id=<%=b2.getBookId()%>"
 								class="btn btn-success btn-sm ml-5">View Details</a> <a href=""
 								class="btn btn-danger btn-sm ml-1"><%=b2.getPrice()%> <i
 								class="fas fa-rupee-sign"></i></a>
@@ -412,7 +412,7 @@
 		</div>
 
 		<div class="text-center mt-3">
-			<a href="all_old_book.jsp" class="btn btn-danger btn-sm text-while">View
+			<a href="/Ebook/all_old_book" class="btn btn-danger btn-sm text-while">View
 				All</a>
 		</div>
 	</div>

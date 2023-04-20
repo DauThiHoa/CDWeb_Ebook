@@ -27,7 +27,7 @@
 
 <div class="heading" style="margin-top: 3%">
     <h1>our blogs</h1>
-    <p> <a href="Ebook">home >></a> blogs </p>
+    <p> <a href="/Ebook/">home >></a> blogs </p>
 </div>
 
 <section class="blogs" style="margin-top: -3%">
@@ -50,7 +50,7 @@
                 </div>
                 <h3>How to distinguish real and fake books accurately?</h3>
                 <p>So that readers, parents, students and teachers... Do not buy fake reference books, pirated books, etc......</p>
-                <a href="about.jsp" class="btn">Read more</a>
+                <a href="/Ebook/about" class="btn">Read more</a>
             </div>
         </div>
 
@@ -68,7 +68,7 @@
                 </div>
                 <h3>How to use Edu Book discount code</h3>
                 <p>Once you get the code, of course you have to know how to use it. Basically, EduBook allows you to use the same</p>
-                <a href="about.jsp" class="btn">Read more</a>
+                <a href="/Ebook/about" class="btn">Read more</a>
             </div>
         </div>
 
@@ -85,7 +85,7 @@
                 </div>
                 <h3>Instructions for returning books, refunding Edu Book</h3>
                 <p>Purchased on Edu Book but the product you received is not the same as the picture. </p>
-                <a href="about.jsp" class="btn">Read more</a>
+                <a href="/Ebook/about" class="btn">Read more</a>
             </div>
         </div>
 
@@ -102,7 +102,7 @@
                 </div>
                 <h3>Tips for hunting discount voucher codes at EBook</h3>
                 <p>If you are facing problems with hunting, retrieving, use EduBook voucher codes.  </p>
-                <a href="about.jsp" class="btn">Read more</a>
+                <a href="/Ebook/about" class="btn">Read more</a>
             </div>
         </div>
 
@@ -122,7 +122,7 @@
                 <p>The project "Exchange old books - Get green trees" received a great response from everyone.
                  Everyone hurry up to participate in the program "Green Living Festival 2021" 
                  and visit booth D6  </p>
-                <a href="about.jsp" class="btn">Read more</a>
+                <a href="/Ebook/about" class="btn">Read more</a>
             </div>
         </div>
  <div class="box">
@@ -139,7 +139,7 @@
                 <h3>Collect old books, give new joy to poor children</h3>
                 <p>Today, sitting and stacking books that I have just received from Dinh Thien Ly school,
                  they have donated and supported children in remote areas, feeling very happy.  </p>
-                <a href="about.jsp" class="btn">Read more</a>
+                <a href="/Ebook/about" class="btn">Read more</a>
             </div>
         </div>
 

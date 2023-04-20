@@ -1,4 +1,4 @@
-<!DOCTYPE jsp>
+<!DOCTYPE >
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -21,14 +21,14 @@
 
 	<header class="header">
 
-		<a href="Ebook" class="logo"> <i class="fas fa-shopping-basket"></i>
+		<a href="/Ebook/" class="logo"> <i class="fas fa-shopping-basket"></i>
 			groco
 		</a>
 
 		<nav class="navbar">
-			<a href="Ebook">home</a> <a href="shop.jsp">shop</a> <a
-				href="about.jsp">about</a> <a href="review.jsp">review</a> <a
-				href="blog.jsp">blog</a> <a href="contact.jsp">contact</a>
+			<a href="/Ebook/">home</a> <a href="/Ebook/shop">shop</a> <a
+				href="/Ebook/about">about</a> <a href="/Ebook/review">review</a> <a
+				href="/Ebook/blog">blog</a> <a href="/Ebook/contact">contact</a>
 		</nav>
 
 		<div class="icons">
@@ -98,7 +98,7 @@
 	<div class="heading">
 		<h1>our shop</h1>
 		<p>
-			<a href="Ebook">home >></a> shop
+			<a href="/Ebook/">home >></a> shop
 		</p>
 	</div>
 
@@ -552,12 +552,12 @@
 
 			<div class="box">
 				<h3>quick links</h3>
-				<a href="Ebook"> <i class="fas fa-arrow-right"></i> home
-				</a> <a href="shop.jsp"> <i class="fas fa-arrow-right"></i> shop
-				</a> <a href="about.jsp"> <i class="fas fa-arrow-right"></i> about
-				</a> <a href="review.jsp"> <i class="fas fa-arrow-right"></i> review
-				</a> <a href="blog.jsp"> <i class="fas fa-arrow-right"></i> blog
-				</a> <a href="contact.jsp"> <i class="fas fa-arrow-right"></i>
+				<a href="/Ebook/"> <i class="fas fa-arrow-right"></i> home
+				</a> <a href="/Ebook/shop"> <i class="fas fa-arrow-right"></i> shop
+				</a> <a href="/Ebook/about"> <i class="fas fa-arrow-right"></i> about
+				</a> <a href="/Ebook/review"> <i class="fas fa-arrow-right"></i> review
+				</a> <a href="/Ebook/blog"> <i class="fas fa-arrow-right"></i> blog
+				</a> <a href="/Ebook/contact"> <i class="fas fa-arrow-right"></i>
 					contact
 				</a>
 			</div>

@@ -16,7 +16,7 @@
            uri="http://java.sun.com/jsp/jstl/functions" %>
 <%@ page isELIgnored="false"%>
 
-<!DOCTYPE jsp>
+<!DOCTYPE>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -144,7 +144,7 @@ function checkAscPrice() {
 		
 		<h1>our shop</h1>
 		<p>
-			<a href="Ebook">home >></a> shop
+			<a href="/Ebook/">home >></a> shop
 		</p>
 		
 		<c:if test="${not empty addCart }">
@@ -361,7 +361,7 @@ function showToast(content) {
 
 							<%-- Categories: <%=b2.getBookCategory()%></h5> --%>
 						<div class="row" style="margin-left: 25%">
-							<a href="view_books.jsp?id=<%=b2.getBookId()%>" class="btn btn-success btn-sm ml-5"><i class="fas fa-eye"></i></a>  
+							<a href="/Ebook/view_books?id=<%=b2.getBookId()%>" class="btn btn-success btn-sm ml-5"><i class="fas fa-eye"></i></a>  
 						</div>
 						
 						<%
@@ -388,7 +388,7 @@ function showToast(content) {
 							}
 							%>
 
-							<a style="margin-left: 5%" href="view_books.jsp?id=<%=b2.getBookId()%>" class="btn btn-success btn-sm"><i class="fas fa-eye"></i></a> 
+							<a style="margin-left: 5%" href="/Ebook/view_books?id=<%=b2.getBookId()%>" class="btn btn-success btn-sm"><i class="fas fa-eye"></i></a> 
 						</div>
 						
 						<%
@@ -411,7 +411,7 @@ function showToast(content) {
             back = pages - 1;//Neu pages tu 2 tro len thi back tru 1
         }
     %>
-    <a href="shop.jsp?pages=<%=back%>">&laquo;</a>
+    <a href="/Ebook/shop?pages=<%=back%>">&laquo;</a>
                 <%
                     //Button Number pages
                     int loop = 0, num = 0;
@@ -437,9 +437,9 @@ function showToast(content) {
                     for (int i = 1; i <= loop; i++) {%>
                 <% if (pages == i) {%> 
 
-    <span><a class="active" href="shop.jsp?pages=<%=i%>"><%=i%></a></span>
+    <span><a class="active" href="/Ebook/shop?pages=<%=i%>"><%=i%></a></span>
                 <%} else {%>
-   <a href="shop.jsp?pages=<%=i%>"><%=i%></a> 
+   <a href="/Ebook/shop?pages=<%=i%>"><%=i%></a> 
 
         <%}
              }%>
@@ -473,7 +473,7 @@ function showToast(content) {
                 }
             }
         %>
-    <a href="shop.jsp?pages=<%=next%>">&raquo;</a>
+    <a href="/Ebook/shop?pages=<%=next%>">&raquo;</a>
 </div>
  
   
@@ -573,7 +573,7 @@ function showToast(content) {
 
 							<%-- Categories: <%=b2.getBookCategory()%></h5> --%>
 						<div class="row" style="margin-left: 25%">
-							<a href="view_books.jsp?id=<%=b2.getBookId()%>" class="btn btn-success btn-sm ml-5"><i class="fas fa-eye"></i></a>  
+							<a href="/Ebook/view_books?id=<%=b2.getBookId()%>" class="btn btn-success btn-sm ml-5"><i class="fas fa-eye"></i></a>  
 						</div>
 						
 						<%
@@ -600,7 +600,7 @@ function showToast(content) {
 							}
 							%>
 
-							<a style="margin-left: 5%" href="view_books.jsp?id=<%=b2.getBookId()%>" class="btn btn-success btn-sm"><i class="fas fa-eye"></i></a> 
+							<a style="margin-left: 5%" href="/Ebook/view_books?id=<%=b2.getBookId()%>" class="btn btn-success btn-sm"><i class="fas fa-eye"></i></a> 
 						</div>
 						
 						<%
@@ -623,7 +623,7 @@ function showToast(content) {
             back3 = pages3 - 1;//Neu pages3 tu 2 tro len thi back3 tru 1
         }
     %>
-    <a href="shop.jsp?pages=<%=back3%>">&laquo;</a>
+    <a href="/Ebook/shop?pages=<%=back3%>">&laquo;</a>
                 <%
                     //Button num3ber pages3
                     int loop3 = 0, num3 = 0;
@@ -649,9 +649,9 @@ function showToast(content) {
                     for (int i = 1; i <= loop3; i++) {%>
                 <% if (pages3 == i) {%> 
 
-    <span><a class="active" href="shop.jsp?pages=<%=i%>"><%=i%></a></span>
+    <span><a class="active" href="/Ebook/shop?pages=<%=i%>"><%=i%></a></span>
                 <%} else {%>
-   <a href="shop.jsp?pages=<%=i%>"><%=i%></a> 
+   <a href="/Ebook/shop?pages=<%=i%>"><%=i%></a> 
 
         <%}
              }%>
@@ -685,7 +685,7 @@ function showToast(content) {
                 }
             }
         %>
-    <a href="shop.jsp?pages=<%=next3%>">&raquo;</a>
+    <a href="/Ebook/shop?pages=<%=next3%>">&raquo;</a>
 </div>
  
   
@@ -786,7 +786,7 @@ function showToast(content) {
 
 							<%-- Categories: <%=b2.getBookCategory()%></h5> --%>
 						<div class="row" style="margin-left: 25%">
-							<a href="view_books.jsp?id=<%=b2.getBookId()%>" class="btn btn-success btn-sm ml-5"><i class="fas fa-eye"></i></a>  
+							<a href="/Ebook/view_books?id=<%=b2.getBookId()%>" class="btn btn-success btn-sm ml-5"><i class="fas fa-eye"></i></a>  
 						</div>
 						
 						<%
@@ -813,7 +813,7 @@ function showToast(content) {
 							}
 							%>
 
-							<a style="margin-left: 5%" href="view_books.jsp?id=<%=b2.getBookId()%>" class="btn btn-success btn-sm"><i class="fas fa-eye"></i></a> 
+							<a style="margin-left: 5%" href="/Ebook/view_books?id=<%=b2.getBookId()%>" class="btn btn-success btn-sm"><i class="fas fa-eye"></i></a> 
 						</div>
 						
 						<%
@@ -836,7 +836,7 @@ function showToast(content) {
             back2 = pages2 - 1;//Neu pages2 tu 2 tro len thi back2 tru 1
         }
     %>
-    <a href="shop.jsp?pages=<%=back2%>">&laquo;</a>
+    <a href="/Ebook/shop?pages=<%=back2%>">&laquo;</a>
                 <%
                     //Button num2ber pages2
                     int loop2 = 0, num2 = 0;
@@ -862,9 +862,9 @@ function showToast(content) {
                     for (int i = 1; i <= loop2; i++) {%>
                 <% if (pages2 == i) {%> 
 
-    <span><a class="active" href="shop.jsp?pages=<%=i%>"><%=i%></a></span>
+    <span><a class="active" href="/Ebook/shop?pages=<%=i%>"><%=i%></a></span>
                 <%} else {%>
-   <a href="shop.jsp?pages=<%=i%>"><%=i%></a> 
+   <a href="/Ebook/shop?pages=<%=i%>"><%=i%></a> 
 
         <%}
              }%>
@@ -898,7 +898,7 @@ function showToast(content) {
                 }
             }
         %>
-    <a href="shop.jsp?pages=<%=next2%>">&raquo;</a>
+    <a href="/Ebook/shop?pages=<%=next2%>">&raquo;</a>
 </div>
  
   
@@ -1004,7 +1004,7 @@ function showToast(content) {
 
 							<%-- Categories: <%=b2.getBookCategory()%></h5> --%>
 						<div class="row" style="margin-left: 25%">
-							<a href="view_books.jsp?id=<%=b2.getBookId()%>" class="btn btn-success btn-sm ml-5"><i class="fas fa-eye"></i></a>  
+							<a href="/Ebook/view_books?id=<%=b2.getBookId()%>" class="btn btn-success btn-sm ml-5"><i class="fas fa-eye"></i></a>  
 						</div>
 						
 						<%
@@ -1031,7 +1031,7 @@ function showToast(content) {
 							}
 							%>
 
-							<a style="margin-left: 5%" href="view_books.jsp?id=<%=b2.getBookId()%>" class="btn btn-success btn-sm"><i class="fas fa-eye"></i></a> 
+							<a style="margin-left: 5%" href="/Ebook/view_books?id=<%=b2.getBookId()%>" class="btn btn-success btn-sm"><i class="fas fa-eye"></i></a> 
 						</div>
 						
 						<%
@@ -1054,7 +1054,7 @@ function showToast(content) {
             back1 = pages1 - 1;//Neu pages1 tu 2 tro len thi back1 tru 1
         }
     %>
-    <a href="shop.jsp?pages=<%=back1%>">&laquo;</a>
+    <a href="/Ebook/shop?pages=<%=back1%>">&laquo;</a>
                 <%
                     //Button num1ber pages1
                     int loop1 = 0, num1 = 0;
@@ -1080,9 +1080,9 @@ function showToast(content) {
                     for (int i = 1; i <= loop1; i++) {%>
                 <% if (pages1 == i) {%> 
 
-    <span><a class="active" href="shop.jsp?pages=<%=i%>"><%=i%></a></span>
+    <span><a class="active" href="/Ebook/shop?pages=<%=i%>"><%=i%></a></span>
                 <%} else {%>
-   <a href="shop.jsp?pages=<%=i%>"><%=i%></a> 
+   <a href="/Ebook/shop?pages=<%=i%>"><%=i%></a> 
 
         <%}
              }%>
@@ -1116,7 +1116,7 @@ function showToast(content) {
                 }
             }
         %>
-    <a href="shop.jsp?pages=<%=next1%>">&raquo;</a>
+    <a href="/Ebook/shop?pages=<%=next1%>">&raquo;</a>
 </div>
  
   
@@ -1228,7 +1228,7 @@ function showToast(content) {
 
 							<%-- Categories: <%=b2.getBookCategory()%></h5> --%>
 						<div class="row" style="margin-left: 25%">
-							<a href="view_books.jsp?id=<%=b2.getBookId()%>" class="btn btn-success btn-sm ml-5"><i class="fas fa-eye"></i></a>  
+							<a href="/Ebook/view_books?id=<%=b2.getBookId()%>" class="btn btn-success btn-sm ml-5"><i class="fas fa-eye"></i></a>  
 						</div>
 						
 						<%
@@ -1255,7 +1255,7 @@ function showToast(content) {
 							}
 							%>
 
-							<a style="margin-left: 5%" href="view_books.jsp?id=<%=b2.getBookId()%>" class="btn btn-success btn-sm"><i class="fas fa-eye"></i></a> 
+							<a style="margin-left: 5%" href="/Ebook/view_books?id=<%=b2.getBookId()%>" class="btn btn-success btn-sm"><i class="fas fa-eye"></i></a> 
 						</div>
 						
 						<%
@@ -1278,7 +1278,7 @@ function showToast(content) {
             back4 = pages4 - 1;//Neu pages4 tu 2 tro len thi back4 tru 1
         }
     %>
-    <a href="shop.jsp?pages=<%=back4%>">&laquo;</a>
+    <a href="/Ebook/shop?pages=<%=back4%>">&laquo;</a>
                 <%
                     //Button num4ber pages4
                     int loop4 = 0, num4 = 0;
@@ -1304,9 +1304,9 @@ function showToast(content) {
                     for (int i = 1; i <= loop4; i++) {%>
                 <% if (pages4 == i) {%> 
 
-    <span><a class="active" href="shop.jsp?pages=<%=i%>"><%=i%></a></span>
+    <span><a class="active" href="/Ebook/shop?pages=<%=i%>"><%=i%></a></span>
                 <%} else {%>
-   <a href="shop.jsp?pages=<%=i%>"><%=i%></a> 
+   <a href="/Ebook/shop?pages=<%=i%>"><%=i%></a> 
 
         <%}
              }%>
@@ -1340,7 +1340,7 @@ function showToast(content) {
                 }
             }
         %>
-    <a href="shop.jsp?pages=<%=next4%>">&raquo;</a>
+    <a href="/Ebook/shop?pages=<%=next4%>">&raquo;</a>
 </div>
  
   
@@ -1441,7 +1441,7 @@ function showToast(content) {
 
 							<%-- Categories: <%=b2.getBookCategory()%></h5> --%>
 						<div class="row" style="margin-left: 25%">
-							<a href="view_books.jsp?id=<%=b2.getBookId()%>" class="btn btn-success btn-sm ml-5"><i class="fas fa-eye"></i></a>  
+							<a href="/Ebook/view_books?id=<%=b2.getBookId()%>" class="btn btn-success btn-sm ml-5"><i class="fas fa-eye"></i></a>  
 						</div>
 						
 						<%
@@ -1468,7 +1468,7 @@ function showToast(content) {
 							}
 							%>
 
-							<a style="margin-left: 5%" href="view_books.jsp?id=<%=b2.getBookId()%>" class="btn btn-success btn-sm"><i class="fas fa-eye"></i></a> 
+							<a style="margin-left: 5%" href="/Ebook/view_books?id=<%=b2.getBookId()%>" class="btn btn-success btn-sm"><i class="fas fa-eye"></i></a> 
 						</div>
 						
 						<%
@@ -1491,7 +1491,7 @@ function showToast(content) {
             back5 = pages5 - 1;//Neu pages5 tu 2 tro len thi back5 tru 1
         }
     %>
-    <a href="shop.jsp?pages=<%=back5%>">&laquo;</a>
+    <a href="/Ebook/shop?pages=<%=back5%>">&laquo;</a>
                 <%
                     //Button num5ber pages5
                     int loop5 = 0, num5 = 0;
@@ -1517,9 +1517,9 @@ function showToast(content) {
                     for (int i = 1; i <= loop5; i++) {%>
                 <% if (pages5 == i) {%> 
 
-    <span><a class="active" href="shop.jsp?pages=<%=i%>"><%=i%></a></span>
+    <span><a class="active" href="/Ebook/shop?pages=<%=i%>"><%=i%></a></span>
                 <%} else {%>
-   <a href="shop.jsp?pages=<%=i%>"><%=i%></a> 
+   <a href="/Ebook/shop?pages=<%=i%>"><%=i%></a> 
 
         <%}
              }%>
@@ -1553,7 +1553,7 @@ function showToast(content) {
                 }
             }
         %>
-    <a href="shop.jsp?pages=<%=next5%>">&raquo;</a>
+    <a href="/Ebook/shop?pages=<%=next5%>">&raquo;</a>
 </div>
  
   
@@ -1653,7 +1653,7 @@ function showToast(content) {
 
 							<%-- Categories: <%=b2.getBookCategory()%></h5> --%>
 						<div class="row" style="margin-left: 25%">
-							<a href="view_books.jsp?id=<%=b2.getBookId()%>" class="btn btn-success btn-sm ml-5"><i class="fas fa-eye"></i></a>  
+							<a href="/Ebook/view_books?id=<%=b2.getBookId()%>" class="btn btn-success btn-sm ml-5"><i class="fas fa-eye"></i></a>  
 						</div>
 						
 						<%
@@ -1680,7 +1680,7 @@ function showToast(content) {
 							}
 							%>
 
-							<a style="margin-left: 5%" href="view_books.jsp?id=<%=b2.getBookId()%>" class="btn btn-success btn-sm"><i class="fas fa-eye"></i></a> 
+							<a style="margin-left: 5%" href="/Ebook/view_books?id=<%=b2.getBookId()%>" class="btn btn-success btn-sm"><i class="fas fa-eye"></i></a> 
 						</div>
 						
 						<%
@@ -1703,7 +1703,7 @@ function showToast(content) {
             back6 = pages6 - 1;//Neu pages6 tu 2 tro len thi back6 tru 1
         }
     %>
-    <a href="shop.jsp?pages=<%=back6%>">&laquo;</a>
+    <a href="/Ebook/shop?pages=<%=back6%>">&laquo;</a>
                 <%
                     //Button num6ber pages6
                     int loop6 = 0, num6 = 0;
@@ -1729,9 +1729,9 @@ function showToast(content) {
                     for (int i = 1; i <= loop6; i++) {%>
                 <% if (pages6 == i) {%> 
 
-    <span><a class="active" href="shop.jsp?pages=<%=i%>"><%=i%></a></span>
+    <span><a class="active" href="/Ebook/shop?pages=<%=i%>"><%=i%></a></span>
                 <%} else {%>
-   <a href="shop.jsp?pages=<%=i%>"><%=i%></a> 
+   <a href="/Ebook/shop?pages=<%=i%>"><%=i%></a> 
 
         <%}
              }%>
@@ -1765,7 +1765,7 @@ function showToast(content) {
                 }
             }
         %>
-    <a href="shop.jsp?pages=<%=next6%>">&raquo;</a>
+    <a href="/Ebook/shop?pages=<%=next6%>">&raquo;</a>
 </div>
  
   
@@ -1867,7 +1867,7 @@ function showToast(content) {
 
 							<%-- Categories: <%=b2.getBookCategory()%></h5> --%>
 						<div class="row" style="margin-left: 25%">
-							<a href="view_books.jsp?id=<%=b2.getBookId()%>" class="btn btn-success btn-sm ml-5"><i class="fas fa-eye"></i></a>  
+							<a href="/Ebook/view_books?id=<%=b2.getBookId()%>" class="btn btn-success btn-sm ml-5"><i class="fas fa-eye"></i></a>  
 						</div>
 						
 						<%
@@ -1894,7 +1894,7 @@ function showToast(content) {
 							}
 							%>
 
-							<a style="margin-left: 5%" href="view_books.jsp?id=<%=b2.getBookId()%>" class="btn btn-success btn-sm"><i class="fas fa-eye"></i></a> 
+							<a style="margin-left: 5%" href="/Ebook/view_books?id=<%=b2.getBookId()%>" class="btn btn-success btn-sm"><i class="fas fa-eye"></i></a> 
 						</div>
 						
 						<%
@@ -1917,7 +1917,7 @@ function showToast(content) {
             back7 = pages7 - 1;//Neu pages7 tu 2 tro len thi back7 tru 1
         }
     %>
-    <a href="shop.jsp?pages=<%=back7%>">&laquo;</a>
+    <a href="/Ebook/shop?pages=<%=back7%>">&laquo;</a>
                 <%
                     //Button num7ber pages7
                     int loop7 = 0, num7 = 0;
@@ -1943,9 +1943,9 @@ function showToast(content) {
                     for (int i = 1; i <= loop7; i++) {%>
                 <% if (pages7 == i) {%> 
 
-    <span><a class="active" href="shop.jsp?pages=<%=i%>"><%=i%></a></span>
+    <span><a class="active" href="/Ebook/shop?pages=<%=i%>"><%=i%></a></span>
                 <%} else {%>
-   <a href="shop.jsp?pages=<%=i%>"><%=i%></a> 
+   <a href="/Ebook/shop?pages=<%=i%>"><%=i%></a> 
 
         <%}
              }%>
@@ -1979,7 +1979,7 @@ function showToast(content) {
                 }
             }
         %>
-    <a href="shop.jsp?pages=<%=next7%>">&raquo;</a>
+    <a href="/Ebook/shop?pages=<%=next7%>">&raquo;</a>
 </div>
  
   
@@ -2078,7 +2078,7 @@ function showToast(content) {
 
 							<%-- Categories: <%=b2.getBookCategory()%></h5> --%>
 						<div class="row" style="margin-left: 25%">
-							<a href="view_books.jsp?id=<%=b2.getBookId()%>" class="btn btn-success btn-sm ml-5"><i class="fas fa-eye"></i></a>  
+							<a href="/Ebook/view_books?id=<%=b2.getBookId()%>" class="btn btn-success btn-sm ml-5"><i class="fas fa-eye"></i></a>  
 						</div>
 						
 						<%
@@ -2105,7 +2105,7 @@ function showToast(content) {
 							}
 							%>
 
-							<a style="margin-left: 5%" href="view_books.jsp?id=<%=b2.getBookId()%>" class="btn btn-success btn-sm"><i class="fas fa-eye"></i></a> 
+							<a style="margin-left: 5%" href="/Ebook/view_books?id=<%=b2.getBookId()%>" class="btn btn-success btn-sm"><i class="fas fa-eye"></i></a> 
 						</div>
 						
 						<%
@@ -2128,7 +2128,7 @@ function showToast(content) {
             back8 = pages8 - 1;//Neu pages8 tu 2 tro len thi back8 tru 1
         }
     %>
-    <a href="shop.jsp?pages=<%=back8%>">&laquo;</a>
+    <a href="/Ebook/shop?pages=<%=back8%>">&laquo;</a>
                 <%
                     //Button num8ber pages8
                     int loop8 = 0, num8 = 0;
@@ -2154,9 +2154,9 @@ function showToast(content) {
                     for (int i = 1; i <= loop8; i++) {%>
                 <% if (pages8 == i) {%> 
 
-    <span><a class="active" href="shop.jsp?pages=<%=i%>"><%=i%></a></span>
+    <span><a class="active" href="/Ebook/shop?pages=<%=i%>"><%=i%></a></span>
                 <%} else {%>
-   <a href="shop.jsp?pages=<%=i%>"><%=i%></a> 
+   <a href="/Ebook/shop?pages=<%=i%>"><%=i%></a> 
 
         <%}
              }%>
@@ -2190,7 +2190,7 @@ function showToast(content) {
                 }
             }
         %>
-    <a href="shop.jsp?pages=<%=next8%>">&raquo;</a>
+    <a href="/Ebook/shop?pages=<%=next8%>">&raquo;</a>
 </div>
  
   

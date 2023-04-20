@@ -227,7 +227,7 @@
 
 							<%-- Categories: <%=b2.getBookCategory()%></h5> --%>
 						<div class="row" style="margin-left: 25%">
-							<a href="view_books.jsp?id=<%=b2.getBookId()%>" class="btn btn-success btn-sm ml-5"><i class="fas fa-eye"></i></a>  
+							<a href="/Ebook/view_books?id=<%=b2.getBookId()%>" class="btn btn-success btn-sm ml-5"><i class="fas fa-eye"></i></a>  
 						</div>
 
 						<%
@@ -254,7 +254,7 @@
 							}
 							%>
 
-							<a style="margin-left: 5%" href="view_books.jsp?id=<%=b2.getBookId()%>" class="btn btn-success btn-sm"><i class="fas fa-eye"></i></a> 
+							<a style="margin-left: 5%" href="/Ebook/view_books?id=<%=b2.getBookId()%>" class="btn btn-success btn-sm"><i class="fas fa-eye"></i></a> 
 						</div>
 						
 						<%
@@ -272,7 +272,7 @@
 	</div>
 
     <div class="text-center mt-7"  >
-			<a href="all_recent_book.jsp"
+			<a href="/Ebook/all_recent_book"
 				class="btn btn-danger btn-sm text-while">View All</a>
 		</div> 
 		
@@ -331,7 +331,7 @@
 	<section class="products">
 
 		<h1 class="title">
-			New <span>Book</span> <a  href="all_new_book.jsp" >View All >></a>
+			New <span>Book</span> <a  href="/Ebook/all_new_book" >View All >></a>
 		</h1>
 
 		<div class="box-container">
@@ -376,7 +376,7 @@
 							<%
 							}
 							%>
-					<a href="view_books.jsp?id=<%=b.getBookId()%>" class="fas fa-eye"></a>
+					<a href="/Ebook/view_books?id=<%=b.getBookId()%>" class="fas fa-eye"></a>
 				</div>
 				
 				
@@ -428,7 +428,7 @@
 			for (BookDtls b2 : list3) {
 			%>
 			
-        <a href="view_books.jsp?id=<%=b2.getBookId()%>" class="box">
+        <a href="/Ebook/view_books?id=<%=b2.getBookId()%>" class="box">
             <img src="book/<%=b2.getPhotoName()%>" alt="">
             <div class="content">
                 <h3><%=b2.getBookName()%></h3>
@@ -442,7 +442,7 @@
     </div>
 
     <div class="text-center mt-7"  >
-			<a href="all_old_book.jsp"
+			<a href="/Ebook/all_old_book"
 				class="btn btn-danger btn-sm text-while">View All</a>
 		</div> 
 	 
@@ -477,7 +477,7 @@
                 </div>
                 <h3>How to distinguish real and fake books accurately?</h3>
                 <p>So that readers, parents, students and teachers...<br> do not buy fake reference books, pirated books, etc......</p>
-                <a href="about.jsp" class="btn">Read more</a>
+                <a href="/Ebook/about" class="btn">Read more</a>
             </div>
         </div>
 
@@ -495,7 +495,7 @@
                 </div>
                 <h3>How to use Edu Book discount code</h3>
                 <p>Once you get the code, of course you have to know how to use it. Basically, EduBook allows you to use the same</p>
-                <a href="about.jsp" class="btn">Read more</a>
+                <a href="/Ebook/about" class="btn">Read more</a>
             </div>
         </div>
 
@@ -512,7 +512,7 @@
                 </div>
                 <h3>Instructions for returning books, refunding Edu Book</h3>
                 <p>Purchased on Edu Book but the product you received is not the same as the picture, the product is defective. You think you've been tricked,...</p>
-                <a href="about.jsp" class="btn">Read more</a>
+                <a href="/Ebook/about" class="btn">Read more</a>
             </div>
         </div>
 

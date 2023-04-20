@@ -68,7 +68,7 @@
 							Categories:
 							<%=b2.getBookCategory()%></p>
 						<div class="row">
-							<a href="view_books.jsp?id=<%=b2.getBookId()%>"
+							<a href="/Ebook/view_books?id=<%=b2.getBookId()%>"
 								class="btn btn-success btn-sm ml-5">View Details</a> <a href=""
 								class="btn btn-danger btn-sm ml-1"><%=b2.getPrice()%> <i
 								class="fas fa-rupee-sign"></i></a>
@@ -100,7 +100,7 @@
 							%>
 
 
-							<a href="view_books.jsp?id=<%=b2.getBookId()%>"
+							<a href="/Ebook/view_books?id=<%=b2.getBookId()%>"
 								class="btn btn-success btn-sm">View Details</a> <a href=""
 								class="btn btn-danger btn-sm"><%=b2.getPrice()%><i
 								class="fas fa-rupee-sign"></i></a>

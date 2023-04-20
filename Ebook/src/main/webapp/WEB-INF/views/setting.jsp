@@ -75,7 +75,7 @@ a:hover {
 
 
 			<div class="col-md-4">
-				<a href="sell_book.jsp">
+				<a href="/Ebook/sell_book">
 					<div class="card">
 						<div class="card-body text-center">
 							<div class="text-primary" >
@@ -88,7 +88,7 @@ a:hover {
 			</div>
 
 			<div class="col-md-4">
-				<a href="old_book.jsp">
+				<a href="/Ebook/old_book">
 					<div class="card">
 						<div class="card-body text-center">
 							<div class="text-primary">
@@ -101,7 +101,7 @@ a:hover {
 			</div>
 
 			<div class="col-md-4">
-				<a href="edit_profile.jsp">
+				<a href="/Ebook/edit_profile">
 					<div class="card">
 						<div class="card-body text-center">
 							<div class="text-primary" style="color: #028fcc">
@@ -115,7 +115,7 @@ a:hover {
 
  
 			<div class="col-md-6 mt-3">
-				<a href="order.jsp">
+				<a href="/Ebook/order">
 					<div class="card">
 						<div class="card-body text-center">
 							<div class="text-danger">
@@ -129,7 +129,7 @@ a:hover {
 			</div>
 
 			<div class="col-md-6 mt-3">
-				<a href="helpline.jsp">
+				<a href="/Ebook/helpline">
 					<div class="card">
 						<div class="card-body text-center">
 							<div class="text-warning">

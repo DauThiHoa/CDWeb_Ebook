@@ -1,4 +1,4 @@
-<!DOCTYPE jsp>
+<!DOCTYPE>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -41,7 +41,7 @@
 
 <div class="heading heading1" style="margin-top: 3%">
     <h1>about us</h1>
-    <p> <a href="Ebook">home >></a> about </p>
+    <p> <a href="/Ebook/">home >></a> about </p>
 </div>
 
 

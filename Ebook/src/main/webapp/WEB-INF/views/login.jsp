@@ -102,7 +102,7 @@
 						<button type="submit" class="btn btn-block">Login</button>
 					</div>
 					<div class="text-right ">
-						<a href="reset.jsp" class="forget-link">Forgot password?</a>
+						<a href="/Ebook/reset" class="forget-link">Forgot password?</a>
 					</div>
 					<div class="text-center mb-2">
 						<div class="text-center mb-3" style="color: #777;">or login
@@ -119,7 +119,7 @@
 					</div>
 					<div class="text-center mb-5" style="color: #777;">
 						Don't have an account? <a class="register-link"
-							href="register.jsp">Register here</a>
+							href="/Ebook/register">Register here</a>
 					</div>
 				</form>
 			</div>

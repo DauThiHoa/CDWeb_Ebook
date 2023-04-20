@@ -40,7 +40,7 @@
 		<a href="/Ebook/"  > <span><img alt=""
 				style="width: 10%; height: 10%" src="img/icon1.png"></span> 
 				</a>
-				<a  href="home.jsp">
+				<a  href="/Ebook/home">
 				 	<span><img alt="" style="width: 20%; height: 20%" src="img/ebook2.png"></span> 
 				</a>
 				 
@@ -68,7 +68,7 @@
 				</a> <a href="" data-toggle="modal" data-target="#exampleModalCenter">
 					<div id="login-btn" class="fas fa-sign-in-alt"></div>
 					
-				</a> <a href="home.jsp">
+				</a> <a href="/Ebook/home">
 					<div id="login-btn" class="fas fa-cog"></div>
 				</a>
 			</div>
@@ -94,7 +94,7 @@
 				</a> <a href="../register.jsp">
 					<div id="login-btn" class="fas fa-user-plus"></div>
 					
-				</a> <a href="home.jsp">
+				</a> <a href="/Ebook/home">
 					<div id="login-btn" class="fas fa-cog"></div>
 				</a>
 				 
