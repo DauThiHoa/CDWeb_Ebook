@@ -25,7 +25,7 @@
 <title>Admin : All Orders</title>
 
 <!-- BIEU TUONG TRANG WEB -->
- <link rel="icon" href="img/favicon.png" type="image/png" class="icon">
+ <link rel="icon" href="../admin/img/favicon.png" type="image/png" class="icon">
  
  
 <%@include file="allCss.jsp"%>

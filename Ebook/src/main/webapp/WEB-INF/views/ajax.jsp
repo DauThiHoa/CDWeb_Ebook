@@ -5,8 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Demo Ajax</title>
-<script type="text/javascript" src="scripts/jquery-3.6.3.min.js"></script>
-<script type="text/javascript" src="scripts/jquery-ajax.js"></script>
+<script type="text/javascript" src="../scripts/jquery-3.6.3.min.js"></script>
+<script type="text/javascript" src="../scripts/jquery-ajax.js"></script>
 
 <script type="text/javascript">
 	$(document).ready(function() {

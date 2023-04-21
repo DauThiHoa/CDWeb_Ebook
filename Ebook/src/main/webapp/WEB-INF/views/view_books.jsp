@@ -20,7 +20,7 @@
 <meta charset="UTF-8">
 
 <!-- BIEU TUONG TRANG WEB -->
- <link rel="icon" href="img/icon2.png" type="image/png" class="icon">
+ <link rel="icon" href="../img/icon2.png" type="image/png" class="icon">
   
 <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -28,16 +28,17 @@
 <title>Ebook: View Product</title>
 
  
- 	 <script src="fontend/js/jquery-3.3.1.js"></script>
-     <script src="fontend/js/bootstrap.min.js"></script>
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-     <link rel="stylesheet" href="fontend/css/bootstrap.min.css">
-     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0.500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="fontend/fonts/fontawesome/css/all.min.css">
-     <link rel="stylesheet" href="fontend/css/style.css">
-     <link rel="stylesheet" href="fontend/css/product.css">
-     <link rel="stylesheet" href="fontend/css/cart.css">
+ 	 <script src="../fontend/js/jquery-3.3.1.js"></script>
+     <script src="../fontend/js/bootstrap.min.js"></script> 
+     <link rel="stylesheet" href="../fontend/css/bootstrap.min.css"> 
+     <link rel="stylesheet" href="../fontend/fonts/fontawesome/css/all.min.css">
+     <link rel="stylesheet" href="../fontend/css/style.css">
+     <link rel="stylesheet" href="../fontend/css/product.css">
+     <link rel="stylesheet" href="../fontend/css/cart.css">
      
+       <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0.500;0,700;1,300;1,400;1,500&display=swap" 
+     rel="stylesheet">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
      
 <%@include file="all_component/allCss.jsp"%>
  
@@ -95,14 +96,14 @@ function showToast(content) {
                         <div class="product__main-img col-lg-4 col-md-4 col-sm-12">
                         
                             <div class="product__main-img-primary">
-                                <img src="book/<%=b.getPhotoName()%>">
+                                <img src="../book/<%=b.getPhotoName()%>">
                             </div>
 
                             <div class="product__main-img-list">
-                                <img src="book/<%=b.getPhotoName()%>">
-                                <img src="fontend/images1/product/hoc-tap-qua-du-an-2-01-1 1.jpg">
-                                <img src="fontend/images1/product/hoc-tap-qua-du-an-2-01-1 2.jpg">
-                                <!-- <img src="fontend/images1/product/23f849a0617301e63159067164aecfd2.png"> -->
+                                <img src="../book/<%=b.getPhotoName()%>">
+                                <img src="../fontend/images1/product/hoc-tap-qua-du-an-2-01-1 1.jpg">
+                                <img src="../fontend/images1/product/hoc-tap-qua-du-an-2-01-1 2.jpg">
+                                <!-- <img src="../fontend/images1/product/23f849a0617301e63159067164aecfd2.png"> -->
                             </div>
                         </div>
 
@@ -315,7 +316,7 @@ function showToast(content) {
                 <aside class="product__aside col-lg-3 col-md-0 col-sm-0">
                     <div class="product__aside-top">
                         <div class="product__aside-top-item">
-                            <img src="fontend/images/shipper.png">
+                            <img src="../fontend/images/shipper.png">
                             <div class="product__aside-top-item-text">
                                 <p>
                                     Fast shipping
@@ -326,7 +327,7 @@ function showToast(content) {
                             </div>
                         </div>
                         <div class="product__aside-top-item">
-                            <img src="fontend/images/brand.png">
+                            <img src="../fontend/images/brand.png">
                             <div class="product__aside-top-item-text">
                                 <p>
                                     Genuine product
@@ -337,7 +338,7 @@ function showToast(content) {
                             </div>
                         </div>
                         <div class="product__aside-top-item">
-                            <img src="fontend/images/less.png">
+                            <img src="../fontend/images/less.png">
                             <div class="product__aside-top-item-text">
                                 <p>
                                     Buy savings
@@ -365,7 +366,7 @@ function showToast(content) {
 							<div class="product__aside-item product__aside-item--border">
                                 <div class="product__aside-img-wrap">
                                		 <a href="/Ebook/view_books?id=<%=b1.getBookId()%>"> 
-                                    <img src="book/<%=b1.getPhotoName()%>" class="product__aside-img">
+                                    <img src="../book/<%=b1.getPhotoName()%>" class="product__aside-img">
                                     </a>
                                 </div>
                                 <div class="product__aside-title">
@@ -481,7 +482,7 @@ function showToast(content) {
 					<div class="comment-item">
 						<ul class=item-reviewer>
 							<div class="comment-item-user">
-								<img src="fontend/images/img/1.png" alt=""
+								<img src="../fontend/images/img/2.png" alt=""
 									class="comment-item-user-img">
 
 								<li><b><%=c.getName()%></b></li>
@@ -585,7 +586,7 @@ function showToast(content) {
 							}
 							%>
             <div class="image">
-                <img src="book/<%=b2.getPhotoName()%>" alt="">
+                <img src="../book/<%=b2.getPhotoName()%>" alt="">
             </div>
             
             <div class="content">
@@ -741,6 +742,6 @@ function showToast(content) {
  
  
  <!-- end footer -->
-    <script src="fontend/js/jq.js"></script>
+    <script src="../fontend/js/jq.js"></script>
 </body>
 </html>

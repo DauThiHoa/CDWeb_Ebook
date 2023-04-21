@@ -19,7 +19,7 @@
 <meta charset="UTF-8">
 
 <!-- BIEU TUONG TRANG WEB -->
- <link rel="icon" href="img/icon2.png" type="image/png" class="icon">
+ <link rel="icon" href="../img/icon2.png" type="image/png" class="icon">
  
 <title>Ebook: Search</title>
 <%@include file="all_component/allCss.jsp"%>
@@ -60,7 +60,7 @@
 			<div class="col-md-3">
 				<div class="card crd-ho mt-2">
 					<div class="card-body text-center">
-						<img alt="" src="book/<%=b2.getPhotoName()%>"
+						<img alt="" src="../book/<%=b2.getPhotoName()%>"
 							style="width: 100%; height: 170px" class="img-thumblin">
 						<p><%=b2.getBookName()%></p>
 						<p><%=b2.getAuthor()%></p>

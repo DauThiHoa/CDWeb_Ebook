@@ -20,12 +20,12 @@
 <meta charset="UTF-8">
 <title>FOOD WEBSITE</title>
 <!-- BIEU TUONG TRANG WEB -->
-<link rel="icon" href="img/icon2.png" type="image/png" class="icon"> 
+<link rel="icon" href="../img/icon2.png" type="image/png" class="icon"> 
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 
-<script type="text/javascript" src="scripts/jquery-3.6.3.min.js"></script>
-<script type="text/javascript" src="scripts/jquery-ajax.js"></script>
+<script type="text/javascript" src="../scripts/jquery-3.6.3.min.js"></script>
+<script type="text/javascript" src="../scripts/jquery-ajax.js"></script>
 
 
 <!-- font awesome cdn link  -->
@@ -33,8 +33,8 @@
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 <!-- custom css file link  -->
-<link rel="stylesheet" href="css/style1.css">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="../css/style1.css">
+<link rel="stylesheet" href="../css/style.css">
 
 
 </head>
@@ -56,13 +56,13 @@
 
 		<!--  logo -->
 		<a href="/Ebook/" class="logo"> <span><img alt=""
-				style="width: 15%; height: 15%" src="img/icon1.png"></span>
+				style="width: 15%; height: 15%" src="../img/icon1.png"></span>
 			 
-				 <span><img alt="" style="width: 22%; height: 22%" src="img/ebook1.png"></span>
+				 <span><img alt="" style="width: 22%; height: 22%" src="../img/ebook1.png"></span>
 		</a>
 
 		<!--  THANH menu  -->
-		<nav style="margin-left: -31%" class="navbar">
+		<nav style="margin-left: -23%" class="navbar">
 			<a href="/Ebook/">home</a> 
 			<a href="/Ebook/shop">shop</a> 
  
@@ -78,7 +78,7 @@
 		<c:if test="${not empty userobj }">
  
 			<!-- CAC ICON SEARCH - LOGIN  -->
-			<div class="icons">
+			<div class="icons" style="margin-right: -6%;">
 				<div id="menu-btn" class="fas fa-bars"></div>
 				<div id="search-btn" class="fas fa-search"></div>
 
@@ -110,7 +110,7 @@
 		<c:if test="${empty userobj }">
 
 			<!-- CAC ICON SEARCH - LOGIN  -->
-			<div class="icons">
+			<div class="icons" style="margin-right: -6%;">
 				<div id="menu-btn" class="fas fa-bars"></div>
 				<div id="search-btn" class="fas fa-search"></div>
 
@@ -173,7 +173,7 @@
 								%>
  
 								<tr  >
-									<th><img alt="" src="book/<%=c.getPhotoName()%>" style="width: 100%; height: 100%" ></th>
+									<th><img alt="" src="../book/<%=c.getPhotoName()%>" style="width: 100%; height: 100%" ></th>
 									<th><p style=""><%=c.getBookName()%></p></th>
 									<td><p style=""><%=c.getAuthor()%></p></td> 
 									<td><p style="">$<%=c.getPrice()%></p></td>
@@ -239,8 +239,8 @@
 	<!-- header section ends -->
 
 	<!-- custom css file link  -->
-	<script src="js/script.js"></script>
-	<script src="js/script1.js"></script>
+	<script src="../js/script.js"></script>
+	<script src="../js/script1.js"></script>
 
 	<script type="text/javascript">
 	

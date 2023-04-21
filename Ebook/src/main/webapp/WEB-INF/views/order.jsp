@@ -20,8 +20,11 @@
 <meta charset="UTF-8">
 
 <!-- BIEU TUONG TRANG WEB -->
- <link rel="icon" href="img/icon2.png" type="image/png" class="icon">
+ <link rel="icon" href="../img/icon2.png" type="image/png" class="icon">
  
+ <link rel="stylesheet" href="../css/style1.css">
+<link rel="stylesheet" href="../css/style.css"> 
+
 <title>Ebook: Setting - OrderBook</title>
 <%@include file="all_component/allCss.jsp"%>
 
@@ -114,7 +117,7 @@ a:hover {
 							%>
 
 							<tr  >
-									<%-- <th  scope="row"><img alt="" src="book/<%=b.getPhotoName()%>"
+									<%-- <th  scope="row"><img alt="" src="../book/<%=b.getPhotoName()%>"
 										style="width: 100px; height: 120px"></th> --%>
 									<th scope="row"><h3 style=""><%=b.getOrderId()%></h3></th>
 									<td><h3 style=""><%=b.getUserName()%></h3></td> 

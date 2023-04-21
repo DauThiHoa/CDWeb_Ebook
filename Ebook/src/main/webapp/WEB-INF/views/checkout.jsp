@@ -18,7 +18,7 @@
 <meta charset="UTF-8">
 
 <!-- BIEU TUONG TRANG WEB -->
-<link rel="icon" href="img/icon2.png" type="image/png" class="icon">
+<link rel="icon" href="../img/icon2.png" type="image/png" class="icon">
 
 <title>EBook: Cart Page</title>
  <%@include file="all_component/allCss.jsp"%>
@@ -30,9 +30,13 @@
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-<!-- custom css file link  -->
-<!-- <link rel="stylesheet" href="css/style1.css">
-<link rel="stylesheet" href="css/style.css">  -->
+<!-- custom css file link  --> 
+<link rel="stylesheet" href="../css/style1.css">
+<link rel="stylesheet" href="../css/style.css">
+
+<script type="text/javascript" src="../scripts/jquery-3.6.3.min.js"></script>
+<script type="text/javascript" src="../scripts/jquery-ajax.js"></script>
+
 
 <script>
   
@@ -108,7 +112,7 @@
 								%>
 
 								<tr >
-									<th  scope="row"><img alt="" src="book/<%=c.getImage()%>"
+									<th  scope="row"><img alt="" src="../book/<%=c.getImage()%>"
 										style="width: 100px; height: 120px"></th>
 									<th scope="row">
 									<br> <br><br>
@@ -287,6 +291,12 @@ function edit_Quantity()() {
 
 </script>
 
+  
+<!-- custom css file link  -->
+<script src="../js/script.js"></script>
+
+<!-- custom js file link  -->
+<script src="../js/script1.js"></script>
 
 </body>
 

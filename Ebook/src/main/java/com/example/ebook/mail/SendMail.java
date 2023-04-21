@@ -63,14 +63,14 @@ public class SendMail {
 
     }
 
-    public static void main(String[] args) {
-        // Gui den 19130075
-        System.out.println("kkkkjjkkkkkkkk");
-//        System.out.println(sendMail("19130075@st.hcmuaf.edu.vn","Test Mail",
-//                "Dear mail Crawler\n\n No spam to my emai, please  " ) ? "Send mail success" : "Send mail fail");
-        
-//      System.out.println(sendMail("19130075@st.hcmuaf.edu.vn","Test Mail",
-//    		  "http://localhost:8080/Ebook/index.jsp") ? "Send mail success" : "Send mail fail");
-    }
+//    public static void main(String[] args) {
+//        // Gui den 19130075
+//        System.out.println("kkkkjjkkkkkkkk");
+////        System.out.println(sendMail("19130075@st.hcmuaf.edu.vn","Test Mail",
+////                "Dear mail Crawler\n\n No spam to my emai, please  " ) ? "Send mail success" : "Send mail fail");
+//        
+////      System.out.println(sendMail("19130075@st.hcmuaf.edu.vn","Test Mail",
+////    		  "http://localhost:8080/Ebook/index.jsp") ? "Send mail success" : "Send mail fail");
+//    }
 
 }

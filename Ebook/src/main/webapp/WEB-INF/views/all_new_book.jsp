@@ -19,7 +19,7 @@
 <meta charset="UTF-8">
 
 <!-- BIEU TUONG TRANG WEB -->
- <link rel="icon" href="img/icon2.png" type="image/png" class="icon">
+ <link rel="icon" href="../img/icon2.png" type="image/png" class="icon">
  
 <title>Ebook: All New Book</title>
 <%@include file="all_component/allCss.jsp"%>
@@ -128,7 +128,7 @@ for (BookDtls b : list) {%>
 			<div class="col-md-3">
 				<div class="card crd-ho">
 					<div class="card-body text-center">
-						<img alt="" src="book/<%=b.getPhotoName()%>"
+						<img alt="" src="../book/<%=b.getPhotoName()%>"
 							style="width: 100%; height: 170px" class="img-thumblin">
 						<p><%=b.getBookName()%></p>
 						<p><%=b.getAuthor()%></p>

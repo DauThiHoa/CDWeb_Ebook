@@ -19,7 +19,7 @@
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-<link href="loginRegister/styleLoginRegister.css" rel="stylesheet">
+<link href="../loginRegister/styleLoginRegister.css" rel="stylesheet">
  
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> 
@@ -41,12 +41,12 @@
 				class="col-lg-10 col-md-10 col-sm-12 col-xs-12 text-center infinity-form">
 				<!-- Company Logo -->
 				<div class="text-center mb-3 mt-5">
-					<!-- <img src="img/ebook2.png"  width="150px"> -->
+					<!-- <img src="../img/ebook2.png"  width="150px"> -->
 					
 					<span><img alt=""
-				style="width: 20%; height: 20%" src="img/icon1.png"></span>
+				style="width: 20%; height: 20%" src="../img/icon1.png"></span>
 			 
-				 <span><img alt="" style="width: 40%; height: 40%" src="img/ebook1.png"></span>
+				 <span><img alt="" style="width: 40%; height: 40%" src="../img/ebook1.png"></span>
 				 
 				</div>
 				<div class="text-center mb-4">

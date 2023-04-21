@@ -26,7 +26,7 @@
 <%@include file="all_component/allCss.jsp"%>
 
 <!-- BIEU TUONG TRANG WEB -->
- <link rel="icon" href="img/icon2.png" type="image/png" class="icon">
+ <link rel="icon" href="../img/icon2.png" type="image/png" class="icon">
  
 <title>EBook: Order Success</title>
 

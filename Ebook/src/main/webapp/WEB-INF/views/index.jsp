@@ -19,7 +19,7 @@
 <meta >
 
 <!-- BIEU TUONG TRANG WEB -->
-<link rel="icon" href="img/icon2.png" type="image/png" class="icon">
+<link rel="icon" href="../img/icon2.png" type="image/png" class="icon">
 <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
@@ -29,11 +29,11 @@
 <title>Ebook: Index</title>
 
 <!-- custom css file link  -->
-<link rel="stylesheet" href="css/style1.css">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="../css/style1.css">
+<link rel="stylesheet" href="../css/style.css">
 
-<script type="text/javascript" src="scripts/jquery-3.6.3.min.js"></script>
-<script type="text/javascript" src="scripts/jquery-ajax.js"></script>
+<script type="text/javascript" src="../scripts/jquery-3.6.3.min.js"></script>
+<script type="text/javascript" src="../scripts/jquery-ajax.js"></script>
 
 <%@include file="all_component/allCss.jsp"%>
 
@@ -85,7 +85,7 @@
 					<a href="#" class="btn">Shop now</a>
 				</div>
 				<div class="image">
-					<img src="image/home-img-1.jpg" alt="">
+					<img src="../image/home-img-1.jpg" alt="">
 				</div>
 			</div>
 
@@ -96,7 +96,7 @@
 					<a href="#" class="btn">shop now</a>
 				</div>
 				<div class="image">
-					<img src="image/home-img-2.jpg" alt="">
+					<img src="../image/home-img-2.jpg" alt="">
 				</div>
 			</div>
 
@@ -107,7 +107,7 @@
 					<a href="#" class="btn">shop now</a>
 				</div>
 				<div class="image">
-					<img src="image/home-img-3.jpg" alt="">
+					<img src="../image/home-img-3.jpg" alt="">
 				</div>
 			</div>
 
@@ -130,7 +130,7 @@
 <section class="banner-container">
 
     <div class="banner">
-        <img src="image/banner-1.png" alt="">
+        <img src="../image/banner-1.png" alt="">
         <div class="content">
             <span>Top of the book  <br> series</span>
             <h3>Revise</h3>
@@ -139,7 +139,7 @@
     </div>
 
     <div class="banner">
-        <img src="image/banner-2.png" alt="">
+        <img src="../image/banner-2.png" alt="">
         <div class="content">
             <span>Health care</span>
             <h3>Scientific <br> standards</h3>
@@ -148,7 +148,7 @@
     </div>
 
     <div class="banner">
-        <img src="image/banner-3.png" alt="">
+        <img src="../image/banner-3.png" alt="">
         <div class="content">
             <span>Review</span>
             <h3>Exam <br>preparation</h3>
@@ -202,7 +202,7 @@
 							%>
 							
             <div class="image">
-                <img src="book/<%=b2.getPhotoName()%>" alt="">
+                <img src="../book/<%=b2.getPhotoName()%>" alt="">
             </div>
             
             <div class="content">
@@ -291,7 +291,7 @@
 <section class="about" id="about">
 
     <div class="image">
-        <img src="image1/about-img.jpg" alt="">
+        <img src="../image1/about-img.jpg" alt="">
     </div>
 
     <div class="content">
@@ -301,19 +301,19 @@
         <a href="#" class="btn">read more</a>
         <div class="icons-container">
             <div class="icons">
-                <img src="image1/serv-1.png" alt="">
+                <img src="../image1/serv-1.png" alt="">
                 <h3>Fast delivery</h3>
             </div>  
             <div class="icons">
-                <img style="width: 20%; height: 65%" src="image1/serv-2.jpg" alt="">
+                <img style="width: 20%; height: 65%" src="../image1/serv-2.jpg" alt="">
                 <h3>Good book</h3>
             </div>   
             <div class="icons">
-                <img src="image1/serv-3.png" alt="">
+                <img src="../image1/serv-3.png" alt="">
                 <h3>Best quality</h3>
             </div>  
             <div class="icons">
-                <img src="image1/serv-4.png" alt="">
+                <img src="../image1/serv-4.png" alt="">
                 <h3>24/7 support</h3>
             </div>           
         </div>
@@ -381,7 +381,7 @@
 				
 				
 				<div class="image">
-					<img src="book/<%=b.getPhotoName()%>" alt="">
+					<img src="../book/<%=b.getPhotoName()%>" alt="">
 				</div>
 				<div class="content">
 					<h3><%=b.getBookName()%></h3>
@@ -429,7 +429,7 @@
 			%>
 			
         <a href="/Ebook/view_books?id=<%=b2.getBookId()%>" class="box">
-            <img src="book/<%=b2.getPhotoName()%>" alt="">
+            <img src="../book/<%=b2.getPhotoName()%>" alt="">
             <div class="content">
                 <h3><%=b2.getBookName()%></h3>
                 <div class="price">$<%=b2.getPrice()%></div>
@@ -467,7 +467,7 @@
         <div class="box">
             <div class="image">
                 <h3> <i class="fas fa-calendar"></i>06/05/2020</h3>
-                <img src="image1/blog-1.png" alt="">
+                <img src="../image1/blog-1.png" alt="">
             </div>
             <div class="content">
                 <div class="tags">
@@ -485,7 +485,7 @@
         <div class="box">
             <div class="image">
                 <h3> <i class="fas fa-calendar"></i> 26/05/2020 </h3>
-                <img src="image1/blog-2.png" alt="">
+                <img src="../image1/blog-2.png" alt="">
             </div>
             <div class="content">
                 <div class="tags">
@@ -502,7 +502,7 @@
         <div class="box">
             <div class="image">
                 <h3> <i class="fas fa-calendar"></i> 22/05/2020 </h3>
-                <img src="image1/blog-3.png" alt="">
+                <img src="../image1/blog-3.png" alt="">
             </div>
             <div class="content">
                 <div class="tags">
@@ -567,10 +567,10 @@
   
   
 <!-- custom css file link  -->
-<script src="js/script.js"></script>
+<script src="../js/script.js"></script>
 
 <!-- custom js file link  -->
-<script src="js/script1.js"></script>
+<script src="../js/script1.js"></script>
 
 </body>
 </html>

@@ -24,7 +24,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- BIEU TUONG TRANG WEB -->
-<link rel="icon" href="img/icon2.png" type="image/png" class="icon">
+<link rel="icon" href="../img/icon2.png" type="image/png" class="icon">
 <!-- font awesome cdn link  -->
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -35,13 +35,13 @@
  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   -->
 
-<script type="text/javascript" src="scripts/jquery-3.6.3.min.js"></script>
-<script type="text/javascript" src="scripts/jquery-ajax.js"></script>
+<script type="text/javascript" src="../scripts/jquery-3.6.3.min.js"></script>
+<script type="text/javascript" src="../scripts/jquery-ajax.js"></script>
 
 
 <!-- custom css file link  -->
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/style1.css">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/style1.css">
 
 <style type="text/css">
 .pagination {
@@ -192,7 +192,7 @@ function showToast(content) {
 		<form action="/Ebook/arrangeServlet"  method="post" class="category">
  
 			<button type="submit" id="categoryLanguage" class="box"> 
-				<img src="image/cat-1.png" alt="">
+				<img src="../image/cat-1.png" alt="">
 				<input  style="display: none" value="categoryLanguage" name="categoryLanguage"> 
 				<h3 >Foreign language books</h3>  
 			</button> 
@@ -201,7 +201,7 @@ function showToast(content) {
 		
 		<form action="/Ebook/arrangeServlet"  method="post" class="category">
 			<button type="submit" id="categoryLiterature" class="box"> 
-				<img src="image/cat-2.png" alt="">
+				<img src="../image/cat-2.png" alt="">
 				<input  style="display: none" value="categoryLiterature" name="categoryLiterature"> 
 				<h3>Literature</h3> 
 			</button> 
@@ -209,7 +209,7 @@ function showToast(content) {
 		
 		<form action="/Ebook/arrangeServlet"  method="post" class="category">	
 			<button type="submit" id="categorySkills" class="box"> 
-				<img src="image/cat-3.png" alt="">
+				<img src="../image/cat-3.png" alt="">
 				<input  style="display: none" value="categorySkills" name="categorySkills"> 
 				<h3>Life skills book</h3> 
 			</button> 
@@ -217,7 +217,7 @@ function showToast(content) {
 		
 		<form action="/Ebook/arrangeServlet"  method="post" class="category">	
 			<button type="submit" id="categoryArt" class="box"> 
-				<img src="image/cat-4.png" alt="">
+				<img src="../image/cat-4.png" alt="">
 				<input  style="display: none" value="categoryArt" name="categoryArt"> 
 				<h3>Book of art - architecture</h3>
 			</button> 
@@ -225,7 +225,7 @@ function showToast(content) {
 		
 		<form action="/Ebook/arrangeServlet"  method="post" class="category">		
 			<button type="submit" id="categorySport" class="box"> 
-				<img src="image/cat-5.png" alt="">
+				<img src="../image/cat-5.png" alt="">
 				<input  style="display: none" value="categorySport" name="categorySport"> 
 				<h3>Medicine & sport books</h3>
 			</button>  
@@ -259,7 +259,7 @@ function showToast(content) {
 			</form>
 
 			<!-- <a href="#" class="box">
-        <img src="image/cat-6.png" alt="">
+        <img src="../image/cat-6.png" alt="">
         <h3>coffee</h3>
     </a> -->
 
@@ -336,7 +336,7 @@ function showToast(content) {
 							%>
 							
             <div class="image">
-                <img src="book/<%=b2.getPhotoName()%>" alt="">
+                <img src="../book/<%=b2.getPhotoName()%>" alt="">
             </div>
             
             <div class="content">
@@ -548,7 +548,7 @@ function showToast(content) {
 							}
 							%>
             <div class="image">
-                <img src="book/<%=b2.getPhotoName()%>" alt="">
+                <img src="../book/<%=b2.getPhotoName()%>" alt="">
             </div>
             
             <div class="content">
@@ -761,7 +761,7 @@ function showToast(content) {
 							}
 							%>
             <div class="image">
-                <img src="book/<%=b2.getPhotoName()%>" alt="">
+                <img src="../book/<%=b2.getPhotoName()%>" alt="">
             </div>
             
             <div class="content">
@@ -979,7 +979,7 @@ function showToast(content) {
 							}
 							%>
             <div class="image">
-                <img src="book/<%=b2.getPhotoName()%>" alt="">
+                <img src="../book/<%=b2.getPhotoName()%>" alt="">
             </div>
             
             <div class="content">
@@ -1203,7 +1203,7 @@ function showToast(content) {
 							}
 							%>
             <div class="image">
-                <img src="book/<%=b2.getPhotoName()%>" alt="">
+                <img src="../book/<%=b2.getPhotoName()%>" alt="">
             </div>
             
             <div class="content">
@@ -1416,7 +1416,7 @@ function showToast(content) {
 							}
 							%>
             <div class="image">
-                <img src="book/<%=b2.getPhotoName()%>" alt="">
+                <img src="../book/<%=b2.getPhotoName()%>" alt="">
             </div>
             
             <div class="content">
@@ -1628,7 +1628,7 @@ function showToast(content) {
 							}
 							%>
             <div class="image">
-                <img src="book/<%=b2.getPhotoName()%>" alt="">
+                <img src="../book/<%=b2.getPhotoName()%>" alt="">
             </div>
             
             <div class="content">
@@ -1842,7 +1842,7 @@ function showToast(content) {
 							}
 							%>
             <div class="image">
-                <img src="book/<%=b2.getPhotoName()%>" alt="">
+                <img src="../book/<%=b2.getPhotoName()%>" alt="">
             </div>
             
             <div class="content">
@@ -2053,7 +2053,7 @@ function showToast(content) {
 							}
 							%>
             <div class="image">
-                <img src="book/<%=b2.getPhotoName()%>" alt="">
+                <img src="../book/<%=b2.getPhotoName()%>" alt="">
             </div>
             
             <div class="content">
@@ -2220,7 +2220,7 @@ function showToast(content) {
 
 
 	<!-- custom css file link  -->
-	<script src="js/script.js"></script>
+	<script src="../js/script.js"></script>
 
 
 <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

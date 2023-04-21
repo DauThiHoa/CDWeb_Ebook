@@ -14,13 +14,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-<link rel="icon" href="img/icon2.png" type="image/png" class="icon">
+<link rel="icon" href="../img/icon2.png" type="image/png" class="icon">
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
     
     <!-- custom css file link  --> 
-    <link rel="stylesheet" href="css/style1.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style1.css">
+    <link rel="stylesheet" href="../css/style.css">
 <%@include file="all_component/allCss.jsp"%>
 
 </head>
@@ -86,17 +86,17 @@ function showToast(content) {
     <div class="icons-container">
 
         <div class="icons">
-            <img src="image1/icon-1.png" alt="">
+            <img src="../image1/icon-1.png" alt="">
             <h3>7:00am to 10:30pm</h3>
         </div>
 
         <div class="icons">
-            <img src="image1/icon-2.png" alt="">
+            <img src="../image1/icon-2.png" alt="">
             <h3>+123-456-7890</h3>
         </div>
 
         <div class="icons">
-            <img src="image1/icon-3.png" alt="">
+            <img src="../image1/icon-3.png" alt="">
             <h3>Ho Chi Minh City</h3>
         </div>
 
@@ -161,7 +161,7 @@ function showToast(content) {
 
 
 <!-- custom css file link  -->
-<script src="js/script.js"></script>
+<script src="../js/script.js"></script>
 
 </body>
 </html>

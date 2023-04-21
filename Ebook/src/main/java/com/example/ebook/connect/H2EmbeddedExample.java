@@ -368,35 +368,35 @@ public class H2EmbeddedExample {
 	  
 	  
 	
-	public static void main(String[] args) {
-//		UserDAOImpl u = new UserDAOImpl(conn);
-//		u.display();
-		
-		H2EmbeddedExample example = new H2EmbeddedExample();   
-		
-		try {
-			Connection connection = example.getConn();
-		  
-			Statement statement = connection.createStatement(); 
-			
-			String sql = "SELECT * FROM USER1"; 
-			
-			ResultSet resultSet = statement.executeQuery(sql);  
-			
-			while (resultSet.next()) { 
-				 
-				int id = resultSet.getInt("ID");
-				String name = resultSet.getString("name"); 
-				
-				System.out.println(id + " - " + name);
-			}
-			
-			connection.close();
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-	}
+//	public static void main(String[] args) {
+////		UserDAOImpl u = new UserDAOImpl(conn);
+////		u.display();
+//		
+//		H2EmbeddedExample example = new H2EmbeddedExample();   
+//		
+//		try {
+//			Connection connection = example.getConn();
+//		  
+//			Statement statement = connection.createStatement(); 
+//			
+//			String sql = "SELECT * FROM USER1"; 
+//			
+//			ResultSet resultSet = statement.executeQuery(sql);  
+//			
+//			while (resultSet.next()) { 
+//				 
+//				int id = resultSet.getInt("ID");
+//				String name = resultSet.getString("name"); 
+//				
+//				System.out.println(id + " - " + name);
+//			}
+//			
+//			connection.close();
+//		} catch (SQLException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//		
+//	}
 	
 }

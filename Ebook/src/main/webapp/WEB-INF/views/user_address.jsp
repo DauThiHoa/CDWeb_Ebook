@@ -19,7 +19,7 @@
 <meta charset="UTF-8">
 
 <!-- BIEU TUONG TRANG WEB -->
- <link rel="icon" href="img/icon2.png" type="image/png" class="icon">
+ <link rel="icon" href="../img/icon2.png" type="image/png" class="icon">
  
 <title>Ebook: Setting - UserAddress</title>
 

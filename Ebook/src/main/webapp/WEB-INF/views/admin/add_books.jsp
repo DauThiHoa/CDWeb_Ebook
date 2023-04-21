@@ -14,7 +14,7 @@
 
 
 <!-- BIEU TUONG TRANG WEB -->
- <link rel="icon" href="img/favicon.png" type="image/png" class="icon">
+ <link rel="icon" href="../admin/img/favicon.png" type="image/png" class="icon">
  
  <style type="text/css">
   
@@ -50,12 +50,12 @@
             <h3  class="text-center text-success" style="font-weight: bold;">ADD BOOKS</h3>
             
                         <c:if test="${not empty failedMsg }">
-							<h4 class="text-center text-danger">${failedMsg }</h4>
+							<h3 class="text-center text-danger">${failedMsg }</h3>
 							<c:remove var="failedMsg" scope="session" />
 						</c:if>
 						 
 						<c:if test="${not empty succMsg }">
-							<h4 class="text-center text-success">${succMsg }</h4>
+							<h3 class="text-center text-success">${succMsg }</h3>
 							<c:remove var="succMsg" scope="session" />
 						</c:if>
 						 

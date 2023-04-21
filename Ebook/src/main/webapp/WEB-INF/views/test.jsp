@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>Password Strength Checker JavaScript</title>
-<link href="loginRegister/styleLoginRegister.css" rel="stylesheet">
+<link href="../loginRegister/styleLoginRegister.css" rel="stylesheet">
 
 </head>
 <body>

@@ -15,14 +15,14 @@
 <link rel="icon" href="img/icon1.png" type="image/png" class="icon">
 
 <%@include file="all_component/allCss.jsp"%>
-<script type="text/javascript" src="scripts/jquery-3.6.3.min.js"></script>
-<script type="text/javascript" src="scripts/jquery-ajax.js"></script>
+<script type="text/javascript" src="../scripts/jquery-3.6.3.min.js"></script>
+<script type="text/javascript" src="../scripts/jquery-ajax.js"></script>
 
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-<link href="loginRegister/styleLoginRegister.css" rel="stylesheet">
+<link href="../loginRegister/styleLoginRegister.css" rel="stylesheet">
 <link
 	href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
 	rel="stylesheet">
@@ -62,9 +62,9 @@
 				class="col-lg-10 col-md-10 col-sm-12 col-xs-12 text-center infinity-form">
 				<div class="text-center mb-3 mt-5">
 					<span><img alt=""
-				style="width: 20%; height: 20%" src="img/icon1.png"></span>
+				style="width: 20%; height: 20%" src="../img/icon1.png"></span>
 			 
-				 <span><img alt="" style="width: 40%; height: 40%" src="img/ebook1.png"></span>
+				 <span><img alt="" style="width: 40%; height: 40%" src="../img/ebook1.png"></span>
 				</div>
 				<div class="reset-form d-block">
 

@@ -5,14 +5,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>shop</title>
-<link rel="icon" href="img/icon2.png" type="image/png" class="icon">
+<link rel="icon" href="../img/icon2.png" type="image/png" class="icon">
 <!-- font awesome cdn link  -->
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 <!-- custom css file link  -->
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/style1.css">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/style1.css">
 
 </head>
 <body>
@@ -45,7 +45,7 @@
 
 		<div class="shopping-cart">
 			<div class="box">
-				<i class="fas fa-times"></i> <img src="image/cart-1.jpg" alt="">
+				<i class="fas fa-times"></i> <img src="../image/cart-1.jpg" alt="">
 				<div class="content">
 					<h3>organic food</h3>
 					<span class="quantity">1</span> <span class="multiply">x</span> <span
@@ -53,7 +53,7 @@
 				</div>
 			</div>
 			<div class="box">
-				<i class="fas fa-times"></i> <img src="image/cart-2.jpg" alt="">
+				<i class="fas fa-times"></i> <img src="../image/cart-2.jpg" alt="">
 				<div class="content">
 					<h3>organic food</h3>
 					<span class="quantity">1</span> <span class="multiply">x</span> <span
@@ -61,7 +61,7 @@
 				</div>
 			</div>
 			<div class="box">
-				<i class="fas fa-times"></i> <img src="image/cart-3.jpg" alt="">
+				<i class="fas fa-times"></i> <img src="../image/cart-3.jpg" alt="">
 				<div class="content">
 					<h3>organic food</h3>
 					<span class="quantity">1</span> <span class="multiply">x</span> <span
@@ -110,15 +110,15 @@
 
 		<!-- <div class="box-container">
 
-			<a href="#" class="box"> <img src="image/cat-1.png" alt="">
+			<a href="#" class="box"> <img src="../image/cat-1.png" alt="">
 				<h3>fresh fruits</h3>
-			</a> <a href="#" class="box"> <img src="image/cat-2.png" alt="">
+			</a> <a href="#" class="box"> <img src="../image/cat-2.png" alt="">
 				<h3>vegetables</h3>
-			</a> <a href="#" class="box"> <img src="image/cat-3.png" alt="">
+			</a> <a href="#" class="box"> <img src="../image/cat-3.png" alt="">
 				<h3>organic spices</h3>
-			</a> <a href="#" class="box"> <img src="image/cat-4.png" alt="">
+			</a> <a href="#" class="box"> <img src="../image/cat-4.png" alt="">
 				<h3>fresh meat</h3>
-			</a> <a href="#" class="box"> <img src="image/cat-5.png" alt="">
+			</a> <a href="#" class="box"> <img src="../image/cat-5.png" alt="">
 				<h3>organic wheat</h3>
 			</a>
 
@@ -129,20 +129,20 @@
 
 		<section class="category">
 
-			<a href="#" class="box"> <img src="image/cat-1.png" alt="">
+			<a href="#" class="box"> <img src="../image/cat-1.png" alt="">
 				<h3>fresh fruits</h3>
-			</a> <a href="#" class="box"> <img src="image/cat-2.png" alt="">
+			</a> <a href="#" class="box"> <img src="../image/cat-2.png" alt="">
 				<h3>vegetables</h3>
-			</a> <a href="#" class="box"> <img src="image/cat-3.png" alt="">
+			</a> <a href="#" class="box"> <img src="../image/cat-3.png" alt="">
 				<h3>organic spices</h3>
-			</a> <a href="#" class="box"> <img src="image/cat-4.png" alt="">
+			</a> <a href="#" class="box"> <img src="../image/cat-4.png" alt="">
 				<h3>fresh meat</h3>
-			</a> <a href="#" class="box"> <img src="image/cat-5.png" alt="">
+			</a> <a href="#" class="box"> <img src="../image/cat-5.png" alt="">
 				<h3>organic wheat</h3>
 			</a>
 
 			<!-- <a href="#" class="box">
-        <img src="image/cat-6.png" alt="">
+        <img src="../image/cat-6.png" alt="">
         <h3>coffee</h3>
     </a> -->
 
@@ -198,7 +198,7 @@
 						class="fas fa-heart"></a> <a href="#" class="fas fa-eye"></a>
 				</div>
 				<div class="image">
-					<img src="image/product-1.jpg" alt="">
+					<img src="../image/product-1.jpg" alt="">
 				</div>
 				<div class="content">
 					<h3>organic food</h3>
@@ -217,7 +217,7 @@
 						class="fas fa-heart"></a> <a href="#" class="fas fa-eye"></a>
 				</div>
 				<div class="image">
-					<img src="image/product-2.jpg" alt="">
+					<img src="../image/product-2.jpg" alt="">
 				</div>
 				<div class="content">
 					<h3>organic food</h3>
@@ -236,7 +236,7 @@
 						class="fas fa-heart"></a> <a href="#" class="fas fa-eye"></a>
 				</div>
 				<div class="image">
-					<img src="image/product-3.jpg" alt="">
+					<img src="../image/product-3.jpg" alt="">
 				</div>
 				<div class="content">
 					<h3>organic food</h3>
@@ -255,7 +255,7 @@
 						class="fas fa-heart"></a> <a href="#" class="fas fa-eye"></a>
 				</div>
 				<div class="image">
-					<img src="image/product-4.jpg" alt="">
+					<img src="../image/product-4.jpg" alt="">
 				</div>
 				<div class="content">
 					<h3>organic food</h3>
@@ -274,7 +274,7 @@
 						class="fas fa-heart"></a> <a href="#" class="fas fa-eye"></a>
 				</div>
 				<div class="image">
-					<img src="image/product-5.jpg" alt="">
+					<img src="../image/product-5.jpg" alt="">
 				</div>
 				<div class="content">
 					<h3>organic food</h3>
@@ -293,7 +293,7 @@
 						class="fas fa-heart"></a> <a href="#" class="fas fa-eye"></a>
 				</div>
 				<div class="image">
-					<img src="image/product-6.jpg" alt="">
+					<img src="../image/product-6.jpg" alt="">
 				</div>
 				<div class="content">
 					<h3>organic food</h3>
@@ -312,7 +312,7 @@
 						class="fas fa-heart"></a> <a href="#" class="fas fa-eye"></a>
 				</div>
 				<div class="image">
-					<img src="image/product-7.jpg" alt="">
+					<img src="../image/product-7.jpg" alt="">
 				</div>
 				<div class="content">
 					<h3>organic food</h3>
@@ -331,7 +331,7 @@
 						class="fas fa-heart"></a> <a href="#" class="fas fa-eye"></a>
 				</div>
 				<div class="image">
-					<img src="image/product-8.jpg" alt="">
+					<img src="../image/product-8.jpg" alt="">
 				</div>
 				<div class="content">
 					<h3>organic food</h3>
@@ -367,7 +367,7 @@
 			<div class="box">
 				<a href="#" class="fas fa-heart"></a>
 				<div class="image">
-					<img src="image1/food-1.png" alt="">
+					<img src="../image1/food-1.png" alt="">
 				</div>
 				<div class="content">
 					<h3>delicious food</h3>
@@ -386,7 +386,7 @@
 			<div class="box">
 				<a href="#" class="fas fa-heart"></a>
 				<div class="image">
-					<img src="image1/food-2.png" alt="">
+					<img src="../image1/food-2.png" alt="">
 				</div>
 				<div class="content">
 					<h3>delicious food</h3>
@@ -405,7 +405,7 @@
 			<div class="box">
 				<a href="#" class="fas fa-heart"></a>
 				<div class="image">
-					<img src="image1/food-3.png" alt="">
+					<img src="../image1/food-3.png" alt="">
 				</div>
 				<div class="content">
 					<h3>delicious food</h3>
@@ -424,7 +424,7 @@
 			<div class="box">
 				<a href="#" class="fas fa-heart"></a>
 				<div class="image">
-					<img src="image1/food-4.png" alt="">
+					<img src="../image1/food-4.png" alt="">
 				</div>
 				<div class="content">
 					<h3>delicious food</h3>
@@ -443,7 +443,7 @@
 			<div class="box">
 				<a href="#" class="fas fa-heart"></a>
 				<div class="image">
-					<img src="image1/food-5.png" alt="">
+					<img src="../image1/food-5.png" alt="">
 				</div>
 				<div class="content">
 					<h3>delicious food</h3>
@@ -462,7 +462,7 @@
 			<div class="box">
 				<a href="#" class="fas fa-heart"></a>
 				<div class="image">
-					<img src="image1/food-6.png" alt="">
+					<img src="../image1/food-6.png" alt="">
 				</div>
 				<div class="content">
 					<h3>delicious food</h3>
@@ -481,7 +481,7 @@
 			<div class="box">
 				<a href="#" class="fas fa-heart"></a>
 				<div class="image">
-					<img src="image1/food-7.png" alt="">
+					<img src="../image1/food-7.png" alt="">
 				</div>
 				<div class="content">
 					<h3>delicious food</h3>
@@ -500,7 +500,7 @@
 			<div class="box">
 				<a href="#" class="fas fa-heart"></a>
 				<div class="image">
-					<img src="image1/food-8.png" alt="">
+					<img src="../image1/food-8.png" alt="">
 				</div>
 				<div class="content">
 					<h3>delicious food</h3>
@@ -589,7 +589,7 @@
 					<input type="email" placeholder="enter your email"> <input
 						type="submit" value="subscribe" class="btn">
 				</form>
-				<img src="image/payment.png" class="payment" alt="">
+				<img src="../image/payment.png" class="payment" alt="">
 			</div>
 
 		</div>
@@ -642,7 +642,7 @@
 
 
 	<!-- custom css file link  -->
-	<script src="js/script.js"></script>
+	<script src="../js/script.js"></script>
 
 </body>
 </html>

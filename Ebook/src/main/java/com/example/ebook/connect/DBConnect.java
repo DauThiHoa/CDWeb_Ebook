@@ -349,9 +349,9 @@ public class DBConnect {
 	}  
 	  
 	  
-	public static void main(String[] args) {
-		DBConnect db = new DBConnect();
-		System.out.println(db.getConn());
-		
-	}
+//	public static void main(String[] args) {
+//		DBConnect db = new DBConnect();
+//		System.out.println(db.getConn());
+//		
+//	}
 }

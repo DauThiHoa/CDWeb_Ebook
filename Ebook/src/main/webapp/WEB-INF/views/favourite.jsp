@@ -23,7 +23,7 @@
 <meta charset="UTF-8">
 
 <!-- BIEU TUONG TRANG WEB -->
-<link rel="icon" href="img/icon2.png" type="image/png" class="icon">
+<link rel="icon" href="../img/icon2.png" type="image/png" class="icon">
 
 <title>EBook: Favourite Page</title>
 <%@include file="all_component/allCss.jsp"%>
@@ -36,10 +36,12 @@
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-<!-- custom css file link  -->
-<!-- <link rel="stylesheet" href="css/style1.css">
-<link rel="stylesheet" href="css/style.css">  -->
+<!-- custom css file link  --> 
+<link rel="stylesheet" href="../css/style1.css">
+<link rel="stylesheet" href="../css/style.css">
 
+<script type="text/javascript" src="../scripts/jquery-3.6.3.min.js"></script>
+<script type="text/javascript" src="../scripts/jquery-ajax.js"></script>
 <script>
   
 </script>
@@ -116,7 +118,7 @@
 
 								<tr style="" >
 								<a href="/Ebook/view_books?id=<%=f.getBid()%>"> 
-									<th style="margin: auto;" scope="row"><img alt="" src="book/<%=f.getPhotoName()%>"
+									<th style="margin: auto;" scope="row"><img alt="" src="../book/<%=f.getPhotoName()%>"
 										style="width: 100px; height: 120px"></th>
 								</a>
 									<th scope="row"><br> <br><br><h3 style=""><%=f.getBookName()%></h3></th>
@@ -174,7 +176,12 @@ function edit_Quantity()() {
 
 
 </script>
+  
+<!-- custom css file link  -->
+<script src="../js/script.js"></script>
 
+<!-- custom js file link  -->
+<script src="../js/script1.js"></script>
 
 </body>
 

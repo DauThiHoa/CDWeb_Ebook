@@ -105,17 +105,21 @@ public class MvcController {
 
 		String fileName = bimg.getSubmittedFileName();
 
+		System.out.println(fileName);
 		BookDtls b = new BookDtls(bname, author, priceDouble, categories, status, fileName, "admin");
-
+ 
 		BookDAOImpl dao = new BookDAOImpl(DBConnect.getConn());
 		boolean f = dao.addBooks(b);
 
 		if (f) {
-			String path = request.getServletContext().getRealPath("") + "/WEB-INF/views/book";
-
+//			resources\static\book
+			String pathSource = request.getServletContext().getRealPath("");
+			String pathNew = pathSource.substring(0, pathSource.length() - 7); 
+			String path = pathNew + "resources/static/book";
+			
 			File file = new File(path);
 			bimg.write(path + File.separator + fileName);
-
+			
 			model.put("succMsg", "Book Add Sucessfully");
 			return "admin/add_books";
 		} else {
@@ -259,14 +263,14 @@ public class MvcController {
 	public String edit_profile(ModelMap model, HttpServletRequest request) {
 		return "edit_profile";
 	}
-	
+
 	@GetMapping("/Ebook/cart") // LAY THONG TIN TRANG WEB LOGIN
-	public String CartServlet(ModelMap model, @RequestParam String bid, @RequestParam String uid, HttpServletRequest request)
-			throws IOException {
-		  
+	public String CartServlet(ModelMap model, @RequestParam String bid, @RequestParam String uid,
+			HttpServletRequest request) throws IOException {
+
 //      LAY DU LIEU TU FORM
-		int bidInt = Integer.parseInt( bid );
-		int uidInt = Integer.parseInt( uid );
+		int bidInt = Integer.parseInt(bid);
+		int uidInt = Integer.parseInt(uid);
 
 //		LAY SACH VOI ID NHAN VAO
 		BookDAOImpl dao = new BookDAOImpl(DBConnect.getConn());
@@ -278,42 +282,42 @@ public class MvcController {
 		c.setUserId(uidInt);
 		c.setBookName(b.getBookName());
 		c.setImage(b.getPhotoName());
-		c.setAuthor(b.getAuthor());  
-		c.setQuantity(1);  
-		c.setPrice(b.getPrice()); 
+		c.setAuthor(b.getAuthor());
+		c.setQuantity(1);
+		c.setPrice(b.getPrice());
 		c.setTotalPrice(b.getPrice());
 
 //		THEM 1 SAN PHAM VAO DANH SACH
 		CartDAOImpl dao2 = new CartDAOImpl(DBConnect.getConn());
 //		KIEM TRA XEM SACH DA DUOC THEM VAO CSDL HAY CHUA 
-		boolean checkIdBook = dao2.checkBookCart(bidInt, uidInt); 
-		
-		if (checkIdBook) { // NEU TRUE => CO THEM SO LUONG SAN PHAM TRONG CSDL 
-			 
-			
+		boolean checkIdBook = dao2.checkBookCart(bidInt, uidInt);
+
+		if (checkIdBook) { // NEU TRUE => CO THEM SO LUONG SAN PHAM TRONG CSDL
+
 			boolean success = dao2.updateBookCart(bidInt, uidInt);
 //			KIEM TRA
-				if (success) {
-					model.put("addCart", "Book Update To Cart");
-					return "checkout"; 
-				} else {
-					model.put("failed", "Something Wrong On Server");
-					return "index"; 
-				}
-			 
+			if (success) {
+				model.put("addCart", "Book Update To Cart");
+				return "checkout";
+			} else {
+				model.put("failed", "Something Wrong On Server");
+				return "index";
+			}
+
 		} else {
 			boolean f = dao2.addCart(c);
 
 //		KIEM TRA
 			if (f) {
 				model.put("addCart", "Book Added To Cart");
-				return "checkout"; 
+				return "checkout";
 			} else {
 				model.put("failed", "Something Wrong On Server");
-				return "index"; 
+				return "index";
 			}
 		}
 	}
+ 
 	
 //	@GetMapping("/Ebook/changePassword") // LAY THONG TIN TRANG WEB LOGIN
 //	public String ChangePassword(ModelMap model, @RequestParam String email, @RequestParam String currentPassword
@@ -352,8 +356,7 @@ public class MvcController {
 //		
 //
 //	}
-	
-	
+
 	// ==================== POST MAPPING USER ========================
 
 	@PostMapping("/Ebook/add_old_book") // LAY THONG TIN TRANG WEB LOGIN
@@ -528,15 +531,14 @@ public class MvcController {
 
 	@PostMapping("/Ebook/addProductDetails") // LAY THONG TIN TRANG WEB LOGIN
 	public String CartProductDetailsServlet(ModelMap model, @RequestParam String bid, @RequestParam String uid,
-			@RequestParam String quantity, HttpServletRequest request)
-			throws IOException {
-  
+			@RequestParam String quantity, HttpServletRequest request) throws IOException {
+
 //      LAY DU LIEU TU FORM
 		int bidInt = Integer.parseInt(bid);
 		int uidInt = Integer.parseInt(uid);
 		int quantityInt = Integer.parseInt(quantity);
-		
-		System.out.println(bidInt +" " + uidInt +" " + quantityInt);
+
+		System.out.println(bidInt + " " + uidInt + " " + quantityInt);
 //		LAY SACH VOI ID NHAN VAO
 		BookDAOImpl dao = new BookDAOImpl(DBConnect.getConn());
 		BookDtls b = dao.getBookById(bidInt);
@@ -547,114 +549,116 @@ public class MvcController {
 		c.setUserId(uidInt);
 		c.setBookName(b.getBookName());
 		c.setImage(b.getPhotoName());
-		c.setAuthor(b.getAuthor()); 
-		c.setQuantity(quantityInt); 
-		c.setPrice(b.getPrice()); 
+		c.setAuthor(b.getAuthor());
+		c.setQuantity(quantityInt);
+		c.setPrice(b.getPrice());
 		c.setTotalPrice(b.getPrice() * quantityInt);
 
 //		THEM 1 SAN PHAM VAO DANH SACH
 		CartDAOImpl dao2 = new CartDAOImpl(DBConnect.getConn());
 //		KIEM TRA XEM SACH DA DUOC THEM VAO CSDL HAY CHUA 
-		boolean checkIdBook = dao2.checkBookCart(bidInt, uidInt); 
-		
-		if (checkIdBook) { // NEU TRUE => CO THEM SO LUONG SAN PHAM TRONG CSDL 
-			 
-			boolean success = dao2.updateQuantityProductDetails (quantityInt, bidInt , uidInt );
+		boolean checkIdBook = dao2.checkBookCart(bidInt, uidInt);
+
+		if (checkIdBook) { // NEU TRUE => CO THEM SO LUONG SAN PHAM TRONG CSDL
+
+			boolean success = dao2.updateQuantityProductDetails(quantityInt, bidInt, uidInt);
 //			KIEM TRA
-				if (success) {
-					model.put("addCart", "Book Update To Cart");
-					return "checkout"; 
-				} else {
-					model.put("failed", "Something Wrong On Server");
-					return "view_books"; 
-				}
-			 
+			if (success) {
+				model.put("addCart", "Book Update To Cart");
+				return "checkout";
+			} else {
+				model.put("failed", "Something Wrong On Server");
+				return "view_books";
+			}
+
 		} else {
 			boolean f = dao2.addCart(c);
 
 //		KIEM TRA
 			if (f) {
 				model.put("addCart", "Book Added To Cart");
-				return "checkout"; 
+				return "checkout";
 			} else {
 				model.put("failed", "Something Wrong On Server");
-				return "view_books"; 
+				return "view_books";
 			}
 		}
 	}
-	
+
 	@PostMapping("/Ebook/changePassword") // LAY THONG TIN TRANG WEB LOGIN
 	public String ChangePassword(ModelMap model, @RequestParam String email, @RequestParam String currentPassword,
 			@RequestParam String newPassword, @RequestParam String confirmPassword, HttpServletRequest request)
-			throws IOException { 
-		 
-		
-		System.out.println("POST : " + email +" -- " + currentPassword  +" -- " + newPassword  +" -- " + confirmPassword);
+			throws IOException {
+
+		System.out.println(
+				"POST : " + email + " -- " + currentPassword + " -- " + newPassword + " -- " + confirmPassword);
 
 		String hash = BCrypt.hashpw(newPassword, BCrypt.gensalt(5));
-		UserDAOImpl dao = new UserDAOImpl(DBConnect.getConn()); 
-		
-		boolean us = dao.checkPasswordEmail(email, currentPassword); 
-		
-		if (us == true && !(currentPassword.equals(newPassword)) && (confirmPassword.equals(newPassword)) ) {
-		   boolean checkPassEmail = dao.updateChangePass (email,hash);
-		
-		if ( checkPassEmail ) {
-			model.put("succMsg", "Change Password Successfully ...");
-			return "login"; 
-		}else {
-			model.put("failedMsg", "Change Password Error ...");
-			return "changePassword"; 
-		  }
-		
-		}else {
+		UserDAOImpl dao = new UserDAOImpl(DBConnect.getConn());
+
+		boolean us = dao.checkPasswordEmail(email, currentPassword);
+
+		if (us == true && !(currentPassword.equals(newPassword)) && (confirmPassword.equals(newPassword))) {
+			boolean checkPassEmail = dao.updateChangePass(email, hash);
+
+			if (checkPassEmail) {
+				model.put("succMsg", "Change Password Successfully ...");
+				return "login";
+			} else {
+				model.put("failedMsg", "Change Password Error ...");
+				return "changePassword";
+			}
+
+		} else {
 			model.put("failedMsg", "Please check the information again ...");
-			return "changePassword"; 
+			return "changePassword";
 		}
-		
+
 	}
-	 
+
 	@PostMapping("/Ebook/commentProduct") // LAY THONG TIN TRANG WEB LOGIN
-	public String CommentServlet(ModelMap model, @RequestParam String bid, @RequestParam String uid, @RequestParam String name, @RequestParam String email,
-			@RequestParam String content ,HttpServletRequest request) { 
-		
-		int bidInt = Integer.parseInt(  bid  );
-		int uidInt = Integer.parseInt(  uid ); 
-	
-	System.out.println(name +" - "+ email +" - "+ content); 
-	
-	long millis=System.currentTimeMillis();   
-	java.sql.Date date=new java.sql.Date(millis);   
-	java.sql.Time time=new java.sql.Time(millis);  
-	
-	String dateTime = date + " " + time ;
-	System.out.println(date + " - " + time); 
-	
+	public String CommentServlet(ModelMap model, @RequestParam String bid, @RequestParam String uid,
+			@RequestParam String name, @RequestParam String email, @RequestParam String content,
+			HttpServletRequest request) {
+
+		int bidInt = Integer.parseInt(bid);
+		int uidInt = Integer.parseInt(uid);
+
+		System.out.println(name + " - " + email + " - " + content);
+
+		long millis = System.currentTimeMillis();
+		java.sql.Date date = new java.sql.Date(millis);
+		java.sql.Time time = new java.sql.Time(millis);
+
+		String dateTime = date + " " + time;
+		System.out.println(date + " - " + time);
+
 //	THAY DOI GIA TRI TRONG DOI TUONG COMMENT
-	CommentProduct c = new CommentProduct();
-	c.setBid(bidInt);
-	c.setUid(uidInt);
-	c.setName(name);
-	c.setEmail(email);
-	c.setDate(dateTime);
-	c.setContent(content);
-	
-	CommentDAO dao = new CommentDAOImpl(DBConnect.getConn());
-	boolean check = dao.addCommentProduct(c);   
-	 
-	if (check) {
-		model.put("succComment", "Comment Product Details Successfully ...");
-		return "view_books?id=" + bid; 
+		CommentProduct c = new CommentProduct();
+		c.setBid(bidInt);
+		c.setUid(uidInt);
+		c.setName(name);
+		c.setEmail(email);
+		c.setDate(dateTime);
+		c.setContent(content);
 
-	} else {
-		model.put("failedComment", "Something Wrong On Server");
-		return "view_books?id=" + bid; 
+		CommentDAO dao = new CommentDAOImpl(DBConnect.getConn());
+		boolean check = dao.addCommentProduct(c);
+
+		if (check) {
+			model.put("succComment", "Comment Product Details Successfully ...");
+			System.out.println("view_books?id=" + bidInt);
+			return "view_books?id=" + bidInt;
+
+		} else {
+			model.put("failedComment", "Something Wrong On Server");
+			System.out.println("view_books?id=" + bidInt);
+			return "view_books?id=" + bidInt;
+
+		}
 
 	}
-		
-	}
-	
-	
+
 	@PostMapping("/Ebook/login") // LAY THONG TIN TRANG WEB LOGIN
 	public String LoginServlet(ModelMap model, @RequestParam String email, @RequestParam String password,
 			HttpServletRequest request) {
@@ -663,7 +667,7 @@ public class MvcController {
 		UserDAOImpl dao = new UserDAOImpl(DBConnect.getConn());
 
 		System.out.println("==================================");
-		System.out.println(dao.display());
+//		System.out.println(dao.display());
 		System.out.println("==================================");
 
 		System.out.println(email + " - " + password);
@@ -695,6 +699,53 @@ public class MvcController {
 				model.put("failedMsg", "Email & Password Invalid");
 				return "login";
 			}
+		}
+	}
+
+	@PostMapping("/Ebook/register") // LAY THONG TIN TRANG WEB LOGIN
+	public String RegisterServlet(ModelMap model, @RequestParam String fname, @RequestParam String email,
+			@RequestParam String phno, @RequestParam String password, @RequestParam String check,
+			HttpServletRequest request) {
+
+//		System.out.println("MA HOA MAT KHAU : ");
+		String hash = BCrypt.hashpw(password, BCrypt.gensalt(5));
+//		System.out.println("BCrypt hash: " + hash);
+
+		System.out.println(fname + " - " + email + " - " + phno + " - " + password + " - " + check);
+
+		User us = new User();
+		us.setName(fname);
+		us.setEmail(email);
+		us.setPhno(phno);
+		us.setPassword(hash);
+
+		UserDAOImpl dao = new UserDAOImpl(DBConnect.getConn());
+
+		if (check != null) {
+
+			boolean f2 = dao.checkUser(email);
+			if (f2) {
+				boolean f = dao.userRegister(us);
+
+				if (f) {
+					System.out.println("User Register Success ...");
+					model.put("succMsg", "Registration Successfully ... ");
+					return "login";
+
+				} else {
+					model.put("failedMsg", "Something wrong on server ...");
+					return "register";
+
+				}
+			} else {
+				model.put("failedMsg", "User Already Exist Try Another Email id");
+				return "register";
+			}
+
+		} else {
+			model.put("failedMsg", "Please Check Agree & Terms Condition");
+			return "register";
+
 		}
 	}
 

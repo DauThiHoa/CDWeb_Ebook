@@ -42,7 +42,7 @@
 							      <input type="submit" value="subscribe" class="btn"> 
                  
             </form  >
-            <img src="image/payment.png" class="payment" alt="">
+            <img src="../image/payment.png" class="payment" alt="">
         </div>
 
 

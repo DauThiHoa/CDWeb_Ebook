@@ -16,7 +16,7 @@
 <title>Admin : Home</title> 
 
 <!-- BIEU TUONG TRANG WEB -->
- <link rel="icon" href="img/favicon.png" type="image/png" class="icon">
+ <link rel="icon" href="../admin/img/favicon.png" type="image/png" class="icon">
  
  
  
@@ -24,8 +24,8 @@
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 
-<script type="text/javascript" src="scripts/jquery-3.6.3.min.js"></script>
-<script type="text/javascript" src="scripts/jquery-ajax.js"></script>
+<script type="text/javascript" src="../scripts/jquery-3.6.3.min.js"></script>
+<script type="text/javascript" src="../scripts/jquery-ajax.js"></script>
 
 
 <!-- font awesome cdn link  -->
@@ -33,7 +33,7 @@
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 <!-- custom css file link  --> 
-<link rel="stylesheet" href="cssAdmin/style.css">
+<link rel="stylesheet" href="../cssAdmin/style.css">
  
  <%@include file="allCss.jsp"%>  
 <style type="text/css">
@@ -166,8 +166,8 @@ a:hover {
 
 
 
- 	<script src="js/script.js"></script>
-	<script src="js/script1.js"></script>
+ 	<script src="../js/script.js"></script>
+	<script src="../js/script1.js"></script>
 	
 	
 </body>

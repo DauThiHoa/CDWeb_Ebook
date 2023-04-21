@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>about</title>
-<link rel="icon" href="img/icon2.png" type="image/png" class="icon">
+<link rel="icon" href="../img/icon2.png" type="image/png" class="icon">
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 	
-	<script type="text/javascript" src="scripts/jquery-3.6.3.min.js"></script>
-<script type="text/javascript" src="scripts/jquery-ajax.js"></script>
+	<script type="text/javascript" src="../scripts/jquery-3.6.3.min.js"></script>
+<script type="text/javascript" src="../scripts/jquery-ajax.js"></script>
 	
 	<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page isELIgnored="false"%>
@@ -25,8 +25,8 @@
 <%@include file="all_component/allCss.jsp"%>
 
 <!-- custom css file link  -->
-<link rel="stylesheet" href="css/style1.css">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="../css/style1.css">
+<link rel="stylesheet" href="../css/style.css">
 
 </head>
 <body>
@@ -48,7 +48,7 @@
 <section class="info-container" style="margin-top: -3%; margin-left: 8%">
 
     <div class="info">
-        <img src="image/icon-1.png" alt="">
+        <img src="../image/icon-1.png" alt="">
         <div class="content">
             <h3>fast delivery</h3>
             <span>within 30 minutes</span>
@@ -56,7 +56,7 @@
     </div>
 
     <div class="info">
-        <img src="image/icon-2.png" alt="">
+        <img src="../image/icon-2.png" alt="">
         <div class="content">
             <h3>24 / 7 available</h3>
             <span>call us anytime</span>
@@ -64,7 +64,7 @@
     </div>
 
     <div class="info">
-        <img src="image/icon-3.png" alt="">
+        <img src="../image/icon-3.png" alt="">
         <div class="content">
             <h3>easy payments</h3>
             <span>cash or credits</span>
@@ -76,7 +76,7 @@
 <section class="about">
 
     <div class="image">
-        <img src="image/about-img.jpg" alt="">
+        <img src="../image/about-img.jpg" alt="">
     </div>
 
     <div class="content">
@@ -96,7 +96,7 @@
 
     <div class="box">
         <div class="user">
-            <img src="image/design2.jpg" alt="">
+            <img src="../image/design2.jpg" alt="">
             <div class="info">
                 <h3>Dau Hoa</h3>
                 <span>Design The Theme</span>
@@ -109,7 +109,7 @@
 
     <div class="box">
         <div class="user">
-            <img src="image/pic-2.png" alt="">
+            <img src="../image/pic-2.png" alt="">
             <div class="info">
                 <h3>My Dung</h3>
                 <span>Design The Theme</span>
@@ -131,7 +131,7 @@
     <div class="box-container">
 
         <div class="box">
-            <img src="image/gallery-img-1.jpg" alt="">
+            <img src="../image/gallery-img-1.jpg" alt="">
             <div class="icons">
                 <a href="#" class="fas fa-eye"></a>
                 <a href="#" class="fas fa-heart"></a>
@@ -140,7 +140,7 @@
         </div>
 
         <div class="box">
-            <img src="image/gallery-img-2.jpg" alt="">
+            <img src="../image/gallery-img-2.jpg" alt="">
             <div class="icons">
                 <a href="#" class="fas fa-eye"></a>
                 <a href="#" class="fas fa-heart"></a>
@@ -149,7 +149,7 @@
         </div>
 
         <div class="box">
-            <img src="image/gallery-img-3.jpg" alt="">
+            <img src="../image/gallery-img-3.jpg" alt="">
             <div class="icons">
                 <a href="#" class="fas fa-eye"></a>
                 <a href="#" class="fas fa-heart"></a>
@@ -158,7 +158,7 @@
         </div>
 
         <div class="box">
-            <img src="image/gallery-img-4.jpg" alt="">
+            <img src="../image/gallery-img-4.jpg" alt="">
             <div class="icons">
                 <a href="#" class="fas fa-eye"></a>
                 <a href="#" class="fas fa-heart"></a>
@@ -167,7 +167,7 @@
         </div>
 
        <!--  <div class="box">
-            <img src="image/gallery-img-5.jpg" alt="">
+            <img src="../image/gallery-img-5.jpg" alt="">
             <div class="icons">
                 <a href="#" class="fas fa-eye"></a>
                 <a href="#" class="fas fa-heart"></a>
@@ -176,7 +176,7 @@
         </div>
 
         <div class="box">
-            <img src="image/gallery-img-6.jpg" alt="">
+            <img src="../image/gallery-img-6.jpg" alt="">
             <div class="icons">
                 <a href="#" class="fas fa-eye"></a>
                 <a href="#" class="fas fa-heart"></a>
@@ -204,9 +204,9 @@
 
 
 <!-- custom css file link  -->
-<script src="js/script.js"></script>
+<script src="../js/script.js"></script>
 <!-- custom js file link  -->
-<script src="js/script1.js"></script>
+<script src="../js/script1.js"></script>
 
 </body>
 </html>

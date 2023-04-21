@@ -32,8 +32,8 @@ public class RandomStringExmple {
 	 public static int randomNumber(int min, int max) {
 	        return generator.nextInt((max - min) + 1) + min;
 	    }
-	 public static void main(String[] args) {
-		 
-		System.out.println(new RandomStringExmple().randomAlphaNumeric(8));
-	}
+//	 public static void main(String[] args) {
+//		 
+//		System.out.println(new RandomStringExmple().randomAlphaNumeric(8));
+//	}
 }

@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>blogs</title>
     <!-- BIEU TUONG TRANG WEB -->
-<link rel="icon" href="img/icon2.png" type="image/png" class="icon">
+<link rel="icon" href="../img/icon2.png" type="image/png" class="icon">
  
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 <%@include file="all_component/allCss.jsp"%>
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
 </head>
 <body>
@@ -39,7 +39,7 @@
          <div class="box">
             <div class="image">
                 <h3> <i class="fas fa-calendar"></i>06/05/2020</h3>
-                <img src="image1/blog-1.png" alt="">   
+                <img src="../image1/blog-1.png" alt="">   
                  
             </div>
             <div class="content">
@@ -58,7 +58,7 @@
         <div class="box">
             <div class="image">
                 <h3> <i class="fas fa-calendar"></i> 26/05/2020 </h3>
-                <img src="image1/blog-2.png" alt="">
+                <img src="../image1/blog-2.png" alt="">
             </div>
             <div class="content">
                 <div class="tags">
@@ -75,7 +75,7 @@
         <div class="box">
             <div class="image">
                 <h3> <i class="fas fa-calendar"></i> 22/05/2020 </h3>
-                <img src="image1/blog-3.png" alt="">
+                <img src="../image1/blog-3.png" alt="">
             </div>
             <div class="content">
                 <div class="tags">
@@ -92,7 +92,7 @@
        <div class="box">
             <div class="image">
                 <h3> <i class="fas fa-calendar"></i> 28/05/2020 </h3>
-                <img src="image1/blog-4.png" alt="">
+                <img src="../image1/blog-4.png" alt="">
             </div>
             <div class="content">
                 <div class="tags">
@@ -110,7 +110,7 @@
    <div class="box">
             <div class="image">
                 <h3> <i class="fas fa-calendar"></i> 29/05/2020 </h3>
-                <img src="image1/blog-5.jpg" alt="">
+                <img src="../image1/blog-5.jpg" alt="">
             </div>
             <div class="content">
                 <div class="tags">
@@ -128,7 +128,7 @@
  <div class="box">
             <div class="image">
                 <h3> <i class="fas fa-calendar"></i> 30/05/2020 </h3>
-                <img src="image1/blog-6.jpg" alt="">
+                <img src="../image1/blog-6.jpg" alt="">
             </div>
             <div class="content">
                 <div class="tags">
@@ -161,7 +161,7 @@
 
 
 <!-- custom css file link  -->
-<script src="js/script.js"></script>
+<script src="../js/script.js"></script>
 
 </body>
 </html>

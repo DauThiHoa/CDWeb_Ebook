@@ -11,7 +11,7 @@
 <html>
 <head>
 <!-- BIEU TUONG TRANG WEB -->
-<link rel="icon" href="img/icon2.png" type="image/png" class="icon">
+<link rel="icon" href="../img/icon2.png" type="image/png" class="icon">
 
 <title>EBook: Register</title>
 <%@include file="all_component/allCss.jsp"%>
@@ -21,7 +21,7 @@
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 
-<link href="loginRegister/styleLoginRegister.css" rel="stylesheet">
+<link href="../loginRegister/styleLoginRegister.css" rel="stylesheet">
 <!-- <link
 	href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
 	rel="stylesheet">  -->
@@ -35,8 +35,8 @@
 <%@include file="all_component/allCss.jsp"%>
 
 
-<script type="text/javascript" src="scripts/jquery-3.6.3.min.js"></script>
-<script type="text/javascript" src="scripts/jquery-ajax.js"></script>
+<script type="text/javascript" src="../scripts/jquery-3.6.3.min.js"></script>
+<script type="text/javascript" src="../scripts/jquery-ajax.js"></script>
 
 <script type="text/javascript">
 	function check() {
@@ -89,13 +89,13 @@
 				<!-- Company Logo -->
 				<div class="text-center mb-3 mt-5">
 					<span><img alt=""
-						style="width: 20%; height: 20%" src="img/icon1.png"></span>
-					  <img src="img/ebook1.png" width="150px">   
+						style="width: 20%; height: 20%" src="../img/icon1.png"></span>
+					  <img src="../img/ebook1.png" width="150px">   
 					
 					<!-- <span><img alt=""
-				style="width: 5%; height: 5%" src="img/icon1.png"></span>
+				style="width: 5%; height: 5%" src="../img/icon1.png"></span>
 			 
-				 <span><img alt="" style="width: 10%; height: 10%" src="img/ebook1.png"></span>  -->
+				 <span><img alt="" style="width: 10%; height: 10%" src="../img/ebook1.png"></span>  -->
 				 
 				</div>
 				<div class="text-center mb-4">
@@ -122,7 +122,7 @@
 
 
 				<!-- Form -->
-				<form action="register" method="post" class="px-3">
+				<form action="/Ebook/register" method="post" class="px-3">
 					<!-- Input Box -->
 					<div class="form-input">
 						<span><i class="fa fa-user"></i></span> <input type="text"

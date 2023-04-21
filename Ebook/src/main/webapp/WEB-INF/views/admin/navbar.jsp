@@ -9,8 +9,8 @@
  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 
-<script type="text/javascript" src="scripts/jquery-3.6.3.min.js"></script>
-<script type="text/javascript" src="scripts/jquery-ajax.js"></script>
+<script type="text/javascript" src="../scripts/jquery-3.6.3.min.js"></script>
+<script type="text/javascript" src="../scripts/jquery-ajax.js"></script>
 
 
 <!-- font awesome cdn link  -->
@@ -18,7 +18,7 @@
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 <!-- custom css file link  --> 
-<link rel="stylesheet" href="cssAdmin/style.css">
+<link rel="stylesheet" href="../cssAdmin/style.css">
  
  
  
@@ -38,10 +38,10 @@
 		<!--  logo -->
 		<div class="logo"> 
 		<a href="/Ebook/"  > <span><img alt=""
-				style="width: 10%; height: 10%" src="img/icon1.png"></span> 
+				style="width: 10%; height: 10%" src="../img/icon1.png"></span> 
 				</a>
 				<a  href="/Ebook/home">
-				 	<span><img alt="" style="width: 20%; height: 20%" src="img/ebook2.png"></span> 
+				 	<span><img alt="" style="width: 20%; height: 20%" src="../img/ebook2.png"></span> 
 				</a>
 				 
 		</div>
@@ -91,7 +91,7 @@
 				</a> <a href="/Ebook/login">
 					<div id="login-btn" class="fas fa-user"></div>
 					
-				</a> <a href="../register.jsp">
+				</a> <a href="/Ebook/register">
 					<div id="login-btn" class="fas fa-user-plus"></div>
 					
 				</a> <a href="/Ebook/home">
@@ -140,7 +140,7 @@
 <!-- End Logout Modal -->
 
  
- 	<script src="js/script.js"></script>
-	<script src="js/script1.js"></script>
+ 	<script src="../js/script.js"></script>
+	<script src="../js/script1.js"></script>
 	
 	

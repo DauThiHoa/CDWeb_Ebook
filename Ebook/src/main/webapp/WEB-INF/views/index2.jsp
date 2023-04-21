@@ -18,15 +18,15 @@
 <meta >
 
 <!-- BIEU TUONG TRANG WEB -->
-<link rel="icon" href="img/icon2.png" type="image/png" class="icon">
+<link rel="icon" href="../img/icon2.png" type="image/png" class="icon">
 <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 <title>Ebook: Index</title>
    
   <!-- custom css file link  -->
-    <link rel="stylesheet" href="css/style1.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style1.css">
+    <link rel="stylesheet" href="../css/style.css">
     
 <%@include file="all_component/allCss.jsp"%>
 
@@ -73,7 +73,7 @@
                 <a href="#" class="btn">Shop now</a>
             </div>
             <div class="image">
-                <img src="image/home-img-1.png" alt="">
+                <img src="../image/home-img-1.png" alt="">
             </div>
         </div>
 
@@ -85,7 +85,7 @@
                 <a href="#" class="btn">shop now</a>
             </div>
             <div class="image">
-                <img src="image/home-img-2.png" alt="">
+                <img src="../image/home-img-2.png" alt="">
             </div>
         </div>
 
@@ -97,7 +97,7 @@
                 <a href="#" class="btn">shop now</a>
             </div>
             <div class="image">
-                <img src="image/home-img-3.png" alt="">
+                <img src="../image/home-img-3.png" alt="">
             </div>
         </div>
 
@@ -111,7 +111,7 @@
 <section class="banner-container">
 
     <div class="banner">
-        <img src="image/banner-1.png" alt="">
+        <img src="../image/banner-1.png" alt="">
         <div class="content">
             <span>Top of the book  <br> series</span>
             <h3>Revise</h3>
@@ -120,7 +120,7 @@
     </div>
 
     <div class="banner">
-        <img src="image/banner-2.png" alt="">
+        <img src="../image/banner-2.png" alt="">
         <div class="content">
             <span>Health care</span>
             <h3>Scientific <br> standards</h3>
@@ -129,7 +129,7 @@
     </div>
 
     <div class="banner">
-        <img src="image/banner-3.png" alt="">
+        <img src="../image/banner-3.png" alt="">
         <div class="content">
             <span>Review</span>
             <h3>Exam <br>preparation</h3>
@@ -169,7 +169,7 @@
 				<div class="card crd-ho">
 					<div class="card-body text-center">
 
-						<img alt="" src="book/<%=b2.getPhotoName()%>"
+						<img alt="" src="../book/<%=b2.getPhotoName()%>"
 							style="width: 100%; height: 170px" class="img-thumblin">
 
 
@@ -255,7 +255,7 @@
         <div class="box">
             <a href="#" class="fas fa-heart"></a>
             <div class="image">
-                <img src="image1/food-1.png" alt="">
+                <img src="../image1/food-1.png" alt="">
             </div>
             <div class="content">
                 <h3>delicious food</h3>
@@ -318,7 +318,7 @@
 			<div class="col-md-3">
 				<div class="card crd-ho">
 					<div class="card-body text-center">
-						<img alt="" src="book/<%=b.getPhotoName()%>"
+						<img alt="" src="../book/<%=b.getPhotoName()%>"
 							style="width: 100%; height: 170px" class="img-thumblin">
 						<p><%=b.getBookName()%></p>
 						<p><%=b.getAuthor()%></p>
@@ -387,7 +387,7 @@
 			<div class="col-md-3">
 				<div class="card crd-ho">
 					<div class="card-body text-center">
-						<img alt="" src="book/<%=b2.getPhotoName()%>"
+						<img alt="" src="../book/<%=b2.getPhotoName()%>"
 							style="width: 100%; height: 170px" class="img-thumblin">
 						<p><%=b2.getBookName()%></p>
 						<p><%=b2.getAuthor()%></p>
@@ -463,10 +463,10 @@
   
   
 <!-- custom css file link  -->
-<script src="js/script.js"></script>
+<script src="../js/script.js"></script>
 
 <!-- custom js file link  -->
-<script src="js/script1.js"></script>
+<script src="../js/script1.js"></script>
 
 </body>
 </html>
