@@ -129,7 +129,7 @@ a:hover {
 									<td><br> <br><br><h3 style=" "><%=b.getBookCategory()%></h3></td>
 									<td> <br> <br><br>
 										<a style=" background: red"
-						 				href="delete_old_book?em=<%=email%>&&id=<%=b.getBookId()%>"
+						 				href="/Ebook/delete_old_book?em=<%=email%>&&id=<%=b.getBookId()%>"
 										class="btn btn-sm btn-danger"><i class="fas fa-trash-alt"></i></a>
 										
 										</td>

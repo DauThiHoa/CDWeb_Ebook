@@ -126,7 +126,7 @@ a:hover {
 									<td><h3 style=""><%=b.getPhno()%></h3></td>
 									<td><h3 style=""><%=b.getPrice()%></h3></td>
 									<td><h3 style=""><%=b.getPaymentType()%></h3></td>
-									<%-- href="delete_old_book?em=<%=email%>&&id=<%=b.getBookId()%>"  background: #078660 --%>
+									<%-- href="/Ebook/delete_old_book?em=<%=email%>&&id=<%=b.getBookId()%>"  background: #078660 --%>
 									<td> 
 										<a style=" "
 						 				href="orderDetails.jsp?order_id=<%=b.getOrderId()%>"

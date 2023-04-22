@@ -190,9 +190,20 @@ function showToast(content) {
 
 
 		<form action="/Ebook/arrangeServlet"  method="post" class="category">
- 
+		
+ 		<!-- descPrice ascPrice descName ascName categoryLanguage categoryLiterature  categorySkills categoryArt categorySport -->
 			<button type="submit" id="categoryLanguage" class="box"> 
 				<img src="../image/cat-1.png" alt="">
+				
+				<input  hidden value="" name="descPrice"> 
+				<input  hidden value="" name="ascPrice"> 
+				<input  hidden value="" name="descName"> 
+				<input  hidden value="" name="ascName"> 
+				<input  hidden value="" name="categoryLiterature"> 
+				<input  hidden value="" name="categorySkills"> 
+				<input  hidden value="" name="categoryArt"> 
+				<input  hidden value="" name="categorySport"> 
+				
 				<input  style="display: none" value="categoryLanguage" name="categoryLanguage"> 
 				<h3 >Foreign language books</h3>  
 			</button> 
@@ -202,6 +213,17 @@ function showToast(content) {
 		<form action="/Ebook/arrangeServlet"  method="post" class="category">
 			<button type="submit" id="categoryLiterature" class="box"> 
 				<img src="../image/cat-2.png" alt="">
+				
+				<!-- descPrice ascPrice descName ascName categoryLanguage categoryLiterature  categorySkills categoryArt categorySport -->
+				<input  hidden value="" name="descPrice"> 
+				<input  hidden value="" name="ascPrice"> 
+				<input  hidden value="" name="descName"> 
+				<input  hidden value="" name="ascName"> 
+				<input  hidden value="" name="categoryLanguage"> 
+				<input  hidden value="" name="categorySkills"> 
+				<input  hidden value="" name="categoryArt"> 
+				<input  hidden value="" name="categorySport"> 
+				
 				<input  style="display: none" value="categoryLiterature" name="categoryLiterature"> 
 				<h3>Literature</h3> 
 			</button> 
@@ -210,6 +232,17 @@ function showToast(content) {
 		<form action="/Ebook/arrangeServlet"  method="post" class="category">	
 			<button type="submit" id="categorySkills" class="box"> 
 				<img src="../image/cat-3.png" alt="">
+				
+				<!-- descPrice ascPrice descName ascName categoryLanguage categoryLiterature  categorySkills categoryArt categorySport -->
+				<input  hidden value="" name="descPrice"> 
+				<input  hidden value="" name="ascPrice"> 
+				<input  hidden value="" name="descName"> 
+				<input  hidden value="" name="ascName"> 
+				<input  hidden value="" name="categoryLanguage"> 
+				<input  hidden value="" name="categoryLiterature"> 
+				<input  hidden value="" name="categoryArt"> 
+				<input  hidden value="" name="categorySport"> 
+				
 				<input  style="display: none" value="categorySkills" name="categorySkills"> 
 				<h3>Life skills book</h3> 
 			</button> 
@@ -218,6 +251,17 @@ function showToast(content) {
 		<form action="/Ebook/arrangeServlet"  method="post" class="category">	
 			<button type="submit" id="categoryArt" class="box"> 
 				<img src="../image/cat-4.png" alt="">
+				
+				<!-- descPrice ascPrice descName ascName categoryLanguage categoryLiterature  categorySkills categoryArt categorySport -->
+				<input  hidden value="" name="descPrice"> 
+				<input  hidden value="" name="ascPrice"> 
+				<input  hidden value="" name="descName"> 
+				<input  hidden value="" name="ascName"> 
+				<input  hidden value="" name="categoryLanguage"> 
+				<input  hidden value="" name="categoryLiterature"> 
+				<input  hidden value="" name="categorySkills"> 
+				<input  hidden value="" name="categorySport"> 
+				
 				<input  style="display: none" value="categoryArt" name="categoryArt"> 
 				<h3>Book of art - architecture</h3>
 			</button> 
@@ -226,6 +270,17 @@ function showToast(content) {
 		<form action="/Ebook/arrangeServlet"  method="post" class="category">		
 			<button type="submit" id="categorySport" class="box"> 
 				<img src="../image/cat-5.png" alt="">
+				
+				<!-- descPrice ascPrice descName ascName categoryLanguage categoryLiterature  categorySkills categoryArt categorySport -->
+				<input  hidden value="" name="descPrice"> 
+				<input  hidden value="" name="ascPrice"> 
+				<input  hidden value="" name="descName"> 
+				<input  hidden value="" name="ascName"> 
+				<input  hidden value="" name="categoryLanguage"> 
+				<input  hidden value="" name="categoryLiterature"> 
+				<input  hidden value="" name="categorySkills"> 
+				<input  hidden value="" name="categoryArt"> 
+				
 				<input  style="display: none" value="categorySport" name="categorySport"> 
 				<h3>Medicine & sport books</h3>
 			</button>  
@@ -249,13 +304,69 @@ function showToast(content) {
 
 		<section class="category">
 
-			<form action="/Ebook/arrangeServlet"  method="post"><input  style="display: none" value="ascName" name="ascName"> <button type="submit" onclick="" id="ascName" class="btn btn-outline-primary" style="font-weight: bold;">Ascending by name</button>
+			<form action="/Ebook/arrangeServlet"  method="post">
+			
+			<!-- descPrice ascPrice descName ascName categoryLanguage categoryLiterature  categorySkills categoryArt categorySport -->
+				<input  hidden value="null" name="descPrice"> 
+				<input  hidden value="null" name="ascPrice"> 
+				<input  hidden value="null" name="descName"> 
+				<input  hidden value="null" name="categorySport"> 
+				<input  hidden value="null" name="categoryLanguage"> 
+				<input  hidden value="null" name="categoryLiterature"> 
+				<input  hidden value="null" name="categorySkills"> 
+				<input  hidden value="null" name="categoryArt"> 
+				
+			<input  style="display: none" value="ascName" name="ascName"> 
+			<button type="submit" onclick="" id="ascName" 
+			class="btn btn-outline-primary" style="font-weight: bold;">Ascending by name</button>
 			</form> 
-			<form action="/Ebook/arrangeServlet"  method="post"><input  style="display: none" value="descName" name="descName">  <button type="submit" value="descName" onclick="" id="descName" class="btn btn-outline-warning" style="font-weight: bold;">Descending by name</button>
+			<form action="/Ebook/arrangeServlet"  method="post">
+			
+			<!-- descPrice ascPrice descName ascName categoryLanguage categoryLiterature  categorySkills categoryArt categorySport -->
+				<input  hidden value="" name="descPrice"> 
+				<input  hidden value="" name="ascPrice"> 
+				<input  hidden value="" name="ascName"> 
+				<input  hidden value="" name="categorySport"> 
+				<input  hidden value="" name="categoryLanguage"> 
+				<input  hidden value="" name="categoryLiterature"> 
+				<input  hidden value="" name="categorySkills"> 
+				<input  hidden value="" name="categoryArt"> 
+				
+			<input  style="display: none" value="descName" name="descName"> 
+			 <button type="submit" value="descName" onclick="" id="descName" 
+			 class="btn btn-outline-warning" style="font-weight: bold;">Descending by name</button>
 			</form> 
-			<form action="/Ebook/arrangeServlet"  method="post"><input  style="display: none" value="ascPrice" name="ascPrice">  <button type="submit" value="ascPrice" onclick="" id="ascPrice" class="btn btn-outline-success" style="font-weight: bold;">Ascending by price</button>
+			<form action="/Ebook/arrangeServlet"  method="post">
+			
+			<!-- descPrice ascPrice descName ascName categoryLanguage categoryLiterature  categorySkills categoryArt categorySport -->
+				<input  hidden value="" name="descPrice"> 
+				<input  hidden value="" name="descName"> 
+				<input  hidden value="" name="ascName"> 
+				<input  hidden value="" name="categorySport"> 
+				<input  hidden value="" name="categoryLanguage"> 
+				<input  hidden value="" name="categoryLiterature"> 
+				<input  hidden value="" name="categorySkills"> 
+				<input  hidden value="" name="categoryArt"> 
+				
+			<input  style="display: none" value="ascPrice" name="ascPrice">  
+			<button type="submit" value="ascPrice" onclick="" id="ascPrice" 
+			class="btn btn-outline-success" style="font-weight: bold;">Ascending by price</button>
 			</form> 
-			<form action="/Ebook/arrangeServlet"  method="post"><input  style="display: none" value="descPrice" name="descPrice">  <button type="submit" value="descPrice" onclick="" id="descPrice" class="btn btn-outline-info" style="font-weight: bold;">Descending by price</button>
+			<form action="/Ebook/arrangeServlet"  method="post">
+			
+			<!-- descPrice ascPrice descName ascName categoryLanguage categoryLiterature  categorySkills categoryArt categorySport -->
+				<input  hidden value="" name="ascPrice"> 
+				<input  hidden value="" name="descName"> 
+				<input  hidden value="" name="ascName"> 
+				<input  hidden value="" name="categorySport"> 
+				<input  hidden value="" name="categoryLanguage"> 
+				<input  hidden value="" name="categoryLiterature"> 
+				<input  hidden value="" name="categorySkills"> 
+				<input  hidden value="" name="categoryArt">
+				
+			<input  style="display: none" value="descPrice" name="descPrice">  
+			<button type="submit" value="descPrice" onclick="" id="descPrice"
+			 class="btn btn-outline-info" style="font-weight: bold;">Descending by price</button>
 			</form>
 
 			<!-- <a href="#" class="box">
@@ -267,7 +378,7 @@ function showToast(content) {
 					<button type="button" class="btn btn-outline-info">Info</button>
 					<button type="button" class="btn btn-outline-light">Light</button>
 					<button type="button" class="btn btn-outline-dark">Dark</button> -->
-
+ 
 
 		</section>
 
@@ -329,7 +440,7 @@ function showToast(content) {
 							} else {
 							%>
 							
-							<a href="favourite?bid=<%=b2.getBookId()%>&&uid=<%=u.getId()%>" class="fas fa-heart"></a>
+							<a href="/Ebook/addFavourite?bid=<%=b2.getBookId()%>&&uid=<%=u.getId()%>" class="fas fa-heart"></a>
 							
 							<%
 							}
@@ -542,7 +653,7 @@ function showToast(content) {
 							} else {
 							%>
 							
-							<a href="favourite?bid=<%=b2.getBookId()%>&&uid=<%=u.getId()%>" class="fas fa-heart"></a>
+							<a href="/Ebook/addFavourite?bid=<%=b2.getBookId()%>&&uid=<%=u.getId()%>" class="fas fa-heart"></a>
 							
 							<%
 							}
@@ -755,7 +866,7 @@ function showToast(content) {
 							} else {
 							%>
 							
-							<a href="favourite?bid=<%=b2.getBookId()%>&&uid=<%=u.getId()%>" class="fas fa-heart"></a>
+							<a href="/Ebook/addFavourite?bid=<%=b2.getBookId()%>&&uid=<%=u.getId()%>" class="fas fa-heart"></a>
 							
 							<%
 							}
@@ -973,7 +1084,7 @@ function showToast(content) {
 							} else {
 							%>
 							
-							<a href="favourite?bid=<%=b2.getBookId()%>&&uid=<%=u.getId()%>" class="fas fa-heart"></a>
+							<a href="/Ebook/addFavourite?bid=<%=b2.getBookId()%>&&uid=<%=u.getId()%>" class="fas fa-heart"></a>
 							
 							<%
 							}
@@ -1197,7 +1308,7 @@ function showToast(content) {
 							} else {
 							%>
 							
-							<a href="favourite?bid=<%=b2.getBookId()%>&&uid=<%=u.getId()%>" class="fas fa-heart"></a>
+							<a href="/Ebook/addFavourite?bid=<%=b2.getBookId()%>&&uid=<%=u.getId()%>" class="fas fa-heart"></a>
 							
 							<%
 							}
@@ -1410,7 +1521,7 @@ function showToast(content) {
 							} else {
 							%>
 							
-							<a href="favourite?bid=<%=b2.getBookId()%>&&uid=<%=u.getId()%>" class="fas fa-heart"></a>
+							<a href="/Ebook/addFavourite?bid=<%=b2.getBookId()%>&&uid=<%=u.getId()%>" class="fas fa-heart"></a>
 							
 							<%
 							}
@@ -1622,7 +1733,7 @@ function showToast(content) {
 							} else {
 							%>
 							
-							<a href="favourite?bid=<%=b2.getBookId()%>&&uid=<%=u.getId()%>" class="fas fa-heart"></a>
+							<a href="/Ebook/addFavourite?bid=<%=b2.getBookId()%>&&uid=<%=u.getId()%>" class="fas fa-heart"></a>
 							
 							<%
 							}
@@ -1836,7 +1947,7 @@ function showToast(content) {
 							} else {
 							%>
 							
-							<a href="favourite?bid=<%=b2.getBookId()%>&&uid=<%=u.getId()%>" class="fas fa-heart"></a>
+							<a href="/Ebook/addFavourite?bid=<%=b2.getBookId()%>&&uid=<%=u.getId()%>" class="fas fa-heart"></a>
 							
 							<%
 							}
@@ -2047,7 +2158,7 @@ function showToast(content) {
 							} else {
 							%>
 							
-							<a href="favourite?bid=<%=b2.getBookId()%>&&uid=<%=u.getId()%>" class="fas fa-heart"></a>
+							<a href="/Ebook/addFavourite?bid=<%=b2.getBookId()%>&&uid=<%=u.getId()%>" class="fas fa-heart"></a>
 							
 							<%
 							}

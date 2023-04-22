@@ -134,7 +134,7 @@
 									
 									<td><br> <br><br>
 										<a style="margin-top: 4%; background: red"
-										href="remove_favourite?bid=<%=f.getBid()%>&&uid=<%=f.getUid()%>"
+										href="/Ebook/remove_favourite?bid=<%=f.getBid()%>&&uid=<%=f.getUid()%>"
 										class="btn btn-sm btn-danger" ><i class="fas fa-trash-alt"></i></a>
 										  
 										</td> 

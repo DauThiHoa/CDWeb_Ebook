@@ -81,7 +81,7 @@ function showToast(content) {
 				<c:remove var="succMsg" scope="session" />
 				</c:if>
 				
-<section class="contact" style="margin-top: -2%">
+<section class="/Ebook/contact" style="margin-top: -2%">
 
     <div class="icons-container">
 

@@ -125,7 +125,7 @@
 		</c:if>
    
 		<!--  SEARCH -->
-		<form class="search-form" action="searchBook" method="post">
+		<form class="search-form" action="/Ebook/searchBook" method="post">
 		<!-- name="ch" -->
 		 
 			 <input type="search" placeholder="Search here..." id="search-box" 

@@ -143,7 +143,7 @@
 									<td><br> <br><br><h3 style=" "><%=o.getPrice()%></h3></td>
 									<td><br> <br><br><h3 style=" "><%=o.getTotal_price()%></h3></td>
 									<%-- <td><a style="margin-top: 25%; background: red"
-										href="remove_book?bid=<%=c.getBid()%>&&uid=<%=c.getUserId()%>&&cid=<%=c.getCid()%>"
+										href="/Ebook/remove_book?bid=<%=c.getBid()%>&&uid=<%=c.getUserId()%>&&cid=<%=c.getCid()%>"
 										class="btn btn-sm btn-danger" ><i class="fas fa-trash-alt"></i></a></td> --%>
 								</tr>
 

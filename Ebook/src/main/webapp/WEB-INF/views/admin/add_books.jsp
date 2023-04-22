@@ -97,7 +97,7 @@
              <div class="inputBox" >    
 									
 									<input  style="width: 100%" placeholder="" class="box" 
-									aria-describedby="emailHelp" required type="double"
+									aria-describedby="emailHelp" required type="number" step="0.01"
 									name="price" class="form-control"
 									id="exampleInputPassword1">
 							 

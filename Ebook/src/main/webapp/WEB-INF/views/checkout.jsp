@@ -142,7 +142,7 @@
 									<td><br> <br><br><h3 style=" "><%=c.getPrice()%></h3></td>
 									<td><br> <br><br><h3 style=" "><%=c.getTotalPrice()%></h3></td>
 									<td><br> <br><br><a style=" background: red"
-										href="remove_book?bid=<%=c.getBid()%>&&uid=<%=c.getUserId()%>&&cid=<%=c.getCid()%>"
+										href="/Ebook/remove_book?bid=<%=c.getBid()%>&&uid=<%=c.getUserId()%>&&cid=<%=c.getCid()%>"
 										class="btn btn-sm btn-danger" ><i class="fas fa-trash-alt"></i></a></td>
 								</tr>
 
@@ -172,7 +172,7 @@
     
     <div class="row" >
 
-        <form action="order" method="post" >
+        <form action="/Ebook/order" method="post" >
             <h1 class="text-center text-success">Your Details For Order</h1>
              
 			  	 <c:if test="${not empty failedOrder }">

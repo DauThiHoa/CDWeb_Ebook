@@ -78,12 +78,12 @@ a:hover {
             <h3  class="text-center text-success" style="font-weight: bold;">Sell Old Book</h3>
             
                         <c:if test="${not empty failedMsg }">
-							<h4 class="text-center text-danger">${failedMsg }</h4>
+							<h3 class="text-center text-danger">${failedMsg }</h3>
 							<c:remove var="failedMsg" scope="session" />
 						</c:if>
 						 
 						<c:if test="${not empty succMsg }">
-							<h4 class="text-center text-success">${succMsg }</h4>
+							<h3 class="text-center text-success">${succMsg }</h3>
 							<c:remove var="succMsg" scope="session" />
 						</c:if>
 						 
@@ -126,7 +126,7 @@ a:hover {
 									
 									<input  style="width: 100%" placeholder="" class="box" 
 									aria-describedby="emailHelp" required type="number"
-									name="price" type="double" class="form-control"
+									name="price" type="number" step="0.01"  class="form-control"
 									id="exampleInputPassword1">
 							 
             </div> 

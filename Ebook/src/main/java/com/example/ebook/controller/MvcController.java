@@ -24,14 +24,24 @@ import org.springframework.web.bind.annotation.RequestPart;
 
 import com.example.ebook.connect.DBConnect;
 import com.example.ebook.dao.BookDAOImpl;
+import com.example.ebook.dao.BookOrderImpl;
 import com.example.ebook.dao.CartDAOImpl;
 import com.example.ebook.dao.CommentDAO;
 import com.example.ebook.dao.CommentDAOImpl;
+import com.example.ebook.dao.ContactDAOImpl;
+import com.example.ebook.dao.FavouriteDAOImpl;
+import com.example.ebook.dao.OrderDetailsDAOImpl;
 import com.example.ebook.dao.UserDAOImpl;
 import com.example.ebook.entity.BookDtls;
+import com.example.ebook.entity.Book_Order;
 import com.example.ebook.entity.Cart;
 import com.example.ebook.entity.CommentProduct;
+import com.example.ebook.entity.Contact;
+import com.example.ebook.entity.Favourite;
+import com.example.ebook.entity.OrderDetails;
 import com.example.ebook.entity.User;
+import com.example.ebook.mail.RandomStringExmple;
+import com.example.ebook.mail.SendMail;
 
 // LOP HIEN THI CAC TRANG
 @Controller
@@ -107,19 +117,19 @@ public class MvcController {
 
 		System.out.println(fileName);
 		BookDtls b = new BookDtls(bname, author, priceDouble, categories, status, fileName, "admin");
- 
+
 		BookDAOImpl dao = new BookDAOImpl(DBConnect.getConn());
 		boolean f = dao.addBooks(b);
 
 		if (f) {
 //			resources\static\book
 			String pathSource = request.getServletContext().getRealPath("");
-			String pathNew = pathSource.substring(0, pathSource.length() - 7); 
+			String pathNew = pathSource.substring(0, pathSource.length() - 7);
 			String path = pathNew + "resources/static/book";
-			
+
 			File file = new File(path);
 			bimg.write(path + File.separator + fileName);
-			
+
 			model.put("succMsg", "Book Add Sucessfully");
 			return "admin/add_books";
 		} else {
@@ -317,13 +327,12 @@ public class MvcController {
 			}
 		}
 	}
- 
-	
+
 //	@GetMapping("/Ebook/changePassword") // LAY THONG TIN TRANG WEB LOGIN
 //	public String ChangePassword(ModelMap model, @RequestParam String email, @RequestParam String currentPassword
 //			, @RequestParam String newPassword, @RequestParam String confirmPassword , HttpServletRequest request , HttpServletResponse response)
 //			throws IOException {
-//  
+//   
 //		response.setContentType("text/plain");
 //		PrintWriter out = response.getWriter(); 
 //		
@@ -357,6 +366,126 @@ public class MvcController {
 //
 //	}
 
+	@GetMapping("/Ebook/changePassword") // LAY THONG TIN TRANG WEB LOGIN
+	public String ChangePassword(ModelMap model, HttpServletRequest request, HttpServletResponse response)
+			throws IOException {
+
+		return "changePassword";
+	}
+
+	@GetMapping("/Ebook/delete_old_book") // LAY THONG TIN TRANG WEB LOGIN
+	public String DeleteOldBook(ModelMap model, @RequestParam String em, @RequestParam String id,
+			HttpServletRequest request) {
+
+		int idInt = Integer.parseInt(id);
+
+		BookDAOImpl dao = new BookDAOImpl(DBConnect.getConn());
+		boolean f = dao.oldBookDelete(em, "Old", idInt);
+
+		if (f) {
+			model.put("succMsg", "Old Book Delete Sucessfully...");
+			return "old_book";
+		} else {
+			model.put("failedMsg", "Something wrong on Server...");
+			return "old_book";
+		}
+
+	}
+
+	@GetMapping("/Ebook/addFavourite") // LAY THONG TIN TRANG WEB LOGIN
+	public String FavouriteServlet(ModelMap model, @RequestParam String uid, @RequestParam String bid,
+			HttpServletRequest request) { 
+//  LAY DU LIEU TU FORM
+		int uidInt = Integer.parseInt( uid );
+		int bidInt = Integer.parseInt( bid );
+
+//	LAY SACH VOI ID NHAN VAO
+		BookDAOImpl dao = new BookDAOImpl(DBConnect.getConn());
+		BookDtls b = dao.getBookById(bidInt);
+
+//	THAY DOI GIA TRI TRONG GIO HANG
+		Favourite favou = new Favourite();
+		favou.setUid(uidInt);
+		favou.setBid(bidInt);
+		favou.setBookName(b.getBookName());
+		favou.setAuthor(b.getAuthor());
+		favou.setPrice(b.getPrice());
+		favou.setBookCategory(b.getBookCategory());
+		favou.setStatus(b.getStatus());
+		favou.setPhotoName(b.getPhotoName());
+
+//	THEM 1 SAN PHAM VAO DANH SACH
+		FavouriteDAOImpl dao2 = new FavouriteDAOImpl(DBConnect.getConn());
+//	KIEM TRA XEM SACH DA DUOC THEM VAO CSDL HAY CHUA 
+		boolean checkExist = dao2.checkFavourite(bidInt , uidInt ); 
+
+		if (checkExist) { // NEU TRUE => CO THEM SO LUONG SAN PHAM TRONG CSDL
+			model.put("failedMsg", "The product has been added to favorites ");
+			return "index";  
+		} else {
+			boolean f = dao2.addFavourite(favou);
+
+//	KIEM TRA
+			if (f) {
+				model.put("succMsg", "Product added to favorites");
+				return "favourite"; 
+			} else {
+				model.put("failedMsg", "Something Wrong On Server");
+				return "index"; 
+			}
+		}
+
+	}
+	
+	@GetMapping("/Ebook/remove_book") // LAY THONG TIN TRANG WEB LOGIN
+	public String RemoveBookCart (ModelMap model, @RequestParam String bid, @RequestParam String uid,
+			@RequestParam String cid, HttpServletRequest request) {
+		  
+//      LAY DU LIEU TU FORM
+		int bidInt = Integer.parseInt( bid );
+		int uidInt = Integer.parseInt( uid );
+		int cidInt = Integer.parseInt( cid );
+		
+//		XOA SAN PHAM TRONG GIO HANG
+		CartDAOImpl dao = new CartDAOImpl(DBConnect.getConn());
+		boolean f = dao.deleteBook(bidInt, uidInt, cidInt);
+  
+//		KIEM TRA
+		if (f) {
+			model.put("succMsg", "Book Removed from Cart");
+			return "checkout"; 
+
+		} else {
+			model.put("failedMsg", "Something Wrong On Server");
+			return "checkout"; 
+
+		}
+	}
+	
+	@GetMapping("/Ebook/remove_favourite") // LAY THONG TIN TRANG WEB LOGIN
+	public String RemoveFavourite  (ModelMap model, @RequestParam String bid, @RequestParam String uid,  HttpServletRequest request) {
+		  
+//      LAY DU LIEU TU FORM
+		int bidInt = Integer.parseInt( bid );
+		int uidInt = Integer.parseInt( uid ); 
+		
+//		XOA SAN PHAM TRONG DANH SACH SAN PHAM YEU THICH
+		FavouriteDAOImpl dao = new FavouriteDAOImpl(DBConnect.getConn());
+		boolean f = dao.deleteFavourite(bidInt, uidInt);
+  
+//		KIEM TRA
+		if (f) {
+			model.put("succMsg", "Favourite removed from list");
+			return "favourite";  
+
+		} else {
+			model.put("failedMsg", "Something Wrong On Server");
+			return "favourite";  
+
+		}
+	}
+	
+	 
 	// ==================== POST MAPPING USER ========================
 
 	@PostMapping("/Ebook/add_old_book") // LAY THONG TIN TRANG WEB LOGIN
@@ -391,143 +520,146 @@ public class MvcController {
 		}
 	}
 
-//	@PostMapping("/Ebook/arrangeServlet") // LAY THONG TIN TRANG WEB LOGIN
-//	public String ArrangeServlet(ModelMap model, @RequestParam String descPrice, @RequestParam String ascPrice,
-//			@RequestParam String descName, @RequestParam String ascName, @RequestParam String categoryLanguage,
-//			@RequestParam String categoryLiterature, @RequestParam String categorySkills,
-//			@RequestParam String categoryArt, @RequestParam String categorySport, HttpServletRequest request,
-//			HttpServletResponse response) throws IOException {
-//
-//		if (descPrice != null) {
-//
-//			model.put("descPrice", "block");
-//			model.put("ascPrice", "none");
-//			model.put("descName", "none");
-//			model.put("ascName", "none");
-//
-//			model.put("categoryLanguage", "none");
-//			model.put("categoryLiterature", "none");
-//			model.put("categorySkills", "none");
-//			model.put("categoryArt", "none");
-//			model.put("categorySport", "none");
-//			return "shop";
-//		} 
-//		else if (ascPrice != null) {
-//
-//			model.put("descPrice", "none");
-//			model.put("ascPrice", "block");
-//			model.put("descName", "none");
-//			model.put("ascName", "none");
-//
-//			model.put("categoryLanguage", "none");
-//			model.put("categoryLiterature", "none");
-//			model.put("categorySkills", "none");
-//			model.put("categoryArt", "none");
-//			model.put("categorySport", "none");
-//			return "shop";
-//
-//		} else if (descName != null) {
-//
-//			model.put("descPrice", "none");
-//			model.put("ascPrice", "none");
-//			model.put("descName", "block");
-//			model.put("ascName", "none");
-//
-//			model.put("categoryLanguage", "none");
-//			model.put("categoryLiterature", "none");
-//			model.put("categorySkills", "none");
-//			model.put("categoryArt", "none");
-//			model.put("categorySport", "none");
-//			return "shop";
-//
-//		} else if (ascName != null) {
-//
-//			model.put("descPrice", "none");
-//			model.put("ascPrice", "none");
-//			model.put("descName", "none");
-//			model.put("ascName", "block");
-//
-//			model.put("categoryLanguage", "none");
-//			model.put("categoryLiterature", "none");
-//			model.put("categorySkills", "none");
-//			model.put("categoryArt", "none");
-//			model.put("categorySport", "none");
-//			return "shop";
-//
-//		} else if (categoryLanguage != null) {
-//
-//			model.put("descPrice", "none");
-//			model.put("ascPrice", "none");
-//			model.put("descName", "none");
-//			model.put("ascName", "none");
-//
-//			model.put("categoryLanguage", "block");
-//			model.put("categoryLiterature", "none");
-//			model.put("categorySkills", "none");
-//			model.put("categoryArt", "none");
-//			model.put("categorySport", "none");
-//			return "shop";
-//
-//		} else if (categoryLiterature != null) {
-//
-//			model.put("descPrice", "none");
-//			model.put("ascPrice", "none");
-//			model.put("descName", "none");
-//			model.put("ascName", "none");
-//
-//			model.put("categoryLanguage", "none");
-//			model.put("categoryLiterature", "block");
-//			model.put("categorySkills", "none");
-//			model.put("categoryArt", "none");
-//			model.put("categorySport", "none");
-//			return "shop";
-//
-//		} else if (categorySkills != null) {
-//
-//			model.put("descPrice", "none");
-//			model.put("ascPrice", "none");
-//			model.put("descName", "none");
-//			model.put("ascName", "none");
-//
-//			model.put("categoryLanguage", "none");
-//			model.put("categoryLiterature", "none");
-//			model.put("categorySkills", "block");
-//			model.put("categoryArt", "none");
-//			model.put("categorySport", "none");
-//			return "shop";
-//
-//		} else if (categoryArt != null) {
-//
-//			model.put("descPrice", "none");
-//			model.put("ascPrice", "none");
-//			model.put("descName", "none");
-//			model.put("ascName", "none");
-//
-//			model.put("categoryLanguage", "none");
-//			model.put("categoryLiterature", "none");
-//			model.put("categorySkills", "none");
-//			model.put("categoryArt", "block");
-//			model.put("categorySport", "none");
-//			return "shop";
-//
-//		} else if (categorySport != null) {
-//
-//			model.put("descPrice", "none");
-//			model.put("ascPrice", "none");
-//			model.put("descName", "none");
-//			model.put("ascName", "none");
-//
-//			model.put("categoryLanguage", "none");
-//			model.put("categoryLiterature", "none");
-//			model.put("categorySkills", "none");
-//			model.put("categoryArt", "none");
-//			model.put("categorySport", "block");
-//			return "shop";
-//
-//		}
-//		return "shop";
-//
-//	}
+	@PostMapping("/Ebook/arrangeServlet") // LAY THONG TIN TRANG WEB LOGIN
+	public String ArrangeServlet(ModelMap model, @RequestParam String descPrice, @RequestParam String ascPrice,
+			@RequestParam String descName, @RequestParam String ascName, @RequestParam String categoryLanguage,
+			@RequestParam String categoryLiterature, @RequestParam String categorySkills,
+			@RequestParam String categoryArt, @RequestParam String categorySport, HttpServletRequest request,
+			HttpServletResponse response) throws IOException {
+
+//		descPrice ascPrice descName ascName categoryLanguage categoryLiterature  categorySkills categoryArt categorySport
+		System.out.println(descPrice + " - " + ascPrice + " - " + descName + " - " + ascName + " - " + categoryLanguage
+				+ " - " + categoryLiterature + " - " + categorySkills + " - " + categoryArt + " - " + categorySport);
+
+		if (descPrice != null) {
+
+			model.put("descPrice", "block");
+			model.put("ascPrice", "none");
+			model.put("descName", "none");
+			model.put("ascName", "none");
+
+			model.put("categoryLanguage", "none");
+			model.put("categoryLiterature", "none");
+			model.put("categorySkills", "none");
+			model.put("categoryArt", "none");
+			model.put("categorySport", "none");
+			return "shop";
+		} else if (ascPrice != null) {
+
+			model.put("descPrice", "none");
+			model.put("ascPrice", "block");
+			model.put("descName", "none");
+			model.put("ascName", "none");
+
+			model.put("categoryLanguage", "none");
+			model.put("categoryLiterature", "none");
+			model.put("categorySkills", "none");
+			model.put("categoryArt", "none");
+			model.put("categorySport", "none");
+			return "shop";
+
+		} else if (descName != null) {
+
+			model.put("descPrice", "none");
+			model.put("ascPrice", "none");
+			model.put("descName", "block");
+			model.put("ascName", "none");
+
+			model.put("categoryLanguage", "none");
+			model.put("categoryLiterature", "none");
+			model.put("categorySkills", "none");
+			model.put("categoryArt", "none");
+			model.put("categorySport", "none");
+			return "shop";
+
+		} else if (ascName != null) {
+
+			model.put("descPrice", "none");
+			model.put("ascPrice", "none");
+			model.put("descName", "none");
+			model.put("ascName", "block");
+
+			model.put("categoryLanguage", "none");
+			model.put("categoryLiterature", "none");
+			model.put("categorySkills", "none");
+			model.put("categoryArt", "none");
+			model.put("categorySport", "none");
+			return "shop";
+
+		} else if (categoryLanguage != null) {
+
+			model.put("descPrice", "none");
+			model.put("ascPrice", "none");
+			model.put("descName", "none");
+			model.put("ascName", "none");
+
+			model.put("categoryLanguage", "block");
+			model.put("categoryLiterature", "none");
+			model.put("categorySkills", "none");
+			model.put("categoryArt", "none");
+			model.put("categorySport", "none");
+			return "shop";
+
+		} else if (categoryLiterature != null) {
+
+			model.put("descPrice", "none");
+			model.put("ascPrice", "none");
+			model.put("descName", "none");
+			model.put("ascName", "none");
+
+			model.put("categoryLanguage", "none");
+			model.put("categoryLiterature", "block");
+			model.put("categorySkills", "none");
+			model.put("categoryArt", "none");
+			model.put("categorySport", "none");
+			return "shop";
+
+		} else if (categorySkills != null) {
+
+			model.put("descPrice", "none");
+			model.put("ascPrice", "none");
+			model.put("descName", "none");
+			model.put("ascName", "none");
+
+			model.put("categoryLanguage", "none");
+			model.put("categoryLiterature", "none");
+			model.put("categorySkills", "block");
+			model.put("categoryArt", "none");
+			model.put("categorySport", "none");
+			return "shop";
+
+		} else if (categoryArt != null) {
+
+			model.put("descPrice", "none");
+			model.put("ascPrice", "none");
+			model.put("descName", "none");
+			model.put("ascName", "none");
+
+			model.put("categoryLanguage", "none");
+			model.put("categoryLiterature", "none");
+			model.put("categorySkills", "none");
+			model.put("categoryArt", "block");
+			model.put("categorySport", "none");
+			return "shop";
+
+		} else if (categorySport != null) {
+
+			model.put("descPrice", "none");
+			model.put("ascPrice", "none");
+			model.put("descName", "none");
+			model.put("ascName", "none");
+
+			model.put("categoryLanguage", "none");
+			model.put("categoryLiterature", "none");
+			model.put("categorySkills", "none");
+			model.put("categoryArt", "none");
+			model.put("categorySport", "block");
+			return "shop";
+
+		}
+		return "shop";
+
+	}
 
 	@PostMapping("/Ebook/addProductDetails") // LAY THONG TIN TRANG WEB LOGIN
 	public String CartProductDetailsServlet(ModelMap model, @RequestParam String bid, @RequestParam String uid,
@@ -659,6 +791,37 @@ public class MvcController {
 
 	}
 
+	@PostMapping("/Ebook/contact") // LAY THONG TIN TRANG WEB LOGIN
+	public String ContactServlet(ModelMap model, @RequestParam String name, @RequestParam String email,
+			@RequestParam String number, @RequestParam String subject, @RequestParam String message,
+			HttpServletRequest request) {
+
+		int numberInt = Integer.parseInt(number);
+
+		System.out.println(name + " - " + email + " - " + number + " - " + subject + " - " + message);
+
+		Contact contact = new Contact();
+		contact.setName(name);
+		contact.setEmail(email);
+		contact.setNumber(numberInt);
+		contact.setSubject(subject);
+		contact.setMessage(message);
+		ContactDAOImpl dao = new ContactDAOImpl(DBConnect.getConn());
+		boolean f = dao.addContact(contact);
+
+		SendMail send = new SendMail();
+		boolean sendMail = send.sendMail("webfurniture7@gmail.com", subject, message);
+
+		if (sendMail && f) {
+			model.put("succMsg", "Add Contact Successfully ... ");
+			return "contact";
+		} else {
+			model.put("failedMsg", "Add Contact Error ...");
+			return "contact";
+		}
+
+	}
+
 	@PostMapping("/Ebook/login") // LAY THONG TIN TRANG WEB LOGIN
 	public String LoginServlet(ModelMap model, @RequestParam String email, @RequestParam String password,
 			HttpServletRequest request) {
@@ -702,6 +865,93 @@ public class MvcController {
 		}
 	}
 
+	@PostMapping("/Ebook/order") // LAY THONG TIN TRANG WEB LOGIN
+	public String OrderServlet (ModelMap model, @RequestParam String id, @RequestParam String username,  @RequestParam String email, @RequestParam String phno,
+			@RequestParam String address, @RequestParam String landmark,@RequestParam String city, @RequestParam String state, @RequestParam String pincode,@RequestParam String payment,
+			 @RequestParam String uid,@RequestParam String total ,HttpServletRequest request) { 
+		  
+		int idInt = Integer.parseInt( id ); 
+		
+		System.out.println("ORDER");
+		System.out.println(address + ", " + landmark + ", " + city + ", " + state + ", " + pincode + ", " + payment); 
+		String fullAdd = address + ", " + landmark + ", " + city + ", " + state + ", " + pincode;
+		
+		int uidInt = Integer.parseInt( uid );
+		double totalDouble = Double.parseDouble( total );
+		
+		System.out.println("TONG TIEN : " + total);
+		 
+		
+		CartDAOImpl dao = new CartDAOImpl(DBConnect.getConn()); 
+		List<Cart> blist = dao.getBookByUser(idInt);
+		
+		RandomStringExmple randomStr = new RandomStringExmple ();
+		String orderId = randomStr.randomAlphaNumeric(10);
+		
+		if (blist.isEmpty()) {
+			model.put("failedOrder", "Add Item");
+			return "checkout"; 
+		}else {
+			 
+			if ("noselect".equals(payment)) {
+				model.put("failedOrder", "Please Choose Payment Method");
+				return "checkout"; 
+			}else {
+				BookOrderImpl dao2 = new BookOrderImpl(DBConnect.getConn());
+				int i = dao2.getOrderNo(); 
+				 
+					 Book_Order o = new Book_Order();
+					 
+					 o.setOrderId(orderId);
+					 o.setUserName(username);
+					 o.setEmail(email);
+					 o.setPhno(phno);
+					 o.setFulladd(fullAdd); 
+					 o.setPrice(totalDouble);
+					 o.setPaymentType(payment); 
+					 
+				boolean f = dao2.saveOrder(o); 
+
+				
+				CartDAOImpl dao1 = new CartDAOImpl(DBConnect.getConn());
+				List<Cart> cart = dao1.getBookByUser(uidInt);
+				
+				boolean addOrderDetails = false ;
+				
+				for (Cart c : cart) { 
+					
+				 OrderDetailsDAOImpl dao3 = new OrderDetailsDAOImpl(DBConnect.getConn());
+				 OrderDetails orderDetails = new OrderDetails();
+				 
+				 orderDetails.setOrder_id(orderId);
+				 orderDetails.setCid(c.getCid());
+				 orderDetails.setBid(c.getBid());
+				 orderDetails.setUid(c.getUserId());
+				 orderDetails.setBookName(c.getBookName());
+				 orderDetails.setImage(c.getImage());
+				 orderDetails.setAuthor(c.getAuthor());
+				 orderDetails.setQuantity(c.getQuantity());
+				 orderDetails.setPrice(c.getPrice());
+				 orderDetails.setTotal_price(c.getTotalPrice());
+				 
+				 addOrderDetails = dao3.addOrderDetails(orderDetails) ; 
+				 
+				}
+				 
+				if (f && addOrderDetails) {
+					boolean deleteCart = dao.deleteCart();
+					model.put("succOrder", "Add Order Success ");
+					return "order_success"; 
+				}else {
+					model.put("failedOrder", "Your Order Failed");
+					return "checkout"; 
+					  
+				}
+			}
+			
+		}
+	}
+	
 	@PostMapping("/Ebook/register") // LAY THONG TIN TRANG WEB LOGIN
 	public String RegisterServlet(ModelMap model, @RequestParam String fname, @RequestParam String email,
 			@RequestParam String phno, @RequestParam String password, @RequestParam String check,
@@ -749,4 +999,24 @@ public class MvcController {
 		}
 	}
 
+	 
+	@PostMapping("/Ebook/searchBook") // LAY THONG TIN TRANG WEB LOGIN
+	public String SearchBookServlet (ModelMap model, @RequestParam String text, HttpServletRequest request) {
+  
+//		String search_box  = request.getParameter("text"); 
+		
+		System.out.println("search_box 2 : " + text);
+		
+		BookDAOImpl dao2 = new BookDAOImpl(DBConnect.getConn());
+		
+		List<BookDtls> list2 = dao2.getBookBySearch(text); 
+		  
+		model.put("listBook", list2 );
+		
+//		==================== CHUYEN VE TRANG TRUOC DO ==================================
+//		response.sendRedirect(request.getHeader("referer"));
+		return request.getHeader("referer"); 
+	}
+
+	 
 }

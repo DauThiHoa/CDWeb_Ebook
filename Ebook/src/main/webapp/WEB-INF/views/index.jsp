@@ -195,7 +195,7 @@
 							} else {
 							%>
 							
-							<a href="favourite?bid=<%=b2.getBookId()%>&&uid=<%=u.getId()%>" class="fas fa-heart"></a>
+							<a href="/Ebook/addFavourite?bid=<%=b2.getBookId()%>&&uid=<%=u.getId()%>" class="fas fa-heart"></a>
 							
 							<%
 							}
@@ -371,7 +371,7 @@
 							} else {
 							%>
 							
-							<a href="favourite?bid=<%=b.getBookId()%>&&uid=<%=u.getId()%>" class="fas fa-heart"></a>
+							<a href="/Ebook/addFavourite?bid=<%=b.getBookId()%>&&uid=<%=u.getId()%>" class="fas fa-heart"></a>
 							
 							<%
 							}
