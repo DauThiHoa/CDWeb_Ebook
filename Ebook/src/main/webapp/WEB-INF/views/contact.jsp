@@ -81,7 +81,7 @@ function showToast(content) {
 				<c:remove var="succMsg" scope="session" />
 				</c:if>
 				
-<section class="/Ebook/contact" style="margin-top: -2%">
+<section class="contact" style="margin-top: -2%">
 
     <div class="icons-container">
 
@@ -104,7 +104,7 @@ function showToast(content) {
 
     <div class="row">
 
-        <form action="contact" method="post">
+        <form action="/Ebook/contact" method="post">
             <h3 class="text-center text-success" style="color: green; text-align: center;">Get in touch</h3>
             <div class="inputBox">
                             <%
@@ -159,9 +159,8 @@ function showToast(content) {
 	<%@include file="all_component/footer.jsp"%>
 <!-- footer section ends -->
 
-
+ 
 <!-- custom css file link  -->
-<script src="../js/script.js"></script>
-
+<script src="../js/script.js"></script> 
 </body>
 </html>

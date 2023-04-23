@@ -71,7 +71,7 @@ a:hover {
 
     <div class="row">
 
-        <form action="update_profile" method="post">
+        <form action="/Ebook/update_profile" method="post">
             <h3  class="text-center text-success" style="font-weight: bold;" >Edit Profile</h3>
             
                         <c:if test="${not empty failedMsg }">
@@ -155,7 +155,7 @@ a:hover {
 						</c:if>
 						
 						
-						<form action="update_profile" method="post">
+						<form action="/Ebook/update_profile" method="post">
 
 							<input type="hidden" value="${userobj.id }" name="id">
 							<div class="form-group">

@@ -12,7 +12,7 @@
 <head>
 <title>Reset</title>
 <!-- BIEU TUONG TRANG WEB -->
-<link rel="icon" href="img/icon1.png" type="image/png" class="icon">
+<link rel="icon" href="../img/icon1.png" type="image/png" class="icon">
 
 <%@include file="all_component/allCss.jsp"%>
 <script type="text/javascript" src="../scripts/jquery-3.6.3.min.js"></script>
@@ -69,12 +69,13 @@
 				<div class="reset-form d-block">
 
 					<!-- reset-password-form -->
-					<form action="sendMail" method="post"
+					<form action="/Ebook/sendMail" method="post"
 						class="reset-password-form px-3">
 						<h4>Reset Your password</h4>
 
 						<p class="mb-3" style="color: #777">Please enter your email
 							address and we will send you a password reset link.</p>
+							<label id="sendMail"></label>
 						<div class="form-input">
 							<span><i class="fa fa-envelope"></i></span> <input id="email"
 								type="email" name="email" placeholder="Email Address"
@@ -84,9 +85,7 @@
 							<button type="submit" class="btn">Send
 								Reset Link</button>
 						</div>
-						<label id="sendMail"></label>
-
-
+						   
 
 						<c:if test="${not empty failedMsg }">
 							<h5 class="text-center text-danger">${failedMsg }</h5>

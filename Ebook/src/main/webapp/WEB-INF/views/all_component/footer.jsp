@@ -37,7 +37,7 @@
         <div class="box">
             <h3>newsletter</h3>
             <p>subscribe for latest updates</p>
-            <form action="subscribe" method="post" > 
+            <form action="/Ebook/subscribe" method="post" > 
 							      <input type="email" name="email" placeholder="Enter your email" required > 
 							      <input type="submit" value="subscribe" class="btn"> 
                  

@@ -123,7 +123,7 @@
 									</td>
 
 									<td>
-										<form action="updateQuantity" method="get"><br> <br><br>
+										<form action="/Ebook/updateQuantity" method="get"><br> <br><br>
 										<h3 style="  ">
 											<input name="quantity" type="number"
 												value="<%=c.getQuantity()%>"

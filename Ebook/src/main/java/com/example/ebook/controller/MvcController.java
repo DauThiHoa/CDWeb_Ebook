@@ -273,6 +273,11 @@ public class MvcController {
 	public String edit_profile(ModelMap model, HttpServletRequest request) {
 		return "edit_profile";
 	}
+	
+	@GetMapping("/Ebook/ajax") // LAY THONG TIN TRANG WEB LOGIN
+	public String ajax(ModelMap model, HttpServletRequest request) {
+		return "ajax";
+	}
 
 	@GetMapping("/Ebook/cart") // LAY THONG TIN TRANG WEB LOGIN
 	public String CartServlet(ModelMap model, @RequestParam String bid, @RequestParam String uid,
@@ -485,7 +490,34 @@ public class MvcController {
 		}
 	}
 	
-	 
+	@GetMapping("/Ebook/updateQuantity") // LAY THONG TIN TRANG WEB LOGIN
+	public String UpdateQuantityCart  (ModelMap model, @RequestParam String quantity, @RequestParam String bid,
+			@RequestParam String uid, @RequestParam String cid, HttpServletRequest request) {
+		 
+		int quantityInt = Integer.parseInt( quantity );
+		int bidInt = Integer.parseInt( bid );
+		int uidInt = Integer.parseInt( uid );
+		int cidInt = Integer.parseInt( cid );
+		
+		System.out.println("quantity : " + quantity + " - " + bid  + " - " +uid + " - " +cid);
+		
+//		CAP NHAT SO LUONG CUA SAN PHAM TRONG GIO HANG
+		CartDAOImpl dao = new CartDAOImpl(DBConnect.getConn());
+		boolean f = dao.updateQuantityCart(quantityInt, bidInt , uidInt);
+  
+//		KIEM TRA
+		if (f) {
+			model.put("succMsg", "Book Update from Cart");
+			return "checkout";   
+
+		} else {
+			model.put("failedMsg", "Something Wrong On Server");
+			return "checkout";   
+
+		}
+	}
+	
+	
 	// ==================== POST MAPPING USER ========================
 
 	@PostMapping("/Ebook/add_old_book") // LAY THONG TIN TRANG WEB LOGIN
@@ -531,8 +563,9 @@ public class MvcController {
 		System.out.println(descPrice + " - " + ascPrice + " - " + descName + " - " + ascName + " - " + categoryLanguage
 				+ " - " + categoryLiterature + " - " + categorySkills + " - " + categoryArt + " - " + categorySport);
 
-		if (descPrice != null) {
-
+		if (descPrice.equals("descPrice")) {
+			
+			System.out.println(1);
 			model.put("descPrice", "block");
 			model.put("ascPrice", "none");
 			model.put("descName", "none");
@@ -544,8 +577,10 @@ public class MvcController {
 			model.put("categoryArt", "none");
 			model.put("categorySport", "none");
 			return "shop";
-		} else if (ascPrice != null) {
+			
+		} else if (ascPrice.equals("ascPrice")) {
 
+			System.out.println(2);
 			model.put("descPrice", "none");
 			model.put("ascPrice", "block");
 			model.put("descName", "none");
@@ -558,8 +593,9 @@ public class MvcController {
 			model.put("categorySport", "none");
 			return "shop";
 
-		} else if (descName != null) {
+		} else if (descName.equals("descName")) {
 
+			System.out.println(3);
 			model.put("descPrice", "none");
 			model.put("ascPrice", "none");
 			model.put("descName", "block");
@@ -572,8 +608,9 @@ public class MvcController {
 			model.put("categorySport", "none");
 			return "shop";
 
-		} else if (ascName != null) {
+		} else if (ascName.equals("ascName")) {
 
+			System.out.println(4);
 			model.put("descPrice", "none");
 			model.put("ascPrice", "none");
 			model.put("descName", "none");
@@ -586,8 +623,9 @@ public class MvcController {
 			model.put("categorySport", "none");
 			return "shop";
 
-		} else if (categoryLanguage != null) {
+		} else if (categoryLanguage.equals("categoryLanguage")) {
 
+			System.out.println(5);
 			model.put("descPrice", "none");
 			model.put("ascPrice", "none");
 			model.put("descName", "none");
@@ -600,8 +638,9 @@ public class MvcController {
 			model.put("categorySport", "none");
 			return "shop";
 
-		} else if (categoryLiterature != null) {
+		} else if (categoryLiterature.equals("categoryLiterature")) {
 
+			System.out.println(6);
 			model.put("descPrice", "none");
 			model.put("ascPrice", "none");
 			model.put("descName", "none");
@@ -614,8 +653,9 @@ public class MvcController {
 			model.put("categorySport", "none");
 			return "shop";
 
-		} else if (categorySkills != null) {
+		} else if (categorySkills.equals("categorySkills")) {
 
+			System.out.println(7);
 			model.put("descPrice", "none");
 			model.put("ascPrice", "none");
 			model.put("descName", "none");
@@ -628,8 +668,9 @@ public class MvcController {
 			model.put("categorySport", "none");
 			return "shop";
 
-		} else if (categoryArt != null) {
+		} else if (categoryArt.equals("categoryArt")) {
 
+			System.out.println(8);
 			model.put("descPrice", "none");
 			model.put("ascPrice", "none");
 			model.put("descName", "none");
@@ -642,8 +683,9 @@ public class MvcController {
 			model.put("categorySport", "none");
 			return "shop";
 
-		} else if (categorySport != null) {
+		} else if (categorySport.equals("categorySport")) {
 
+			System.out.println(9);
 			model.put("descPrice", "none");
 			model.put("ascPrice", "none");
 			model.put("descName", "none");
@@ -657,6 +699,7 @@ public class MvcController {
 			return "shop";
 
 		}
+		System.out.println(10);
 		return "shop";
 
 	}
@@ -749,7 +792,7 @@ public class MvcController {
 	}
 
 	@PostMapping("/Ebook/commentProduct") // LAY THONG TIN TRANG WEB LOGIN
-	public String CommentServlet(ModelMap model, @RequestParam String bid, @RequestParam String uid,
+	public String CommentServlet (ModelMap model, @RequestParam String bid, @RequestParam String uid,
 			@RequestParam String name, @RequestParam String email, @RequestParam String content,
 			HttpServletRequest request) {
 
@@ -778,15 +821,20 @@ public class MvcController {
 		boolean check = dao.addCommentProduct(c);
 
 		if (check) {
-			model.put("succComment", "Comment Product Details Successfully ...");
-			System.out.println("view_books?id=" + bidInt);
-			return "view_books?id=" + bidInt;
-
+			model.put("succComment", "Comment Product Details Successfully ..."); 
+//			return "view_books?id=" + bidInt;
+			
+//			==================== CHUYEN VE TRANG TRUOC DO ==================================
+//			response.sendRedirect(request.getHeader("referer"));
+			 String referer = request.getHeader("Referer");
+			 return "redirect:" + referer; 
+			 
 		} else {
-			model.put("failedComment", "Something Wrong On Server");
-			System.out.println("view_books?id=" + bidInt);
-			return "view_books?id=" + bidInt;
-
+			model.put("failedComment", "Something Wrong On Server"); 
+			
+//			return "view_books?id=" + bidInt;
+			String referer = request.getHeader("Referer");
+			return "redirect:" + referer; 
 		}
 
 	}
@@ -1009,14 +1057,145 @@ public class MvcController {
 		
 		BookDAOImpl dao2 = new BookDAOImpl(DBConnect.getConn());
 		
-		List<BookDtls> list2 = dao2.getBookBySearch(text); 
-		  
-		model.put("listBook", list2 );
+		List<BookDtls> list2 = dao2.getBookBySearch(text);  
+//		model.put("listBook", list2 );
+		request.getSession().setAttribute("listBook", list2);
 		
 //		==================== CHUYEN VE TRANG TRUOC DO ==================================
 //		response.sendRedirect(request.getHeader("referer"));
-		return request.getHeader("referer"); 
+		 String referer = request.getHeader("Referer");
+		 return "redirect:" + referer; 
+		 
 	}
-
+	
+	@PostMapping("/Ebook/subscribe") // LAY THONG TIN TRANG WEB LOGIN
+	public String SubscribeServlet (ModelMap model, @RequestParam String email, HttpServletRequest request) {
 	 
+//		KET NOI DU LIEU
+		 UserDAOImpl dao = new UserDAOImpl(DBConnect.getConn());  
+
+		 System.out.println(email); 
+		 SendMail send = new SendMail();
+		 boolean sendMail = send.sendMail(email, "SIGN UP FOR NEWS", "You have successfully subscribed to the newsletter! Please check your email regularly to receive the latest news from our website.");
+		 
+		if ( sendMail ) { 
+			model.put("succMsg", "Subscribe Success");
+			return "index"; 
+		}else {
+			model.put("failedMsg", "Email Invalid");
+			return "index"; 
+		 }   
+
+		 
+	}
+	
+	@PostMapping("/Ebook/update_profile") // LAY THONG TIN TRANG WEB LOGIN
+	public String UpdateProfileServlet (ModelMap model, @RequestParam String id, @RequestParam String fname, @RequestParam String email,
+			 @RequestParam String phno, @RequestParam String password, HttpServletRequest request) {
+	    
+//		LAY THONG TIN FORM
+		int idInt = Integer.parseInt( id );
+//		String name = req.getParameter("fname");
+//		String email = req.getParameter("email");
+//		String phno = req.getParameter("phno");
+//		String password = req.getParameter("password");
+
+//		THAY DOI CAC GIA TRI TRONG THONG TIN NGUOI DUNG
+		User us = new User();
+		us.setId(idInt);
+		us.setName(fname);
+		us.setEmail(email);
+		us.setPhno(phno);
+ 
+		UserDAOImpl dao = new UserDAOImpl(DBConnect.getConn());
+
+//		KIEM TRA NGUOI DUNG CO NHAP MAT KHAU DUNG HAY KHONG
+//		boolean f = dao.checkPassword(id, password);
+		 
+//		boolean checkPassEmail = dao.checkPasswordEmail(email, hash);
+		boolean f = dao.checkPasswordEmail(email, password); 
+		
+		if (f) { // NEU DUNG THI CAP NHAT CAC THONG TIN
+
+			boolean f2 = dao.updateProfile(us);
+			
+			if (f2) {
+				model.put("succMsg", "Profile Update Successfully ... ");
+				return "edit_profile";  
+				
+			} else {
+				model.put("failedMsg", "Something wrong on server");
+				return "edit_profile";  
+			}
+
+		} else { //
+			model.put("failedMsg", "Your Password is Incorrect");
+			return "edit_profile";  
+		}
+
+	}
+	
+	@PostMapping("/Ebook/AjaxController") // LAY THONG TIN TRANG WEB LOGIN
+	public void AjaxController (ModelMap model, @RequestParam String action, @RequestParam String fullname, @RequestParam String number1, 
+			@RequestParam String number2 , HttpServletRequest request, HttpServletResponse response) throws IOException {
+		  
+		 response.setContentType("text/plain");
+		 PrintWriter out = response.getWriter();
+		   System.out.println("kkkkkkkkkkkkkkkkkkkkkkkkkkkk");
+		 if ( action.equals("demo1")) { 
+		 System.out.println(fullname);
+		 out.print("Hello: " + fullname);
+		 
+		 }
+		 else  if ( action.equals("demo2")) {
+			 int number1Int = Integer.parseInt( number1 );
+			 int number2Int = Integer.parseInt( number2 );
+			 out.print((int )number1Int + number2Int);
+		 }
+		 
+	}
+	 
+	@PostMapping("/Ebook/sendMail") // LAY THONG TIN TRANG WEB LOGIN
+	public String MailController (ModelMap model, @RequestParam String email, HttpServletRequest request, HttpServletResponse response) throws IOException {   
+ 
+		System.out.println("email: " + email);
+
+//		LAY CHUOI KI TU NGAU NHIEN
+		RandomStringExmple random = new RandomStringExmple();
+		String passwordNew = random.randomAlphaNumeric(8);
+//		MA HOA KI TU
+		String hash = BCrypt.hashpw(passwordNew, BCrypt.gensalt(5)); 
+		
+//		KIEM TRA MAIL CO TRONG CSDL HAY KO
+		UserDAOImpl dao = new UserDAOImpl(DBConnect.getConn());
+		boolean f2 = dao.checkUser(email);
+		
+		if (!f2)
+		{
+			boolean f = dao.updateChangePass(email, hash);
+			SendMail sendmail = new SendMail();
+			
+			boolean result = sendmail.sendMail(email, "Change Password Account",
+					"Your new password is : "+ passwordNew + "\n\n" +
+			        "Please login the site with the new password \n\n http://localhost:8080/Ebook/login" +"\n\n"+
+			        "Or you can change your password" +"\n\n"+
+					"http://localhost:8080/Ebook/changePassword");
+			
+			if (f && result) {
+				System.out.println("Send Email And Update Password Success ...");
+				model.put("succMsg", "Send Mail Successfully");
+				return "login"; 
+
+			} else {
+				model.put("failedMsg", "Send Mail Error");
+				return "reset"; 
+
+			}
+		}else {
+			model.put("failedMsg", "User Already Exist Try Another Email id");
+			return "register"; 
+		}
+		 
+	}
+		  
 }

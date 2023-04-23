@@ -11,7 +11,7 @@
 <html>
 <head>
 <!-- BIEU TUONG TRANG WEB -->
-<link rel="icon" href="img/icon1.png" type="image/png" class="icon">
+<link rel="icon" href="../img/icon1.png" type="image/png" class="icon">
 
 <title>EBook: Login</title>
 

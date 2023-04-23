@@ -9,8 +9,8 @@ import java.util.Properties;
 public class SendMail {
     private static String username = "webfurniture7@gmail.com";
     // vktwcfsfegvhxcah
-//    private static String password = "WebFurniture12345$";
-    private static String password = "ncqdadbsqzjnnfen";
+    private static String password = "WebFurniture12345$";
+//    private static String password = "ncqdadbsqzjnnfen";
 //    daudiep2003@gmail.com
 //    ssqdfsnuvmfqeaqt
     

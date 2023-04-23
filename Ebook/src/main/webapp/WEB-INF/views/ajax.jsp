@@ -21,7 +21,7 @@
 					fullname : fullname,
 					action : 'demo1'
 				},
-				url : 'AjaxController',
+				url : '/Ebook/AjaxController',
 				success : function(result) {
 					$('#result1').html(result)
 				}
@@ -42,7 +42,7 @@
 					number2 : number2,
 					action : 'demo2'
 				},
-				url : 'AjaxController',
+				url : '/Ebook/AjaxController',
 				success : function(result) {
 					$('#result2').html(result)
 				}
