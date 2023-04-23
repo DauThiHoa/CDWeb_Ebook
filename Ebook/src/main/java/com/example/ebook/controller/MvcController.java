@@ -274,6 +274,11 @@ public class MvcController {
 		return "edit_profile";
 	}
 	
+	@GetMapping("/Ebook/orderDetails") // LAY THONG TIN TRANG WEB LOGIN
+	public String orderDetails(ModelMap model, HttpServletRequest request) {
+		return "orderDetails";
+	}
+	
 	@GetMapping("/Ebook/ajax") // LAY THONG TIN TRANG WEB LOGIN
 	public String ajax(ModelMap model, HttpServletRequest request) {
 		return "ajax";
@@ -996,13 +1001,15 @@ public class MvcController {
 	
 	@PostMapping("/Ebook/register") // LAY THONG TIN TRANG WEB LOGIN
 	public String RegisterServlet(ModelMap model, @RequestParam String fname, @RequestParam String email,
-			@RequestParam String phno, @RequestParam String password, @RequestParam String check,
+			@RequestParam String phno, @RequestParam String password, 
 			HttpServletRequest request) {
 
 //		System.out.println("MA HOA MAT KHAU : ");
 		String hash = BCrypt.hashpw(password, BCrypt.gensalt(5));
 //		System.out.println("BCrypt hash: " + hash);
 
+		String check = request.getParameter("check");
+		
 		System.out.println(fname + " - " + email + " - " + phno + " - " + password + " - " + check);
 
 		User us = new User();
@@ -1010,10 +1017,12 @@ public class MvcController {
 		us.setEmail(email);
 		us.setPhno(phno);
 		us.setPassword(hash);
+		
+		System.out.println(check + "=======");
 
 		UserDAOImpl dao = new UserDAOImpl(DBConnect.getConn());
 
-		if (check != null) {
+		if (check != null ) {
 
 			boolean f2 = dao.checkUser(email);
 			if (f2) {

@@ -73,7 +73,7 @@ a:hover {
 
   
 
-	<div class="container " style="margin-top: 8%">
+	<div class="container " style="margin-top: 10%">
 		<!-- <div class="row"> -->
 		
 	<!-- 	<a href="/Ebook/setting">
@@ -147,7 +147,7 @@ a:hover {
 			</div>
 			 
 			 
-			 <div class="text-center text-white">
+			 <div class="text-center text-white p-3">
              
 								<a href="/Ebook/setting" class="btn btn-warning" style="background: orange;">Setting Now</a>
 								

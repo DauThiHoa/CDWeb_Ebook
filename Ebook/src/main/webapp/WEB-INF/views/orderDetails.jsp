@@ -65,7 +65,7 @@
 	</c:if>
   
   
-	<div class="container " style="margin-top: 8%">
+	<div class="container " style="margin-top: 10%">
 		<!-- <div class="row"> -->
 			<div class=""> 
 				<div class="card bg-white"  >
@@ -168,7 +168,7 @@
  </div>
  
 									
-			<div class="text-center text-white">
+			<div class="text-center text-white p-3">
              
 								<a href="/Ebook/order" class="btn btn-warning" style="background: orange;">Order Now</a>
 								

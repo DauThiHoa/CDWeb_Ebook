@@ -70,7 +70,7 @@ a:hover {
 
   
  
- 	<div class="container " style="margin-top: 8%">
+ 	<div class="container " style="margin-top: 10%">
  	
  	<!-- <a href="/Ebook/setting">
 		<i class="fas fa-caret-square-left" style="font-size: 347%; background: #f7f7f7; color: green;"></i>
@@ -129,7 +129,7 @@ a:hover {
 									<%-- href="/Ebook/delete_old_book?em=<%=email%>&&id=<%=b.getBookId()%>"  background: #078660 --%>
 									<td> 
 										<a style=" "
-						 				href="orderDetails.jsp?order_id=<%=b.getOrderId()%>"
+						 				href="/Ebook/orderDetails?order_id=<%=b.getOrderId()%>"
 										class="btn btn-sm btn-danger"><i class="fas fa-search"></i></a>
 										
 										</td>
@@ -147,7 +147,7 @@ a:hover {
 			</div>
 			
  
- 			<div class="text-center text-white">
+ 			<div class="text-center text-white p-3">
              
 								<a href="/Ebook/setting" class="btn btn-warning" style="background: orange;">Setting Now</a>
 								
