@@ -69,7 +69,7 @@
 	</c:if>
 	 
   
-	<div class="container " style="margin-top: 8%">
+	<div class="container " style="margin-top: 10%">
 		<!-- <div class="row"> -->
 			<div class=""> 
 				<div class="card bg-white p-2"  >
@@ -159,11 +159,11 @@
  </div>
  
 									
-			<div class="text-center text-white">
+			<div class="text-center text-white p-5">
              
 								<!-- <a href="order.jsp" class="btn btn-warning" style="background: orange;">Order Now</a> -->
 								
-								<a href="/Ebook/" class="btn btn-success p-2"> Continue Shopping</a>
+								<a href="/Ebook/" class="btn btn-success"> Continue Shopping</a>
 			</div>
 
 <%@include file="all_component/footer.jsp"%>

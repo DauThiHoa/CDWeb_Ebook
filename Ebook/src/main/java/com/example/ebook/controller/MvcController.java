@@ -332,44 +332,38 @@ public class MvcController {
 			}
 		}
 	}
-
-//	@GetMapping("/Ebook/changePassword") // LAY THONG TIN TRANG WEB LOGIN
-//	public String ChangePassword(ModelMap model, @RequestParam String email, @RequestParam String currentPassword
-//			, @RequestParam String newPassword, @RequestParam String confirmPassword , HttpServletRequest request , HttpServletResponse response)
-//			throws IOException {
-//   
-//		response.setContentType("text/plain");
-//		PrintWriter out = response.getWriter(); 
-//		
-////		String hash = BCrypt.hashpw(currentPassword, BCrypt.gensalt(5));
-//		
-////		System.out.println(email + "  -----  " + currentPassword);
-////			KET NOI DU LIEU
-////		$2a$05$ugAb0E9Pdy5Kk1xumjJ.dezc1jLpBY/pqszBjH/stHx6JOC9O1Weq
-////		System.out.println(hash);
-//		
-//		UserDAOImpl dao = new UserDAOImpl(DBConnect.getConn());
-////		boolean checkPassEmail = dao.checkPasswordEmail(email, hash);
-//		boolean us = dao.checkPasswordEmail(email, currentPassword);
-//		
-////		System.out.println(checkPassEmail + "=> checkPassEmail ");
-//		
-//		if (!us) {
-//			out.print("Email & Password Invalid");
-//			return "changePassword";
-//		}else
-//		if (currentPassword.equals(newPassword)) {
-//			out.print("Password is same old password");
-//			return "changePassword";
-//		}else
-//		if (!confirmPassword.equals(newPassword)) {
-//			out.print("Password incorrect");
-//			return "changePassword";
-//		}
-//		return "login";
-//		
-//
-//	}
+  
+	@GetMapping("/Ebook/changePasswordAjax") // LAY THONG TIN TRANG WEB LOGIN
+	public void ChangePasswordAjax(ModelMap model, @RequestParam String email, @RequestParam String currentPassword
+			, @RequestParam String newPassword, @RequestParam String confirmPassword , HttpServletRequest request , HttpServletResponse response)
+			throws IOException {
+   
+		response.setContentType("text/plain");
+		PrintWriter out = response.getWriter(); 
+		
+//		String hash = BCrypt.hashpw(currentPassword, BCrypt.gensalt(5));
+		
+//		System.out.println(email + "  -----  " + currentPassword);
+//			KET NOI DU LIEU
+//		$2a$05$ugAb0E9Pdy5Kk1xumjJ.dezc1jLpBY/pqszBjH/stHx6JOC9O1Weq
+//		System.out.println(hash);
+		
+		UserDAOImpl dao = new UserDAOImpl(DBConnect.getConn());
+//		boolean checkPassEmail = dao.checkPasswordEmail(email, hash);
+		boolean us = dao.checkPasswordEmail(email, currentPassword);
+		
+//		System.out.println(checkPassEmail + "=> checkPassEmail ");
+		
+		if (!us) {
+			out.print("Email & Password Invalid"); 
+		}else
+		if (currentPassword.equals(newPassword)) {
+			out.print("Password is same old password"); 
+		}else
+		if (!confirmPassword.equals(newPassword)) {
+			out.print("Password incorrect"); 
+		} 
+	}
 
 	@GetMapping("/Ebook/changePassword") // LAY THONG TIN TRANG WEB LOGIN
 	public String ChangePassword(ModelMap model, HttpServletRequest request, HttpServletResponse response)

@@ -33,9 +33,8 @@
 
 <script type="text/javascript">
 
-/* function check() {
-	var email = $('#email').val();
-	
+function check() {
+	var email = $('#email').val(); 
 	var currentPassword = $('#currentPassword').val();  
 	var newPassword = $('#newPassword').val();
 	var confirmPassword = $('#confirmPassword').val();
@@ -52,21 +51,20 @@
 			confirmPassword : confirmPassword,
 			
 		},
-		url : '/Ebook/changePassword',
+		url : '/Ebook/changePasswordAjax',
 		success : function(result) {
 			$('#result').html(result)
 		}
 	})
-} */
-
-	 
+} 
+ 
 	
 </script>
-
-
+ 
 </head>
 <body>
-
+ 
+        
 	<%
 	User u = (User) session.getAttribute("userobj");
 	%>
@@ -102,12 +100,12 @@
 					<h5 class="text-center text-success">${succMsg }</h5>
 					<c:remove var="succMsg" scope="session" />
 				</c:if> 
-
+				
+ 				 <div class="text-center text-danger" id="result"></div>
 
 				<!-- Form -->
 				<form action="/Ebook/changePassword" method="POST"  class="px-3">
-				
-				<br> <span class="text-center text-danger" id="result"></span>
+				 
 				
 					<!-- Input Box -->
 					<div class="form-input">

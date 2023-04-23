@@ -92,15 +92,15 @@ a:hover {
 					<div class="card">
 						<div class="card-body text-center">
 							<div class="text-primary">
-								<i class="fas fa-book-open fa-5x" style="color: green;"></i>
+								<i class="fas fa-book-open fa-5x" style="color: #e66c30;"></i>
 							</div>
 							<h1>Old Book</h1>
 						</div>
 					</div>
 				</a>
 			</div>
-
-			<div class="col-md-4">
+ 
+			 <div class="col-md-4">
 				<a href="/Ebook/edit_profile">
 					<div class="card">
 						<div class="card-body text-center">
@@ -112,9 +112,8 @@ a:hover {
 					</div>
 				</a>
 			</div>
-
  
-			<div class="col-md-6 mt-3">
+			<div class="col-md-4 mt-4">
 				<a href="/Ebook/order">
 					<div class="card">
 						<div class="card-body text-center">
@@ -127,8 +126,21 @@ a:hover {
 					</div>
 				</a>
 			</div>
-
-			<div class="col-md-6 mt-3">
+ 
+			<div class="col-md-4 mt-4">
+				<a href="/Ebook/changePassword">
+					<div class="card">
+						<div class="card-body text-center">
+							<div class="text-primary"  >
+								<i class="fas fa-edit fa-5x" style="color: green;"></i>
+							</div>
+							<h1>Change Password</h1>
+						</div>
+					</div>
+				</a>
+			</div>
+			
+			<div class="col-md-4 mt-4">
 				<a href="/Ebook/helpline">
 					<div class="card">
 						<div class="card-body text-center">
