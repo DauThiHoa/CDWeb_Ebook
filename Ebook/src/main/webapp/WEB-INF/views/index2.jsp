@@ -169,7 +169,7 @@
 				<div class="card crd-ho">
 					<div class="card-body text-center">
 
-						<img alt="" src="../book/<%=b2.getPhotoName()%>"
+						<img alt="" src="<%=b2.getPhotoName()%>"
 							style="width: 100%; height: 170px" class="img-thumblin">
 
 
@@ -318,7 +318,7 @@
 			<div class="col-md-3">
 				<div class="card crd-ho">
 					<div class="card-body text-center">
-						<img alt="" src="../book/<%=b.getPhotoName()%>"
+						<img alt="" src="<%=b.getPhotoName()%>"
 							style="width: 100%; height: 170px" class="img-thumblin">
 						<p><%=b.getBookName()%></p>
 						<p><%=b.getAuthor()%></p>
@@ -387,7 +387,7 @@
 			<div class="col-md-3">
 				<div class="card crd-ho">
 					<div class="card-body text-center">
-						<img alt="" src="../book/<%=b2.getPhotoName()%>"
+						<img alt="" src="<%=b2.getPhotoName()%>"
 							style="width: 100%; height: 170px" class="img-thumblin">
 						<p><%=b2.getBookName()%></p>
 						<p><%=b2.getAuthor()%></p>

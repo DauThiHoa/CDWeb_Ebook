@@ -96,13 +96,13 @@ function showToast(content) {
                         <div class="product__main-img col-lg-4 col-md-4 col-sm-12">
                         
                             <div class="product__main-img-primary">
-                                <img src="../book/<%=b.getPhotoName()%>">
+                                <img src="<%=b.getPhotoName()%>">
                             </div>
 
                             <div class="product__main-img-list">
-                                <img src="../book/<%=b.getPhotoName()%>">
-                                <img src="../fontend/images1/product/hoc-tap-qua-du-an-2-01-1 1.jpg">
-                                <img src="../fontend/images1/product/hoc-tap-qua-du-an-2-01-1 2.jpg">
+                                <img src="<%=b.getPhotoName()%>">
+                                <!-- <img src="../fontend/images1/product/hoc-tap-qua-du-an-2-01-1 1.jpg">
+                                <img src="../fontend/images1/product/hoc-tap-qua-du-an-2-01-1 2.jpg"> -->
                                 <!-- <img src="../fontend/images1/product/23f849a0617301e63159067164aecfd2.png"> -->
                             </div>
                         </div>
@@ -366,7 +366,7 @@ function showToast(content) {
 							<div class="product__aside-item product__aside-item--border">
                                 <div class="product__aside-img-wrap">
                                		 <a href="/Ebook/view_books?id=<%=b1.getBookId()%>"> 
-                                    <img src="../book/<%=b1.getPhotoName()%>" class="product__aside-img">
+                                    <img src="<%=b1.getPhotoName()%>" class="product__aside-img">
                                     </a>
                                 </div>
                                 <div class="product__aside-title">
@@ -586,7 +586,7 @@ function showToast(content) {
 							}
 							%>
             <div class="image">
-                <img src="../book/<%=b2.getPhotoName()%>" alt="">
+                <img src="<%=b2.getPhotoName()%>" alt="">
             </div>
             
             <div class="content">

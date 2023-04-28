@@ -118,7 +118,7 @@
 
 								<tr style="" >
 								<a href="/Ebook/view_books?id=<%=f.getBid()%>"> 
-									<th style="margin: auto;" scope="row"><img alt="" src="../book/<%=f.getPhotoName()%>"
+									<th style="margin: auto;" scope="row"><img alt="" src="<%=f.getPhotoName()%>"
 										style="width: 100px; height: 120px"></th>
 								</a>
 									<th scope="row"><br> <br><br><h3 style=""><%=f.getBookName()%></h3></th>

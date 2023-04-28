@@ -93,8 +93,8 @@
 
 							<tr  > 
 									<th scope="row"><h3 class="text"><%=b.getBookId()%></h3></th>
-									<td><img class="text" src="../book/<%=b.getPhotoName()%>"
-												style="width: 80px; height: 80px"></td>
+									<td><img class="text" src="<%=b.getPhotoName()%>"
+												style="width: 80px; height: 95px"></td>
 									<td><h3 class="text"><%=b.getBookName()%></h3></td> 
 
 									<td><h3 class="text"><%=b.getAuthor()%></h3></td>

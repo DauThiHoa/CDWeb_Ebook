@@ -112,7 +112,7 @@
 								%>
 
 								<tr >
-									<th  scope="row"><img alt="" src="../book/<%=c.getImage()%>"
+									<th  scope="row"><img alt="" src="<%=c.getImage()%>"
 										style="width: 100px; height: 120px"></th>
 									<th scope="row">
 									<br> <br><br>

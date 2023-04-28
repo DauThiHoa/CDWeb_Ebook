@@ -55,7 +55,7 @@
 			<div class="col-md-3">
 				<div class="card crd-ho mt-2">
 					<div class="card-body text-center">
-						<img alt="" src="../book/<%=b2.getPhotoName()%>"
+						<img alt="" src="<%=b2.getPhotoName()%>"
 							style="width: 100%; height: 170px" class="img-thumblin">
 						<p><%=b2.getBookName()%></p>
 						<p><%=b2.getAuthor()%></p>

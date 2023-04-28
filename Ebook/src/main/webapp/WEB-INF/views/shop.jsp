@@ -447,7 +447,7 @@ function showToast(content) {
 							%>
 							
             <div class="image">
-                <img src="../book/<%=b2.getPhotoName()%>" alt="">
+                <img src="<%=b2.getPhotoName()%>" alt="">
             </div>
             
             <div class="content">
@@ -659,7 +659,7 @@ function showToast(content) {
 							}
 							%>
             <div class="image">
-                <img src="../book/<%=b2.getPhotoName()%>" alt="">
+                <img src="<%=b2.getPhotoName()%>" alt="">
             </div>
             
             <div class="content">
@@ -872,7 +872,7 @@ function showToast(content) {
 							}
 							%>
             <div class="image">
-                <img src="../book/<%=b2.getPhotoName()%>" alt="">
+                <img src="<%=b2.getPhotoName()%>" alt="">
             </div>
             
             <div class="content">
@@ -1090,7 +1090,7 @@ function showToast(content) {
 							}
 							%>
             <div class="image">
-                <img src="../book/<%=b2.getPhotoName()%>" alt="">
+                <img src="<%=b2.getPhotoName()%>" alt="">
             </div>
             
             <div class="content">
@@ -1314,7 +1314,7 @@ function showToast(content) {
 							}
 							%>
             <div class="image">
-                <img src="../book/<%=b2.getPhotoName()%>" alt="">
+                <img src="<%=b2.getPhotoName()%>" alt="">
             </div>
             
             <div class="content">
@@ -1527,7 +1527,7 @@ function showToast(content) {
 							}
 							%>
             <div class="image">
-                <img src="../book/<%=b2.getPhotoName()%>" alt="">
+                <img src="<%=b2.getPhotoName()%>" alt="">
             </div>
             
             <div class="content">
@@ -1739,7 +1739,7 @@ function showToast(content) {
 							}
 							%>
             <div class="image">
-                <img src="../book/<%=b2.getPhotoName()%>" alt="">
+                <img src="<%=b2.getPhotoName()%>" alt="">
             </div>
             
             <div class="content">
@@ -1953,7 +1953,7 @@ function showToast(content) {
 							}
 							%>
             <div class="image">
-                <img src="../book/<%=b2.getPhotoName()%>" alt="">
+                <img src="<%=b2.getPhotoName()%>" alt="">
             </div>
             
             <div class="content">
@@ -2164,7 +2164,7 @@ function showToast(content) {
 							}
 							%>
             <div class="image">
-                <img src="../book/<%=b2.getPhotoName()%>" alt="">
+                <img src="<%=b2.getPhotoName()%>" alt="">
             </div>
             
             <div class="content">

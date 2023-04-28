@@ -202,7 +202,7 @@
 							%>
 							
             <div class="image">
-                <img src="../book/<%=b2.getPhotoName()%>" alt="">
+                <img src="<%=b2.getPhotoName()%>" alt="">
             </div>
             
             <div class="content">
@@ -381,7 +381,7 @@
 				
 				
 				<div class="image">
-					<img src="../book/<%=b.getPhotoName()%>" alt="">
+					<img src="<%=b.getPhotoName()%>" alt="">
 				</div>
 				<div class="content">
 					<h3><%=b.getBookName()%></h3>
@@ -429,7 +429,7 @@
 			%>
 			
         <a href="/Ebook/view_books?id=<%=b2.getBookId()%>" class="box">
-            <img src="../book/<%=b2.getPhotoName()%>" alt="">
+            <img src="<%=b2.getPhotoName()%>" alt="">
             <div class="content">
                 <h3><%=b2.getBookName()%></h3>
                 <div class="price">$<%=b2.getPrice()%></div>

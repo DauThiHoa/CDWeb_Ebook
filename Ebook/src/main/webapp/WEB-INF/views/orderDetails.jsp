@@ -123,7 +123,7 @@
 								%>
 
 								<tr  >
-									<th  scope="row"><img alt="" src="../book/<%=o.getImage()%>"
+									<th  scope="row"><img alt="" src="<%=o.getImage()%>"
 										style="width: 100px; height: 120px"></th>
 									<th scope="row"><br> <br><br><h3 style=" "><%=o.getBookName()%></h3></th>
 									<td><br> <br><br><h3 style=" "><%=o.getAuthor()%></h3></td>

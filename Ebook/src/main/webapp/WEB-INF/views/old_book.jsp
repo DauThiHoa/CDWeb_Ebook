@@ -120,7 +120,7 @@ a:hover {
 								%>
 
 								<tr  >
-									<th  scope="row"><img alt="" src="../book/<%=b.getPhotoName()%>"
+									<th  scope="row"><img alt="" src="<%=b.getPhotoName()%>"
 										style="width: 100px; height: 120px"></th>
 									<th scope="row"><br> <br><br><h3 style=" "><%=b.getBookName()%></h3></th>
 									<td><br> <br><br><h3 style=" "><%=b.getAuthor()%></h3></td> 

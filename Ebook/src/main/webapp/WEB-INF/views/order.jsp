@@ -117,7 +117,7 @@ a:hover {
 							%>
 
 							<tr  >
-									<%-- <th  scope="row"><img alt="" src="../book/<%=b.getPhotoName()%>"
+									<%-- <th  scope="row"><img alt="" src="<%=b.getPhotoName()%>"
 										style="width: 100px; height: 120px"></th> --%>
 									<th scope="row"><h3 style=""><%=b.getOrderId()%></h3></th>
 									<td><h3 style=""><%=b.getUserName()%></h3></td> 
