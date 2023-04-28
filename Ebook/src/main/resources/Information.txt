@@ -1,0 +1,63 @@
+SINH VIÊN THỰC HIỆN
+
+	Đậu Thị Hoa - 19130075
+	Tào Thị Mỹ Dung - 19130052
+
+- PHÂN CÔNG NHIỆM VỤ :
+	+ Đậu Thị Hoa : Hoàn thành các chức năng phần User
+	+ Tào Thị Mỹ Dung : Hoàn thành các chức năng phần Admin và tạo dữ liệu database
+
+						USER
+
+- Đăng nhập ( Email - admin@gmail.com - Password : admin ) 
+	-> Hiển thị mật khẩu ( ẩn mật khẩu )
+	-> Quên mật khẩu : => Gửi mail
+	+ Gửi mật khẩu mới 
+	+ Có thể thay đổi mật khẩu 
+Áp dụng Ajax :
+	+ Thông báo "Email & Mật khẩu không hợp lệ" hoặc "Mật khẩu giống mật khẩu cũ" hoặc "Mật khẩu sai”
+
+- Đăng kí
+	-> Mã hóa mật khẩu 
+
+- Đăng xuất
+
+- Xem chi tiết sản phẩm
+	+ Bình luận sản phẩm
+- Thêm sản phẩm vào giỏ hàng 
+	+ Chỉnh sửa số lượng 
+	+ Xóa sản phẩm trong giỏ hàng
+- Đặt hàng :
+	+ Xem đơn hàng mình đã đặt
+	+ Xem chi tiết đơn hàng 
+- Thêm sản phẩm vào mục yêu thích
+- Tìm kiếm sản phẩm theo tên, tác giả
+- Sắp xếp sản phẩm :
+	+ Theo giá ( giảm dần - tăng dần )
+	+ Theo tên ( giảm dần - tăng dần )
+	+ Theo thể loại : Ngoại ngữ, văn học, kĩ năng sống, mỹ thuật - kiến trúc, y thuật - thể thao 
+- Gửi liên hệ 
+- Đăng kí nhận tin 
+
+- Cài đặt  :
+	+ Giảm giá sách cũ
+	+ Hiển thị sách đã được giảm giá
+	+ Chỉnh sửa thông tin cá nhân 
+	+ Thay đổi mật khẩu 
+	+ Xem các đơn hàng mình đã đặt
+	+ Xem chi tiết các sản phẩm trong đơn hàng
+
+					ADMIN
+Email - admin@gmail.com - Password : admin
+- Đăng nhập
+- Đăng xuất
+- Thêm sách mới
+- Xem danh sách tất cả các sách :
+	+ Chỉnh sửa thông tin 
+	+ Xóa sách
+- Xem danh sách tất cả các đơn hàng mà người dùng đã đặt mua
+
+DATABASE
+- Tạo dữ liệu database
+
+ 
